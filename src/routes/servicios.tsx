@@ -54,7 +54,7 @@ function ServiciosPage() {
       <main className="px-6 sm:px-10 lg:px-20 xl:px-28">
         {/* Manifesto */}
         <section className="pt-20 pb-24 md:pt-28 md:pb-32">
-          <div className="mx-auto max-w-3xl md:ml-[12%]">
+          <div className="mx-auto max-w-3xl">
             <h1 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
               Cinco cosas, <span className="italic">no cuarenta.</span>
             </h1>
