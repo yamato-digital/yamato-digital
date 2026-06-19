@@ -436,9 +436,7 @@ function Footer() {
     <footer className="bg-ink text-paper">
       <div className="flex flex-col gap-10 border-t border-paper/15 px-6 py-12 md:flex-row md:items-end md:justify-between md:px-12">
         <div>
-          <p className="font-serif text-5xl">
-            yamato<span className="text-paper/50">.</span>
-          </p>
+          <img src={logoWhite.url} alt="YAMATO" className="h-10 w-auto" />
           <p className="mt-3 text-sm text-paper/60">
             Consultora de marketing independiente. Madrid · Remote.
           </p>
