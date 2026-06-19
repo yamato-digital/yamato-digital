@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import logoBlack from "@/assets/logo-yamato-black.png";
+import logoWhite from "@/assets/logo-yamato-white.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -88,8 +90,8 @@ function Nav() {
   return (
     <header className="sticky top-0 z-40 bg-paper/85 backdrop-blur">
       <div className="flex items-center justify-between px-6 py-6 md:px-12">
-        <a href="#top" className="font-serif text-2xl tracking-tight">
-          yamato<span className="text-muted-ink">.</span>
+        <a href="#top" className="inline-block">
+          <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
         </a>
         <nav className="hidden gap-8 text-sm md:flex">
           {[
@@ -434,9 +436,7 @@ function Footer() {
     <footer className="bg-ink text-paper">
       <div className="flex flex-col gap-10 border-t border-paper/15 px-6 py-12 md:flex-row md:items-end md:justify-between md:px-12">
         <div>
-          <p className="font-serif text-5xl">
-            yamato<span className="text-paper/50">.</span>
-          </p>
+          <img src={logoWhite} alt="YAMATO" className="h-10 w-auto" />
           <p className="mt-3 text-sm text-paper/60">
             Consultora de marketing independiente. Madrid · Remote.
           </p>
