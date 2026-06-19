@@ -200,38 +200,36 @@ function About() {
 
 function Services() {
   return (
-    <section id="servicios" className="bg-cream">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-        <div className="grid gap-12 md:grid-cols-12">
-          <div className="md:col-span-4">
-            <Eyebrow>Nuestros servicios</Eyebrow>
-            <h3 className="mt-6 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-tight">
-              Cinco cosas, <span className="italic">no cuarenta.</span>
-            </h3>
-          </div>
-          <ol className="md:col-span-7 md:col-start-6">
-            {SERVICES.map((s, i) => (
-              <li
-                key={s}
-                className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b"
-              >
-                <span className="text-sm tabular-nums text-muted-ink">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">
-                  {s}
-                </span>
-              </li>
-            ))}
-          </ol>
-          <blockquote className="border-l-2 border-ink pl-6 font-serif text-xl italic leading-relaxed text-ink md:col-span-10 md:col-start-2 md:text-2xl">
-            Independientes de verdad. Ejecutamos lo que mueve el negocio (SEO, GEO, CRM, web, IA) y
-            dirigimos lo demás: el paid lo lleva un especialista que elegimos y controlamos
-            nosotros. Por eso no cobramos un porcentaje de lo que inviertes. No gestionamos tu
-            publicidad, así que no tenemos nada que inflar. Independientes en la estructura, no en
-            el eslogan.
-          </blockquote>
+    <section id="servicios" className="bg-cream px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <div className="grid gap-12 md:grid-cols-12">
+        <div className="md:col-span-4">
+          <Eyebrow>Nuestros servicios</Eyebrow>
+          <h3 className="mt-6 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-tight">
+            Cinco cosas, <span className="italic">no cuarenta.</span>
+          </h3>
         </div>
+        <ol className="md:col-span-7 md:col-start-6">
+          {SERVICES.map((s, i) => (
+            <li
+              key={s}
+              className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b"
+            >
+              <span className="text-sm tabular-nums text-muted-ink">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">
+                {s}
+              </span>
+            </li>
+          ))}
+        </ol>
+        <blockquote className="border-l-2 border-ink pl-6 font-serif text-xl italic leading-relaxed text-ink md:col-span-10 md:col-start-2 md:text-2xl">
+          Independientes de verdad. Ejecutamos lo que mueve el negocio (SEO, GEO, CRM, web, IA) y
+          dirigimos lo demás: el paid lo lleva un especialista que elegimos y controlamos
+          nosotros. Por eso no cobramos un porcentaje de lo que inviertes. No gestionamos tu
+          publicidad, así que no tenemos nada que inflar. Independientes en la estructura, no en
+          el eslogan.
+        </blockquote>
       </div>
     </section>
   );
@@ -257,8 +255,8 @@ function Process() {
   ];
 
   return (
-    <section id="proceso">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+    <section id="proceso" className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <div className="mx-auto max-w-5xl">
         <Eyebrow>Cómo lo hacemos</Eyebrow>
         <p className="mt-6 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
           “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no
@@ -283,21 +281,19 @@ function Process() {
 
 function PriceQuote() {
   return (
-    <section className="border-y border-hairline bg-paper">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-        <Eyebrow>Inversión</Eyebrow>
-        <p className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
-          Un CMO por el precio de un{" "}
-          <span className="italic text-muted-ink">junior</span>.
-        </p>
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
-          Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una
-          década dirigiendo marketing. Menos horas, sí. Pero ninguna se pierde en que un junior
-          aprenda a tu costa.
-        </p>
-        <div className="mt-10">
-          <Cta>Si llamas, respondemos</Cta>
-        </div>
+    <section className="border-y border-hairline bg-paper px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <Eyebrow>Inversión</Eyebrow>
+      <p className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
+        Un CMO por el precio de un{" "}
+        <span className="italic text-muted-ink">junior</span>.
+      </p>
+      <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
+        Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una
+        década dirigiendo marketing. Menos horas, sí. Pero ninguna se pierde en que un junior
+        aprenda a tu costa.
+      </p>
+      <div className="mt-10">
+        <Cta>Si llamas, respondemos</Cta>
       </div>
     </section>
   );
@@ -305,8 +301,8 @@ function PriceQuote() {
 
 function EnterpriseBlock() {
   return (
-    <section>
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+    <section className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <div className="mx-auto max-w-6xl">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>Para empresas grandes</Eyebrow>
@@ -354,8 +350,8 @@ function Cases() {
   ];
 
   return (
-    <section id="casos" className="bg-cream">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+    <section id="casos" className="bg-cream px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <div className="mx-auto max-w-5xl">
         <Eyebrow>Casos de éxito</Eyebrow>
         <div className="mt-16 divide-y divide-ink/15">
           {cases.map((c) => (
@@ -387,33 +383,31 @@ function Cases() {
 
 function Fit() {
   return (
-    <section>
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-        <Eyebrow>No perdamos el tiempo</Eyebrow>
-        <h3 className="mt-6 max-w-3xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
-          Encajarás con YAMATO <span className="italic">si…</span>
-        </h3>
+    <section className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <Eyebrow>No perdamos el tiempo</Eyebrow>
+      <h3 className="mt-6 max-w-3xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
+        Encajarás con YAMATO <span className="italic">si…</span>
+      </h3>
 
-        <div className="mt-16 grid gap-16 md:grid-cols-2">
-          <ul className="space-y-5">
-            {FIT_YES.map((t) => (
-              <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
-                <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-ink" />
+      <div className="mt-16 grid gap-16 md:grid-cols-2">
+        <ul className="space-y-5">
+          {FIT_YES.map((t) => (
+            <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
+              <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-ink" />
+              <span>{t}</span>
+            </li>
+          ))}
+        </ul>
+        <div>
+          <p className="font-serif text-2xl italic text-muted-ink">No encajarás si…</p>
+          <ul className="mt-6 space-y-5">
+            {FIT_NO.map((t) => (
+              <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
+                <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
                 <span>{t}</span>
               </li>
             ))}
           </ul>
-          <div>
-            <p className="font-serif text-2xl italic text-muted-ink">No encajarás si…</p>
-            <ul className="mt-6 space-y-5">
-              {FIT_NO.map((t) => (
-                <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
-                  <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
-                  <span>{t}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
     </section>
