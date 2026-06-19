@@ -433,16 +433,28 @@ function Closing() {
         <div className="mt-12">
           <a
             href="mailto:hola@yamato.digital"
-            className="group inline-flex items-baseline font-serif text-[clamp(1.75rem,3.5vw,2.75rem)] italic whitespace-pre-line"
+            className="group inline-flex items-baseline font-serif text-[clamp(1.75rem,3.5vw,2.75rem)] leading-tight italic link-underline link-underline-hover"
           >
-            Hablemos pues{"\n"}
+            Hablemos pues
             <Arrow />
           </a>
         </div>
-        <p className="mt-16 max-w-2xl text-base leading-relaxed text-paper/70">
-          Y si nada de esto te encaja, dedícale 1 minuto al día a la newsletter. Intentaremos que
-          al menos aprendas algo nuevo cada día.
-        </p>
+
+        <div className="mt-24">
+          <p className="max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
+            Y si nada de esto te encaja, dedícale 1 minuto al día a la newsletter. Intentaremos que
+            al menos aprendas algo nuevo cada día.
+          </p>
+          <div className="mt-12">
+            <a
+              href="#"
+              className="group inline-flex items-center gap-4 rounded-full border border-paper/30 px-8 py-4 font-serif text-[clamp(1.25rem,2.5vw,1.75rem)] italic transition-colors hover:bg-paper/10"
+            >
+              Quiero leerla
+              <Arrow />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
