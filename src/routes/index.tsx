@@ -439,8 +439,16 @@ function Closing() {
             <Arrow />
           </a>
         </div>
+      </div>
+    </section>
+  );
+}
 
-        <div className="mt-24">
+function Newsletter() {
+  return (
+    <section className="bg-ink text-paper">
+      <div className="px-6 sm:px-10 lg:px-20 xl:px-28 pb-32">
+        <div className="border-t border-paper/15 pt-24">
           <p className="max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
             Y si nada de esto te encaja, dedícale 1 minuto al día a la newsletter. Intentaremos que
             al menos aprendas algo nuevo cada día.
