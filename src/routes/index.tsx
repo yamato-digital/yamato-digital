@@ -428,15 +428,14 @@ function Closing() {
           <span className="text-paper/60">Y colorín colorado…</span>
         </Eyebrow>
         <p className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
-          Empiezas con 30 minutos de llamada. Sales con una{" "}
-          <span className="italic">Radiografía gratis</span> y tres verdades.
+          ¿Qué tal si hacemos una, o dos, cosas juntos?
         </p>
         <div className="mt-12">
           <a
             href="mailto:hola@yamato.digital"
-            className="group inline-flex items-baseline font-serif text-[clamp(1.75rem,3.5vw,2.75rem)] italic"
+            className="group inline-flex items-baseline font-serif text-[clamp(1.75rem,3.5vw,2.75rem)] italic whitespace-pre-line"
           >
-            Pide tu Radiografía gratis
+            Hablemos pues{"\n"}
             <Arrow />
           </a>
         </div>
