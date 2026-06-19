@@ -459,7 +459,6 @@ function Home() {
       <Process />
       <PriceQuote />
       <EnterpriseBlock />
-      <Cases />
       <Fit />
       <Closing />
       <Newsletter />
