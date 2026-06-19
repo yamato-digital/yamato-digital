@@ -205,7 +205,7 @@ function Services() {
           <div className="md:col-span-4">
             <Eyebrow>Nuestros servicios</Eyebrow>
           </div>
-          <ol className="md:col-span-7 md:col-start-6">
+          <ol className="md:col-span-8 md:col-start-5">
             {SERVICES.map((s, i) => (
               <li
                 key={s}
