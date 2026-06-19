@@ -74,7 +74,7 @@ function Cta({ children, href = "#contacto" }: { children: React.ReactNode; href
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="text-[11px] font-medium uppercase tracking-[0.18em] text-muted-ink">
+    <h2 className="text-sm font-medium uppercase tracking-[0.18em] text-muted-ink">
       {children}
     </h2>
   );
