@@ -511,6 +511,7 @@ function Home() {
       <Cases />
       <Fit />
       <Closing />
+      <Newsletter />
       <Footer />
     </main>
   );
