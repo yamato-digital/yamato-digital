@@ -9,13 +9,13 @@ export const Route = createFileRoute("/servicios")({
       {
         name: "description",
         content:
-          "Descubre cómo YAMATO puede ayudar a tu empresa con estrategia, mentoría, Go-to-Market, IA aplicada y ejecución.",
+          "Cinco cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución para empresas que quieren resultados.",
       },
       { property: "og:title", content: "Servicios — YAMATO" },
       {
         property: "og:description",
         content:
-          "Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución para startups y corporaciones.",
+          "Cinco cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución.",
       },
       { property: "og:url", content: "/servicios" },
     ],
@@ -24,31 +24,26 @@ export const Route = createFileRoute("/servicios")({
   component: ServiciosPage,
 });
 
-const SERVICE_DETAILS = [
+const SERVICES = [
   {
-    title: "Estrategia y dirección",
-    description:
-      "Diseñamos la dirección de tu marketing como si fuera nuestro. Desde el posicionamiento hasta el plan anual, con honestidad brutal y cero plantillas.",
+    title: "Estrategia y dirección.",
+    body: "Nadie piensa tu marketing más allá del mes que viene. Entramos como tu director: auditamos, fijamos estrategia, marcamos KPIs y lideramos la operación.",
   },
   {
-    title: "Mentoría y gestión de equipos",
-    description:
-      "Acompañamos a tu equipo interno o externo para que tomen mejores decisiones, gestionen mejor su tiempo y dejen de depender de agencias que no entienden el negocio.",
+    title: "Mentoría y gestión de equipos.",
+    body: "Tienes gente que ejecuta mucho y avanza poco. No despedimos a nadie: les damos dirección, foco y un backlog priorizado por negocio.",
   },
   {
-    title: "Go-to-Market",
-    description:
-      "Lanzamos productos y servicios con un plan que funciona desde el día uno. Investigación, mensajería, canales y métricas claras.",
+    title: "Go-to-Market.",
+    body: "Hay fecha de lanzamiento y nadie ha pensado el cómo. Diseñamos y ejecutamos la entrada al mercado. Con plan y con plazos.",
   },
   {
-    title: "IA aplicada",
-    description:
-      "Integramos inteligencia artificial en tus procesos de marketing para ganar velocidad, calidad y diferenciación real.",
+    title: "IA aplicada.",
+    body: "Todos hablan de IA, nadie la implanta. La metemos donde ahorra dinero de verdad: automatizaciones, agentes, análisis, reporting. La IA no va a acabar con el marketing, va a acabar con el marketing mediocre.",
   },
   {
-    title: "Ejecución",
-    description:
-      "Nos ponemos las pilas y ejecutamos lo que hay que ejecutar. Sin reuniones eternas, sin informes que nadie lee.",
+    title: "Ejecución.",
+    body: "SEO, GEO, CRM, web, automatización. Lo ejecutamos nosotros — y solo si la estrategia la hemos marcado nosotros. ¿Google Ads y Social Ads? Los dirigimos y elegimos a quién los toca. Un CMO no mueve pujas: dirige al que las mueve.",
   },
 ];
 
@@ -56,40 +51,44 @@ function ServiciosPage() {
   return (
     <div className="bg-paper text-ink">
       <Nav />
-      <main>
-        <section className="px-6 sm:px-10 lg:px-20 xl:px-28 pt-24 pb-16">
-          <h1 className="max-w-[16ch] font-serif text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.02em]">
-            Nuestros <span className="italic">servicios</span>
-          </h1>
-          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
-            Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.
-          </p>
+      <main className="px-6 sm:px-10 lg:px-20 xl:px-28">
+        {/* Manifesto */}
+        <section className="pt-20 pb-24 md:pt-28 md:pb-32">
+          <div className="mx-auto max-w-3xl md:ml-[12%]">
+            <h1 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
+              Cinco cosas, <span className="italic">no cuarenta.</span>
+            </h1>
+            <div className="mt-10 space-y-7 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
+              <p>
+                No hacemos de todo. Hacemos lo que mueve el negocio. Estrategia,
+                equipos, lanzamientos, IA y ejecución.
+              </p>
+              <p>
+                Si necesitas a alguien que te haga cuarenta cosas regulares,
+                no somos nosotros. Si quieres a alguien que haga cinco bien y
+                te diga la verdad por el camino, sigue leyendo.
+              </p>
+            </div>
+          </div>
         </section>
 
-        <section className="px-6 sm:px-10 lg:px-20 xl:px-28 pb-28">
-          <div className="mx-auto max-w-7xl">
-            <div className="grid gap-0 md:grid-cols-12">
-              {SERVICE_DETAILS.map((s, i) => (
-                <div
-                  key={s.title}
-                  className="border-t border-ink/15 py-10 md:col-span-12 md:grid md:grid-cols-12 md:gap-6"
-                >
-                  <div className="md:col-span-1">
-                    <span className="text-sm tabular-nums text-muted-ink">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                  </div>
-                  <div className="mt-2 md:col-span-4 md:mt-0">
-                    <h2 className="font-serif text-2xl leading-tight md:text-3xl">
-                      {s.title}
-                    </h2>
-                  </div>
-                  <div className="mt-4 md:col-span-6 md:col-start-6 md:mt-0">
-                    <p className="text-base leading-relaxed text-muted-ink">
-                      {s.description}
-                    </p>
-                  </div>
-                </div>
+        <div className="mx-auto max-w-3xl md:ml-[12%]">
+          <div className="border-t border-ink/20" />
+        </div>
+
+        {/* What we actually do */}
+        <section className="pt-20 pb-28 md:pt-28 md:pb-36">
+          <div className="mx-auto max-w-3xl md:ml-[12%]">
+            <h2 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
+              Vale. ¿Pero qué hacéis <span className="italic">exactamente?</span>
+            </h2>
+
+            <div className="mt-12 space-y-8 max-w-xl text-[15px] leading-[1.7] text-muted-ink">
+              {SERVICES.map((s) => (
+                <p key={s.title}>
+                  <strong className="font-semibold text-ink">{s.title}</strong>{" "}
+                  {s.body}
+                </p>
               ))}
             </div>
           </div>
