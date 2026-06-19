@@ -381,9 +381,9 @@ function Fit() {
   return (
     <section className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
       <Eyebrow>No perdamos el tiempo</Eyebrow>
-      <h2 className="mt-6 max-w-3xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
+      <h3 className="mt-6 max-w-3xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
         Encajarás con YAMATO <span className="italic">si…</span>
-      </h2>
+      </h3>
 
       <div className="mt-16 grid gap-16 md:grid-cols-2">
         <ul className="space-y-5">
