@@ -220,13 +220,6 @@ function Services() {
               </li>
             ))}
           </ol>
-          <blockquote className="border-l-2 border-ink pl-6 font-serif text-xl italic leading-relaxed text-ink md:col-span-10 md:col-start-2 md:text-2xl">
-            Independientes de verdad. Ejecutamos lo que mueve el negocio (SEO, GEO, CRM, web, IA) y
-            dirigimos lo demás: el paid lo lleva un especialista que elegimos y controlamos
-            nosotros. Por eso no cobramos un porcentaje de lo que inviertes. No gestionamos tu
-            publicidad, así que no tenemos nada que inflar. Independientes en la estructura, no en
-            el eslogan.
-          </blockquote>
         </div>
       </div>
     </section>
