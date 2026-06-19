@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import logoBlack from "@/assets/logo-yamato-black.png";
 
 export function Nav() {
@@ -8,6 +9,9 @@ export function Nav() {
           <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
         </a>
         <nav className="hidden gap-8 text-sm md:flex">
+          <Link to="/servicios" className="link-underline link-underline-hover">
+            Servicios
+          </Link>
           {[
             ["Qué hacemos", "/#servicios"],
             ["Cómo", "/#proceso"],
