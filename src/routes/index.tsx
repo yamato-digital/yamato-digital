@@ -255,8 +255,8 @@ function Process() {
   ];
 
   return (
-    <section id="proceso">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+    <section id="proceso" className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <div className="mx-auto max-w-5xl">
         <Eyebrow>Cómo lo hacemos</Eyebrow>
         <p className="mt-6 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
           “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no
