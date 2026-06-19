@@ -91,7 +91,6 @@ function Nav() {
           {[
             ["Qué hacemos", "#servicios"],
             ["Cómo", "#proceso"],
-            ["Casos", "#casos"],
             ["Contacto", "#contacto"],
           ].map(([label, href]) => (
             <a
