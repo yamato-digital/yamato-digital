@@ -89,7 +89,7 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
 function Nav() {
   return (
     <header className="sticky top-0 z-40 bg-paper/85 backdrop-blur">
-      <div className="flex items-center justify-between px-6 py-6 md:px-12">
+      <div className="flex items-center justify-between px-6 sm:px-10 lg:px-20 xl:px-28 py-6">
         <a href="#top" className="inline-block">
           <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
         </a>
@@ -116,7 +116,7 @@ function Nav() {
 
 function Hero() {
   return (
-    <section id="top" className="px-6 md:px-12">
+    <section id="top" className="px-6 sm:px-10 lg:px-20 xl:px-28">
       <h1 className="mt-16 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em] md:mt-24">
         Hola. Somos una consultora de marketing independiente
         <span className="italic"> (y sincera).</span>
@@ -133,7 +133,7 @@ function Hero() {
 
 function HeroMedia() {
   return (
-    <section className="px-6 md:px-12">
+    <section className="px-6 sm:px-10 lg:px-20 xl:px-28">
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-ink/95">
         <div className="absolute inset-0 flex flex-col items-center justify-center text-paper/80">
           <span className="text-xs uppercase tracking-[0.25em]">Hero media</span>
@@ -166,7 +166,7 @@ function Marquee() {
 
 function About() {
   return (
-    <section className="grid gap-12 px-6 py-28 md:grid-cols-12 md:px-12">
+    <section className="grid gap-12 md:grid-cols-12 px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
       <div className="md:col-span-3">
         <Eyebrow>Qué es YAMATO</Eyebrow>
       </div>
@@ -193,7 +193,7 @@ function About() {
 function Services() {
   return (
     <section id="servicios" className="bg-cream">
-      <div className="grid gap-12 px-6 py-28 md:grid-cols-12 md:px-12">
+      <div className="grid gap-12 md:grid-cols-12 px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <div className="md:col-span-4">
           <Eyebrow>Nuestros servicios</Eyebrow>
           <h2 className="mt-6 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-tight">
@@ -247,7 +247,7 @@ function Process() {
   ];
 
   return (
-    <section id="proceso" className="px-6 py-28 md:px-12">
+    <section id="proceso" className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
       <Eyebrow>Cómo lo hacemos</Eyebrow>
       <p className="mt-6 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
         “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no
@@ -272,7 +272,7 @@ function Process() {
 function PriceQuote() {
   return (
     <section className="border-y border-hairline bg-paper">
-      <div className="px-6 py-28 md:px-12">
+      <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Inversión</Eyebrow>
         <p className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
           Un CMO por el precio de un{" "}
@@ -293,7 +293,7 @@ function PriceQuote() {
 
 function EnterpriseBlock() {
   return (
-    <section className="grid gap-12 px-6 py-28 md:grid-cols-12 md:px-12">
+    <section className="grid gap-12 md:grid-cols-12 px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
       <div className="md:col-span-4">
         <Eyebrow>Para empresas grandes</Eyebrow>
         <h2 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
@@ -339,7 +339,7 @@ function Cases() {
 
   return (
     <section id="casos" className="bg-cream">
-      <div className="px-6 py-28 md:px-12">
+      <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Casos de éxito</Eyebrow>
         <div className="mt-16 divide-y divide-ink/15">
           {cases.map((c) => (
@@ -371,7 +371,7 @@ function Cases() {
 
 function Fit() {
   return (
-    <section className="px-6 py-28 md:px-12">
+    <section className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
       <Eyebrow>No perdamos el tiempo</Eyebrow>
       <h2 className="mt-6 max-w-3xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
         Encajarás con YAMATO <span className="italic">si…</span>
@@ -405,7 +405,7 @@ function Fit() {
 function Closing() {
   return (
     <section id="contacto" className="bg-ink text-paper">
-      <div className="px-6 py-32 md:px-12">
+      <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-32">
         <Eyebrow>
           <span className="text-paper/60">Y colorín colorado…</span>
         </Eyebrow>
@@ -434,7 +434,7 @@ function Closing() {
 function Footer() {
   return (
     <footer className="bg-ink text-paper">
-      <div className="flex flex-col gap-10 border-t border-paper/15 px-6 py-12 md:flex-row md:items-end md:justify-between md:px-12">
+      <div className="flex flex-col gap-10 border-t border-paper/15 px-6 sm:px-10 lg:px-20 xl:px-28 py-12 md:flex-row md:items-end md:justify-between">
         <div>
           <img src={logoWhite} alt="YAMATO" className="h-10 w-auto" />
           <p className="mt-3 text-sm text-paper/60">
