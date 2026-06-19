@@ -83,7 +83,7 @@ function ServiciosPage() {
               Vale. ¿Pero qué hacéis <span className="italic">exactamente?</span>
             </h2>
 
-            <div className="mt-12 space-y-8 max-w-xl text-[15px] leading-[1.7] text-muted-ink">
+            <div className="mt-12 space-y-8 max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">
               {SERVICES.map((s) => (
                 <p key={s.title}>
                   <strong className="font-semibold text-ink">{s.title}</strong>{" "}
