@@ -177,6 +177,9 @@ function About() {
     <section className="py-28 px-6 sm:px-10 lg:px-20 xl:px-28">
       <div className="mx-auto max-w-4xl">
         <Eyebrow>Qué es YAMATO</Eyebrow>
+        <h2 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,3.5rem)] leading-[0.95] tracking-tight">
+          Tu dirección de marketing independiente
+        </h2>
         <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl">
           <p>
             Tu dirección de marketing. La cabeza de un CMO con más de una década dirigiendo + las
@@ -257,10 +260,10 @@ function Process() {
   return (
     <section id="proceso" className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
       <Eyebrow>Cómo lo hacemos</Eyebrow>
-      <p className="mt-6 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
+      <h2 className="mt-6 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
         “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no
         haces.”
-      </p>
+      </h2>
       <div className="mt-20 grid gap-12 md:grid-cols-3">
         {steps.map((s) => (
           <div key={s.n}>
@@ -282,10 +285,10 @@ function PriceQuote() {
     <section className="border-y border-hairline bg-paper">
       <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Inversión</Eyebrow>
-        <p className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
+        <h2 className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
           Un CMO por el precio de un{" "}
           <span className="italic text-muted-ink">junior</span>.
-        </p>
+        </h2>
         <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
           Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una
           década dirigiendo marketing. Menos horas, sí. Pero ninguna se pierde en que un junior
@@ -349,6 +352,9 @@ function Cases() {
     <section id="casos" className="bg-cream">
       <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Casos de éxito</Eyebrow>
+        <h2 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,3.5rem)] leading-[0.95] tracking-tight">
+          Clientes que ya duermen bien
+        </h2>
         <div className="mt-16 divide-y divide-ink/15">
           {cases.map((c) => (
             <article key={c.tag} className="grid gap-8 py-14 md:grid-cols-12">
@@ -417,10 +423,10 @@ function Closing() {
         <Eyebrow>
           <span className="text-paper/60">Y colorín colorado…</span>
         </Eyebrow>
-        <p className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
+        <h2 className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
           Empiezas con 30 minutos de llamada. Sales con una{" "}
           <span className="italic">Radiografía gratis</span> y tres verdades.
-        </p>
+        </h2>
         <div className="mt-12">
           <a
             href="mailto:hola@yamato.digital"
