@@ -201,35 +201,37 @@ function About() {
 function Services() {
   return (
     <section id="servicios" className="bg-cream">
-      <div className="grid gap-12 md:grid-cols-12 px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-        <div className="md:col-span-4">
-          <Eyebrow>Nuestros servicios</Eyebrow>
-          <h3 className="mt-6 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-tight">
-            Cinco cosas, <span className="italic">no cuarenta.</span>
-          </h3>
+      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+        <div className="grid gap-12 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <Eyebrow>Nuestros servicios</Eyebrow>
+            <h3 className="mt-6 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-tight">
+              Cinco cosas, <span className="italic">no cuarenta.</span>
+            </h3>
+          </div>
+          <ol className="md:col-span-7 md:col-start-6">
+            {SERVICES.map((s, i) => (
+              <li
+                key={s}
+                className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b"
+              >
+                <span className="text-sm tabular-nums text-muted-ink">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">
+                  {s}
+                </span>
+              </li>
+            ))}
+          </ol>
+          <blockquote className="border-l-2 border-ink pl-6 font-serif text-xl italic leading-relaxed text-ink md:col-span-10 md:col-start-2 md:text-2xl">
+            Independientes de verdad. Ejecutamos lo que mueve el negocio (SEO, GEO, CRM, web, IA) y
+            dirigimos lo demás: el paid lo lleva un especialista que elegimos y controlamos
+            nosotros. Por eso no cobramos un porcentaje de lo que inviertes. No gestionamos tu
+            publicidad, así que no tenemos nada que inflar. Independientes en la estructura, no en
+            el eslogan.
+          </blockquote>
         </div>
-        <ol className="md:col-span-7 md:col-start-6">
-          {SERVICES.map((s, i) => (
-            <li
-              key={s}
-              className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b"
-            >
-              <span className="text-sm tabular-nums text-muted-ink">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">
-                {s}
-              </span>
-            </li>
-          ))}
-        </ol>
-        <blockquote className="border-l-2 border-ink pl-6 font-serif text-xl italic leading-relaxed text-ink md:col-span-10 md:col-start-2 md:text-2xl">
-          Independientes de verdad. Ejecutamos lo que mueve el negocio (SEO, GEO, CRM, web, IA) y
-          dirigimos lo demás: el paid lo lleva un especialista que elegimos y controlamos
-          nosotros. Por eso no cobramos un porcentaje de lo que inviertes. No gestionamos tu
-          publicidad, así que no tenemos nada que inflar. Independientes en la estructura, no en
-          el eslogan.
-        </blockquote>
       </div>
     </section>
   );
@@ -255,23 +257,25 @@ function Process() {
   ];
 
   return (
-    <section id="proceso" className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-      <Eyebrow>Cómo lo hacemos</Eyebrow>
-      <p className="mt-6 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
-        “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no
-        haces.”
-      </p>
-      <div className="mt-20 grid gap-12 md:grid-cols-3">
-        {steps.map((s) => (
-          <div key={s.n}>
-            <span className="font-serif text-5xl text-muted-ink">{s.n}</span>
-            <h3 className="mt-4 font-serif text-3xl">{s.title}</h3>
-            <p className="mt-4 leading-relaxed text-muted-ink">{s.body}</p>
-          </div>
-        ))}
-      </div>
-      <div className="mt-16">
-        <Cta>¿Nos sentamos?</Cta>
+    <section id="proceso">
+      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+        <Eyebrow>Cómo lo hacemos</Eyebrow>
+        <p className="mt-6 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
+          “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no
+          haces.”
+        </p>
+        <div className="mt-20 grid gap-12 md:grid-cols-3">
+          {steps.map((s) => (
+            <div key={s.n}>
+              <span className="font-serif text-5xl text-muted-ink">{s.n}</span>
+              <h3 className="mt-4 font-serif text-3xl">{s.title}</h3>
+              <p className="mt-4 leading-relaxed text-muted-ink">{s.body}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-16">
+          <Cta>¿Nos sentamos?</Cta>
+        </div>
       </div>
     </section>
   );
@@ -280,7 +284,7 @@ function Process() {
 function PriceQuote() {
   return (
     <section className="border-y border-hairline bg-paper">
-      <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Inversión</Eyebrow>
         <p className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
           Un CMO por el precio de un{" "}
@@ -301,30 +305,34 @@ function PriceQuote() {
 
 function EnterpriseBlock() {
   return (
-    <section className="grid gap-12 md:grid-cols-12 px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-      <div className="md:col-span-4">
-        <Eyebrow>Para empresas grandes</Eyebrow>
-        <h3 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
-          ¿Y si ya tienes un <span className="italic">CMO?</span>
-        </h3>
-      </div>
-      <div className="space-y-6 text-lg leading-relaxed md:col-span-7 md:col-start-6 md:text-xl">
-        <p>No venimos a quitarle la silla a nadie.</p>
-        <p>
-          En empresas grandes entramos donde la estructura no llega: el lanzamiento que nadie
-          tiene tiempo de liderar, la unidad de negocio sin foco, la IA de la que todo el comité
-          habla y nadie implanta, la segunda opinión que tu agencia no te va a dar…
-        </p>
-        <p>
-          Proyectos con principio, fin y resultado. No nos quedamos a vivir en tu nómina. Es como
-          trabajamos con Cegid.
-        </p>
-        <p className="text-muted-ink">
-          Sí, suena a lo que te prometió la gran consultora. La diferencia: aquí, el que te lo
-          vende es el que trabaja.
-        </p>
-        <div className="pt-4">
-          <Cta>Cuéntanos el proyecto</Cta>
+    <section>
+      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+        <div className="grid gap-12 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <Eyebrow>Para empresas grandes</Eyebrow>
+            <h3 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
+              ¿Y si ya tienes un <span className="italic">CMO?</span>
+            </h3>
+          </div>
+          <div className="space-y-6 text-lg leading-relaxed md:col-span-7 md:col-start-6 md:text-xl">
+            <p>No venimos a quitarle la silla a nadie.</p>
+            <p>
+              En empresas grandes entramos donde la estructura no llega: el lanzamiento que nadie
+              tiene tiempo de liderar, la unidad de negocio sin foco, la IA de la que todo el comité
+              habla y nadie implanta, la segunda opinión que tu agencia no te va a dar…
+            </p>
+            <p>
+              Proyectos con principio, fin y resultado. No nos quedamos a vivir en tu nómina. Es como
+              trabajamos con Cegid.
+            </p>
+            <p className="text-muted-ink">
+              Sí, suena a lo que te prometió la gran consultora. La diferencia: aquí, el que te lo
+              vende es el que trabaja.
+            </p>
+            <div className="pt-4">
+              <Cta>Cuéntanos el proyecto</Cta>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -347,7 +355,7 @@ function Cases() {
 
   return (
     <section id="casos" className="bg-cream">
-      <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Casos de éxito</Eyebrow>
         <div className="mt-16 divide-y divide-ink/15">
           {cases.map((c) => (
@@ -379,31 +387,33 @@ function Cases() {
 
 function Fit() {
   return (
-    <section className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-      <Eyebrow>No perdamos el tiempo</Eyebrow>
-      <h3 className="mt-6 max-w-3xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
-        Encajarás con YAMATO <span className="italic">si…</span>
-      </h3>
+    <section>
+      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+        <Eyebrow>No perdamos el tiempo</Eyebrow>
+        <h3 className="mt-6 max-w-3xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
+          Encajarás con YAMATO <span className="italic">si…</span>
+        </h3>
 
-      <div className="mt-16 grid gap-16 md:grid-cols-2">
-        <ul className="space-y-5">
-          {FIT_YES.map((t) => (
-            <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
-              <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-ink" />
-              <span>{t}</span>
-            </li>
-          ))}
-        </ul>
-        <div>
-          <p className="font-serif text-2xl italic text-muted-ink">No encajarás si…</p>
-          <ul className="mt-6 space-y-5">
-            {FIT_NO.map((t) => (
-              <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
-                <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
+        <div className="mt-16 grid gap-16 md:grid-cols-2">
+          <ul className="space-y-5">
+            {FIT_YES.map((t) => (
+              <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
+                <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-ink" />
                 <span>{t}</span>
               </li>
             ))}
           </ul>
+          <div>
+            <p className="font-serif text-2xl italic text-muted-ink">No encajarás si…</p>
+            <ul className="mt-6 space-y-5">
+              {FIT_NO.map((t) => (
+                <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
+                  <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
+                  <span>{t}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
