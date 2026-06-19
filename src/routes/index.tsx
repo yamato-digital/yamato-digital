@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import logoBlack from "@/assets/logo-yamato-black.png";
+import logoWhite from "@/assets/logo-yamato-white.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
