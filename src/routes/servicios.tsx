@@ -47,18 +47,27 @@ const SERVICES = [
   },
 ];
 
+function Eyebrow({ children }: { children: React.ReactNode }) {
+  return (
+    <h2 className="text-sm font-medium uppercase tracking-[0.18em] text-muted-ink">
+      {children}
+    </h2>
+  );
+}
+
 function ServiciosPage() {
   return (
     <div className="bg-paper text-ink">
       <Nav />
-      <main className="px-6 sm:px-10 lg:px-20 xl:px-28">
+      <main>
         {/* Manifesto */}
-        <section className="pt-20 pb-24 md:pt-28 md:pb-32">
-          <div className="mx-auto max-w-3xl md:ml-[12%]">
-            <h1 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
+        <section className="px-6 sm:px-10 lg:px-20 xl:px-28 pt-20 pb-24 md:pt-28 md:pb-32">
+          <div className="mx-auto max-w-4xl">
+            <Eyebrow>Nuestros servicios</Eyebrow>
+            <h1 className="mt-10 font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
               Cinco cosas, <span className="italic">no cuarenta.</span>
             </h1>
-            <div className="mt-10 space-y-7 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
+            <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl text-muted-ink">
               <p>
                 No hacemos de todo. Hacemos lo que mueve el negocio. Estrategia,
                 equipos, lanzamientos, IA y ejecución.
@@ -72,21 +81,21 @@ function ServiciosPage() {
           </div>
         </section>
 
-        <div className="mx-auto max-w-3xl md:ml-[12%]">
-          <div className="border-t border-ink/20" />
+        <div className="px-6 sm:px-10 lg:px-20 xl:px-28">
+          <div className="mx-auto max-w-4xl border-t border-ink/20" />
         </div>
 
         {/* What we actually do */}
-        <section className="pt-20 pb-28 md:pt-28 md:pb-36">
-          <div className="mx-auto max-w-3xl md:ml-[12%]">
+        <section className="px-6 sm:px-10 lg:px-20 xl:px-28 pt-20 pb-28 md:pt-28 md:pb-36">
+          <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
               Vale. ¿Pero qué hacéis <span className="italic">exactamente?</span>
             </h2>
 
-            <div className="mt-12 space-y-8 max-w-xl text-[15px] leading-[1.7] text-muted-ink">
+            <div className="mt-12 space-y-6 text-lg leading-relaxed md:text-xl text-muted-ink">
               {SERVICES.map((s) => (
                 <p key={s.title}>
-                  <strong className="font-semibold text-ink">{s.title}</strong>{" "}
+                  <strong className="text-ink">{s.title}</strong>{" "}
                   {s.body}
                 </p>
               ))}
