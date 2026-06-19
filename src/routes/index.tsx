@@ -24,15 +24,9 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const CLIENTS = [
-  "Apodemia",
-  "Cegid",
-  "Contasimple",
-  "Verifactu",
-  "Growth Partner",
-  "Boutique Agency",
-  "Function + Feeling",
-];
+const CLIENTS_ROW_1 = ["Cedrion", "Kincode", "Bindu Events", "Beedigital", "Cegid"];
+const CLIENTS_ROW_2 = ["APODEMIA", "Airamana", "1forAll", "IEB", "Grupo Alquila"];
+const CLIENTS_ROW_3 = ["Clicollege", "Vivas Psicología", "SomosNLP", "Rem83"];
 
 const SERVICES = [
   "Estrategia y dirección",
