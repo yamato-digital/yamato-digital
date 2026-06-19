@@ -281,21 +281,19 @@ function Process() {
 
 function PriceQuote() {
   return (
-    <section className="border-y border-hairline bg-paper">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-        <Eyebrow>Inversión</Eyebrow>
-        <p className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
-          Un CMO por el precio de un{" "}
-          <span className="italic text-muted-ink">junior</span>.
-        </p>
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
-          Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una
-          década dirigiendo marketing. Menos horas, sí. Pero ninguna se pierde en que un junior
-          aprenda a tu costa.
-        </p>
-        <div className="mt-10">
-          <Cta>Si llamas, respondemos</Cta>
-        </div>
+    <section className="border-y border-hairline bg-paper px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <Eyebrow>Inversión</Eyebrow>
+      <p className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
+        Un CMO por el precio de un{" "}
+        <span className="italic text-muted-ink">junior</span>.
+      </p>
+      <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
+        Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una
+        década dirigiendo marketing. Menos horas, sí. Pero ninguna se pierde en que un junior
+        aprenda a tu costa.
+      </p>
+      <div className="mt-10">
+        <Cta>Si llamas, respondemos</Cta>
       </div>
     </section>
   );
