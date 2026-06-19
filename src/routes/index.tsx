@@ -475,7 +475,7 @@ function Footer() {
         <div>
           <img src={logoWhite.url} alt="YAMATO" className="h-10 w-auto" />
           <p className="mt-3 text-sm text-paper/60">
-            Consultora de marketing independiente. Madrid · Remote.
+            Consultora de marketing independiente ·&nbsp;Desde Madrid para el mundo entero
           </p>
         </div>
         <div className="grid gap-2 text-sm text-paper/70 md:text-right">
