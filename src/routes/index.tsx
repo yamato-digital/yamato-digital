@@ -80,32 +80,6 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
   );
 }
 
-function Nav() {
-  return (
-    <header className="sticky top-0 z-40 bg-paper/85 backdrop-blur">
-      <div className="flex items-center justify-between px-6 sm:px-10 lg:px-20 xl:px-28 py-6">
-        <a href="#top" className="inline-block">
-          <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
-        </a>
-        <nav className="hidden gap-8 text-sm md:flex">
-          {[
-            ["Qué hacemos", "#servicios"],
-            ["Cómo", "#proceso"],
-            ["Contacto", "#contacto"],
-          ].map(([label, href]) => (
-            <a
-              key={href}
-              href={href}
-              className="link-underline link-underline-hover"
-            >
-              {label}
-            </a>
-          ))}
-        </nav>
-      </div>
-    </header>
-  );
-}
 
 function Hero() {
   return (
@@ -412,32 +386,6 @@ function Newsletter() {
   );
 }
 
-function Footer() {
-  return (
-    <footer className="bg-ink text-paper">
-      <div className="flex flex-col gap-10 border-t border-paper/15 px-6 sm:px-10 lg:px-20 xl:px-28 py-12 md:flex-row md:items-end md:justify-between">
-        <div>
-          <img src={logoWhite.url} alt="YAMATO" className="h-10 w-auto" />
-          <p className="mt-3 text-sm text-paper/60">
-            Consultora de marketing independiente ·&nbsp;Desde Madrid para el mundo entero
-          </p>
-        </div>
-        <div className="grid gap-2 text-sm text-paper/70 md:text-right">
-          <a href="mailto:hola@yamato.digital" className="link-underline link-underline-hover">
-            hola@yamato.digital
-          </a>
-          <a href="#" className="link-underline link-underline-hover">
-            Newsletter
-          </a>
-          <a href="#" className="link-underline link-underline-hover">
-            LinkedIn
-          </a>
-          <p className="mt-6 text-paper/40">© {new Date().getFullYear()} YAMATO</p>
-        </div>
-      </div>
-    </footer>
-  );
-}
 
 function Home() {
   return (
