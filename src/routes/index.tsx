@@ -89,7 +89,7 @@ function Nav() {
     <header className="sticky top-0 z-40 bg-paper/85 backdrop-blur">
       <div className="flex items-center justify-between px-6 py-6 md:px-12">
         <a href="#top" className="inline-block">
-          <img src={logoBlack.url} alt="YAMATO" className="h-8 w-auto" />
+          <img src="/logo-yamato-black.png" alt="YAMATO" className="h-8 w-auto" />
         </a>
         <nav className="hidden gap-8 text-sm md:flex">
           {[
