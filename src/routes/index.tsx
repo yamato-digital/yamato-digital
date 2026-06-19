@@ -91,7 +91,6 @@ function Nav() {
           {[
             ["Qué hacemos", "#servicios"],
             ["Cómo", "#proceso"],
-            ["Casos", "#casos"],
             ["Contacto", "#contacto"],
           ].map(([label, href]) => (
             <a
@@ -336,51 +335,6 @@ function EnterpriseBlock() {
   );
 }
 
-function Cases() {
-  const cases = [
-    {
-      tag: "Apodemia · Ecommerce",
-      title: "Su anterior agencia les quitaba el sueño.",
-      body: "Tomamos la dirección de todo su negocio digital en 2025 e hicimos un +30% de GMV respecto al año anterior. En 2026 vamos a por el +100%. Intentamos que ahora duerman por las noches.",
-    },
-    {
-      tag: "Cegid / Contasimple · SaaS",
-      title: "2025 fue el año de Verifactu.",
-      body: "Llevamos la estrategia de marketing y comunicación para pelear el podio del SaaS de referencia. Lo conseguimos. El Gobierno retrasó Verifactu un año el 2 de diciembre. Gracias.",
-    },
-  ];
-
-  return (
-    <section id="casos" className="bg-cream">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-        <Eyebrow>Casos de éxito</Eyebrow>
-        <div className="mt-16 divide-y divide-ink/15">
-          {cases.map((c) => (
-            <article key={c.tag} className="grid gap-8 py-14 md:grid-cols-12">
-              <p className="text-sm uppercase tracking-[0.18em] text-muted-ink md:col-span-3">
-                {c.tag}
-              </p>
-              <div className="md:col-span-9">
-                <h3 className="font-serif text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] tracking-tight">
-                  {c.title}
-                </h3>
-                <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-ink md:text-xl">
-                  {c.body}
-                </p>
-              </div>
-            </article>
-          ))}
-        </div>
-        <p className="mt-10 max-w-2xl font-serif text-2xl italic text-muted-ink">
-          Y muchos más, pero no queremos hacer un scroll infinito en la Home.
-        </p>
-        <div className="mt-10">
-          <Cta>Llámanos y te contamos el resto</Cta>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Fit() {
   return (
@@ -505,7 +459,6 @@ function Home() {
       <Process />
       <PriceQuote />
       <EnterpriseBlock />
-      <Cases />
       <Fit />
       <Closing />
       <Newsletter />
