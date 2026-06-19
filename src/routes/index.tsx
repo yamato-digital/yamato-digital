@@ -257,10 +257,6 @@ function Process() {
     <section id="proceso">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Cómo lo hacemos</Eyebrow>
-        <p className="mt-6 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
-          “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no
-          haces.”
-        </p>
         <div className="mt-20 grid gap-12 md:grid-cols-3">
           {steps.map((s) => (
             <div key={s.n}>
@@ -270,6 +266,10 @@ function Process() {
             </div>
           ))}
         </div>
+        <p className="mt-20 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
+          “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no
+          haces.”
+        </p>
         <div className="mt-16">
           <Cta>¿Nos sentamos?</Cta>
         </div>
