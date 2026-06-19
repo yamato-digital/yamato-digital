@@ -153,7 +153,7 @@ function Marquee() {
           const doubled = [...row.items, ...row.items, ...row.items, ...row.items];
           const isLast = idx === rows.length - 1;
           return (
-            <div key={idx} className={`overflow-hidden ${isLast ? "" : "border-b border-ink/15"}`}>
+            <div key={idx} className={`overflow-hidden py-4 ${isLast ? "" : "border-b border-ink/15"}`}>
               <div
                 className={`${row.reverse ? "marquee-track-reverse" : "marquee-track"} font-serif text-[clamp(1.75rem,4.5vw,3.5rem)] leading-[1.2] whitespace-nowrap py-1`}
               >
