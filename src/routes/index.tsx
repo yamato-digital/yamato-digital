@@ -89,7 +89,7 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
 function Nav() {
   return (
     <header className="sticky top-0 z-40 bg-paper/85 backdrop-blur">
-      <div className="flex items-center justify-between px-6 py-6 md:px-12">
+      <div className="flex items-center justify-between px-6 sm:px-10 lg:px-20 xl:px-28 py-6">
         <a href="#top" className="inline-block">
           <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
         </a>
@@ -166,7 +166,7 @@ function Marquee() {
 
 function About() {
   return (
-    <section className="grid gap-12 px-6 py-28 md:grid-cols-12 md:px-12">
+    <section className="grid gap-12 grid-cols-12 px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
       <div className="md:col-span-3">
         <Eyebrow>Qué es YAMATO</Eyebrow>
       </div>
@@ -193,7 +193,7 @@ function About() {
 function Services() {
   return (
     <section id="servicios" className="bg-cream">
-      <div className="grid gap-12 px-6 py-28 md:grid-cols-12 md:px-12">
+      <div className="grid gap-12 grid-cols-12 px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <div className="md:col-span-4">
           <Eyebrow>Nuestros servicios</Eyebrow>
           <h2 className="mt-6 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-tight">
@@ -293,7 +293,7 @@ function PriceQuote() {
 
 function EnterpriseBlock() {
   return (
-    <section className="grid gap-12 px-6 py-28 md:grid-cols-12 md:px-12">
+    <section className="grid gap-12 grid-cols-12 px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
       <div className="md:col-span-4">
         <Eyebrow>Para empresas grandes</Eyebrow>
         <h2 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
