@@ -12,10 +12,16 @@ export function Nav() {
           <Link to="/servicios" className="link-underline link-underline-hover">
             Servicios
           </Link>
+          <Link
+            to="/contacto"
+            activeProps={{ className: "font-semibold" }}
+            className="link-underline link-underline-hover"
+          >
+            Contacto
+          </Link>
           {[
             ["Qué hacemos", "/#servicios"],
             ["Cómo", "/#proceso"],
-            ["Contacto", "/#contacto"],
           ].map(([label, href]) => (
             <a
               key={href}
