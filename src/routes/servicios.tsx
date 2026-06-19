@@ -69,9 +69,9 @@ function ServiciosPage() {
                 te diga la verdad por el camino, sigue leyendo.
               </p>
               <p>
-                Si necesitas a alguien que te haga cuarenta cosas regulares,
-                no somos nosotros. Si quieres a alguien que haga cinco bien y
-                te diga la verdad por el camino, sigue leyendo.
+                Y si lo único que necesitas en hacer campañas de Paid Media, no
+                te preocupes, te pondremos en contacto con nuestros partners.
+                Saben hacerlo mucho mejor que nosotros.
               </p>
             </div>
           </div>
