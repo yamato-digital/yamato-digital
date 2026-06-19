@@ -79,7 +79,7 @@ function ServiciosPage() {
         {/* What we actually do */}
         <section className="pt-20 pb-28 md:pt-28 md:pb-36">
           <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
+            <h2 className="font-serif text-lg leading-relaxed md:text-xl tracking-[-0.01em]">
               Vale. ¿Pero qué hacéis <span className="italic">exactamente?</span>
             </h2>
 
