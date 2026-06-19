@@ -74,9 +74,9 @@ function Cta({ children, href = "#contacto" }: { children: React.ReactNode; href
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-muted-ink">
+    <h2 className="text-[11px] font-medium uppercase tracking-[0.18em] text-muted-ink">
       {children}
-    </p>
+    </h2>
   );
 }
 
@@ -204,9 +204,9 @@ function Services() {
       <div className="grid gap-12 md:grid-cols-12 px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <div className="md:col-span-4">
           <Eyebrow>Nuestros servicios</Eyebrow>
-          <h2 className="mt-6 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-tight">
+          <h3 className="mt-6 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-tight">
             Cinco cosas, <span className="italic">no cuarenta.</span>
-          </h2>
+          </h3>
         </div>
         <ol className="md:col-span-7 md:col-start-6">
           {SERVICES.map((s, i) => (
@@ -304,9 +304,9 @@ function EnterpriseBlock() {
     <section className="grid gap-12 md:grid-cols-12 px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
       <div className="md:col-span-4">
         <Eyebrow>Para empresas grandes</Eyebrow>
-        <h2 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
+        <h3 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
           ¿Y si ya tienes un <span className="italic">CMO?</span>
-        </h2>
+        </h3>
       </div>
       <div className="space-y-6 text-lg leading-relaxed md:col-span-7 md:col-start-6 md:text-xl">
         <p>No venimos a quitarle la silla a nadie.</p>
@@ -381,9 +381,9 @@ function Fit() {
   return (
     <section className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
       <Eyebrow>No perdamos el tiempo</Eyebrow>
-      <h2 className="mt-6 max-w-3xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
+      <h3 className="mt-6 max-w-3xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
         Encajarás con YAMATO <span className="italic">si…</span>
-      </h2>
+      </h3>
 
       <div className="mt-16 grid gap-16 md:grid-cols-2">
         <ul className="space-y-5">
