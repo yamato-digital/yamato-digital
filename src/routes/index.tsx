@@ -194,6 +194,17 @@ function Services() {
               </li>
             ))}
           </ol>
+          <div className="mt-10 md:col-span-8 md:col-start-5">
+            <Link
+              to="/servicios"
+              className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight italic link-underline link-underline-hover"
+            >
+              Ver en detalle
+              <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
+                →
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
