@@ -141,18 +141,31 @@ function HeroMedia() {
 }
 
 function Marquee() {
-  const row = [...CLIENTS, ...CLIENTS, ...CLIENTS];
+  const rows = [
+    { items: CLIENTS_ROW_1, reverse: false },
+    { items: CLIENTS_ROW_2, reverse: true },
+    { items: CLIENTS_ROW_3, reverse: false },
+  ];
   return (
-    <section aria-label="Trabajamos con" className="border-y border-hairline py-10">
-      <div className="overflow-hidden">
-        <div className="marquee-track font-serif text-[clamp(2rem,5vw,4rem)] leading-none whitespace-nowrap">
-          {row.map((c, i) => (
-            <span key={i} className="flex items-center gap-10">
-              {c}
-              <span aria-hidden className="text-muted-ink">◦</span>
-            </span>
-          ))}
-        </div>
+    <section aria-label="Trabajamos con" className="border-y border-hairline py-12">
+      <div className="space-y-4">
+        {rows.map((row, idx) => {
+          const doubled = [...row.items, ...row.items, ...row.items, ...row.items];
+          return (
+            <div key={idx} className="overflow-hidden">
+              <div
+                className={`${row.reverse ? "marquee-track-reverse" : "marquee-track"} font-serif text-[clamp(1.75rem,4.5vw,3.5rem)] leading-[1.2] whitespace-nowrap py-1`}
+              >
+                {doubled.map((c, i) => (
+                  <span key={i} className="flex items-center gap-10">
+                    {c}
+                    <span aria-hidden className="text-muted-ink">◦</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
