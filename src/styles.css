@@ -175,9 +175,19 @@
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
 
 @utility marquee-track {
-  animation: marquee 40s linear infinite;
+  animation: marquee 50s linear infinite;
+  width: max-content;
+  display: flex;
+  gap: 2.5rem;
+}
+@utility marquee-track-reverse {
+  animation: marquee-reverse 45s linear infinite;
   width: max-content;
   display: flex;
   gap: 2.5rem;
