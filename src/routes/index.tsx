@@ -90,8 +90,8 @@ function Nav() {
   return (
     <header className="sticky top-0 z-40 bg-paper/85 backdrop-blur">
       <div className="flex items-center justify-between px-6 py-6 md:px-12">
-        <a href="#top" className="font-serif text-2xl tracking-tight">
-          yamato<span className="text-muted-ink">.</span>
+        <a href="#top" className="inline-block">
+          <img src={logoBlack.url} alt="YAMATO" className="h-8 w-auto" />
         </a>
         <nav className="hidden gap-8 text-sm md:flex">
           {[
