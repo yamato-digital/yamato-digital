@@ -304,13 +304,13 @@ function EnterpriseBlock() {
             </h3>
           </div>
           <div className="space-y-6 text-lg leading-relaxed md:col-span-7 md:col-start-6 md:text-xl">
-            <p>No venimos a quitarle la silla a nadie.</p>
-            <p>
+            <p className="text-muted-ink">No venimos a quitarle la silla a nadie.</p>
+            <p className="text-muted-ink">
               En empresas grandes entramos donde la estructura no llega: el lanzamiento que nadie
               tiene tiempo de liderar, la unidad de negocio sin foco, la IA de la que todo el comité
               habla y nadie implanta, la segunda opinión que tu agencia no te va a dar…
             </p>
-            <p>
+            <p className="text-muted-ink">
               Proyectos con principio, fin y resultado. No nos quedamos a vivir en tu nómina. Es como
               trabajamos con Cegid.
             </p>
