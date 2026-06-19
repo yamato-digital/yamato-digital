@@ -452,6 +452,7 @@ function Home() {
       <Process />
       <PriceQuote />
       <EnterpriseBlock />
+      <div className="border-t border-hairline" />
       <Fit />
       <Closing />
       <Newsletter />
