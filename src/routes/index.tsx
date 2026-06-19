@@ -200,38 +200,36 @@ function About() {
 
 function Services() {
   return (
-    <section id="servicios" className="bg-cream">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-        <div className="grid gap-12 md:grid-cols-12">
-          <div className="md:col-span-4">
-            <Eyebrow>Nuestros servicios</Eyebrow>
-            <h3 className="mt-6 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-tight">
-              Cinco cosas, <span className="italic">no cuarenta.</span>
-            </h3>
-          </div>
-          <ol className="md:col-span-7 md:col-start-6">
-            {SERVICES.map((s, i) => (
-              <li
-                key={s}
-                className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b"
-              >
-                <span className="text-sm tabular-nums text-muted-ink">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">
-                  {s}
-                </span>
-              </li>
-            ))}
-          </ol>
-          <blockquote className="border-l-2 border-ink pl-6 font-serif text-xl italic leading-relaxed text-ink md:col-span-10 md:col-start-2 md:text-2xl">
-            Independientes de verdad. Ejecutamos lo que mueve el negocio (SEO, GEO, CRM, web, IA) y
-            dirigimos lo demás: el paid lo lleva un especialista que elegimos y controlamos
-            nosotros. Por eso no cobramos un porcentaje de lo que inviertes. No gestionamos tu
-            publicidad, así que no tenemos nada que inflar. Independientes en la estructura, no en
-            el eslogan.
-          </blockquote>
+    <section id="servicios" className="bg-cream px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <div className="grid gap-12 md:grid-cols-12">
+        <div className="md:col-span-4">
+          <Eyebrow>Nuestros servicios</Eyebrow>
+          <h3 className="mt-6 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-tight">
+            Cinco cosas, <span className="italic">no cuarenta.</span>
+          </h3>
         </div>
+        <ol className="md:col-span-7 md:col-start-6">
+          {SERVICES.map((s, i) => (
+            <li
+              key={s}
+              className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b"
+            >
+              <span className="text-sm tabular-nums text-muted-ink">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">
+                {s}
+              </span>
+            </li>
+          ))}
+        </ol>
+        <blockquote className="border-l-2 border-ink pl-6 font-serif text-xl italic leading-relaxed text-ink md:col-span-10 md:col-start-2 md:text-2xl">
+          Independientes de verdad. Ejecutamos lo que mueve el negocio (SEO, GEO, CRM, web, IA) y
+          dirigimos lo demás: el paid lo lleva un especialista que elegimos y controlamos
+          nosotros. Por eso no cobramos un porcentaje de lo que inviertes. No gestionamos tu
+          publicidad, así que no tenemos nada que inflar. Independientes en la estructura, no en
+          el eslogan.
+        </blockquote>
       </div>
     </section>
   );
