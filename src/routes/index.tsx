@@ -205,9 +205,6 @@ function Services() {
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>Nuestros servicios</Eyebrow>
-            <h3 className="mt-6 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-tight">
-              Cinco cosas, <span className="italic">no cuarenta.</span>
-            </h3>
           </div>
           <ol className="md:col-span-7 md:col-start-6">
             {SERVICES.map((s, i) => (
