@@ -301,8 +301,8 @@ function PriceQuote() {
 
 function EnterpriseBlock() {
   return (
-    <section>
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+    <section className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <div className="mx-auto max-w-6xl">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>Para empresas grandes</Eyebrow>
@@ -350,8 +350,8 @@ function Cases() {
   ];
 
   return (
-    <section id="casos" className="bg-cream">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+    <section id="casos" className="bg-cream px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <div className="mx-auto max-w-5xl">
         <Eyebrow>Casos de éxito</Eyebrow>
         <div className="mt-16 divide-y divide-ink/15">
           {cases.map((c) => (
@@ -383,33 +383,31 @@ function Cases() {
 
 function Fit() {
   return (
-    <section>
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-        <Eyebrow>No perdamos el tiempo</Eyebrow>
-        <h3 className="mt-6 max-w-3xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
-          Encajarás con YAMATO <span className="italic">si…</span>
-        </h3>
+    <section className="px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+      <Eyebrow>No perdamos el tiempo</Eyebrow>
+      <h3 className="mt-6 max-w-3xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
+        Encajarás con YAMATO <span className="italic">si…</span>
+      </h3>
 
-        <div className="mt-16 grid gap-16 md:grid-cols-2">
-          <ul className="space-y-5">
-            {FIT_YES.map((t) => (
-              <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
-                <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-ink" />
+      <div className="mt-16 grid gap-16 md:grid-cols-2">
+        <ul className="space-y-5">
+          {FIT_YES.map((t) => (
+            <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
+              <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-ink" />
+              <span>{t}</span>
+            </li>
+          ))}
+        </ul>
+        <div>
+          <p className="font-serif text-2xl italic text-muted-ink">No encajarás si…</p>
+          <ul className="mt-6 space-y-5">
+            {FIT_NO.map((t) => (
+              <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
+                <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
                 <span>{t}</span>
               </li>
             ))}
           </ul>
-          <div>
-            <p className="font-serif text-2xl italic text-muted-ink">No encajarás si…</p>
-            <ul className="mt-6 space-y-5">
-              {FIT_NO.map((t) => (
-                <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
-                  <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
-                  <span>{t}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
     </section>
