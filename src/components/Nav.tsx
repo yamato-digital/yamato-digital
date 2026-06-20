@@ -13,6 +13,13 @@ export function Nav() {
             Servicios
           </Link>
           <Link
+            to="/clientes"
+            activeProps={{ className: "font-semibold" }}
+            className="link-underline link-underline-hover"
+          >
+            Clientes
+          </Link>
+          <Link
             to="/contacto"
             activeProps={{ className: "font-semibold" }}
             className="link-underline link-underline-hover"
