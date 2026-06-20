@@ -5,9 +5,9 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-40 bg-paper/85 backdrop-blur">
       <div className="flex items-center justify-between px-6 sm:px-10 lg:px-20 xl:px-28 py-6">
-        <a href="/#top" className="inline-block">
+        <Link to="/" className="inline-block">
           <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
-        </a>
+        </Link>
         <nav className="hidden gap-8 text-sm md:flex">
           <Link to="/servicios" className="link-underline link-underline-hover">
             Servicios
