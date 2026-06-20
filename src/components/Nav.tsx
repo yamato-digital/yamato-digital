@@ -12,13 +12,14 @@ export function Nav() {
           <Link to="/servicios" className="link-underline link-underline-hover">
             Servicios
           </Link>
-          <Link
-            to="/contacto"
-            activeProps={{ className: "font-semibold" }}
+          <a
+            href="https://tally.so/r/rjgEpL"
+            target="_blank"
+            rel="noopener noreferrer"
             className="link-underline link-underline-hover"
           >
             Contacto
-          </Link>
+          </a>
           {[
             ["Qué hacemos", "/#servicios"],
             ["Cómo", "/#proceso"],
