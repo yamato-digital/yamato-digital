@@ -29,55 +29,55 @@ const clients = [
   },
   {
     name: "Cegid",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
+    description: "Líder europeo de software de gestión en la nube. Trabajamos con su producto Contasimple: diagnóstico a fondo, detección de oportunidades de crecimiento y estrategia para abrir nuevos canales, con foco en posicionarlo como SaaS de referencia en Verifactu.",
   },
   {
     name: "IEB",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
-  },
-  {
-    name: "Cedrión",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
+    description: "Una de las escuelas de referencia en finanzas y mercados en España, con décadas formando al sector. Hicimos una auditoría completa del estado de su marketing y su comunicación global: qué funciona, qué no y qué falta por hacer.",
   },
   {
     name: "Beedigital",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
+    description: "Marketing digital para pymes y autónomos (la antigua Páginas Amarillas). Diseñamos y validamos el lanzamiento de un nuevo programa: propuesta de valor, segmentos early adopter, funnel de validación, KPIs y quick wins, incluida una campaña piloto para medir CPL.",
+  },
+  {
+    name: "Fundación Airamana",
+    description: "Fundación sin ánimo de lucro de ámbito estatal. Diseñamos, desarrollamos y mantenemos su web corporativa, y llevamos la estrategia integral de comunicación de \"Airamana ESCUCHA\", su proyecto de salud mental para gente joven.",
   },
   {
     name: "Bindu Events",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
+    description: "Agencia de congresos y eventos corporativos de alto impacto, con base en Málaga. Auditamos su web como canal de marca y conversión, y ejecutamos un rediseño integral: diseño gráfico, contenidos, UX e implementación técnica completa.",
   },
   {
-    name: "Cliente 7",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
+    name: "1forAll",
+    description: "Plataforma de IA todo-en-uno para generar voz, imagen y vídeo (antes Voice-Gen.ai). Dirigimos su estrategia de marketing y comunicación para hacer crecer el ARR, pilotamos la transición de marca de Voicegen a 1forAll y montamos su CRM.",
   },
   {
-    name: "Cliente 8",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
+    name: "Kincode",
+    description: "Plataforma SaaS que mide y optimiza la cultura organizacional con IA. Hicimos de equipo de marketing estratégico: reestructuramos su web bilingüe y su copy, definimos propuesta de valor e ICP, construimos su thought leadership y ordenamos la operación con RACI y project tracking.",
   },
   {
-    name: "Cliente 9",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
+    name: "Cedrion",
+    description: "Deep-tech de refrigeración por plasma frío para aeronáutica, espacio y movilidad eléctrica. Les acompañamos en el levantamiento de capital: tradujimos una tecnología compleja en una narrativa clara y preparamos investor deck, one-pager y el pitch de los fundadores.",
   },
   {
-    name: "Cliente 10",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
+    name: "Clicollege",
+    description: "Plataforma de educación cuyo negocio se juega en dos picos muy marcados del calendario. Llevamos sus campañas digitales justo ahí: la captación de verano y el arranque del curso escolar, donde se concentra la demanda y la competencia aprieta.",
   },
   {
-    name: "Cliente 11",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
+    name: "SomosNLP",
+    description: "Comunidad hispanohablante de referencia en IA y procesamiento del lenguaje natural, con un evento propio que reúne a investigadores y profesionales del sector. Diseñamos su logo corporativo y gestionamos toda la comunicación de su evento SomosNLP, de principio a fin.",
   },
   {
-    name: "Cliente 12",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
+    name: "Rem83",
+    description: "Empresa de hardware con un producto técnico que el mercado no entiende a la primera. Entramos con consultoría estratégica y de comunicación de marca para ordenar el mensaje y traducir la tecnología en una propuesta clara.",
   },
   {
-    name: "Cliente 13",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
+    name: "Vivas Psicología",
+    description: "Consulta de psicología que trabaja la marca personal del terapeuta como vía de confianza con el paciente. Diseñamos su logo y su identidad corporativa desde cero: la base visual sobre la que apoyar todo lo demás.",
   },
   {
-    name: "Cliente 14",
-    description: "Breve descripción del proyecto. Reemplaza este texto.",
+    name: "Grupo Alquila",
+    description: "Inmobiliaria de alquiler garantizado en Madrid. Su partner de Paid Media y captación digital: reconstruimos campañas y segmentación, mejoramos SEO y landings para convertir, y montamos un dashboard en vivo para que dirección viera el rendimiento de cada euro en tiempo real.",
   },
 ];
 
