@@ -34,6 +34,14 @@ function ContactoPage() {
         </h1>
         <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-lg font-medium md:gap-10 md:text-xl">
           <a
+            href="https://tally.so/r/rjgEpL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-underline link-underline-hover"
+          >
+            Reservar consulta.
+          </a>
+          <a
             href="mailto:hola@yamato.digital"
             className="link-underline link-underline-hover"
           >
