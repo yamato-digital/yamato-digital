@@ -14,10 +14,10 @@ export function Footer() {
           <a href="mailto:hola@yamato.digital" className="link-underline link-underline-hover">
             hola@yamato.digital
           </a>
-          <a href="#" className="link-underline link-underline-hover">
+          <a href="https://pulsodiario.igonigonzalez.com/" className="link-underline link-underline-hover">
             Newsletter
           </a>
-          <a href="#" className="link-underline link-underline-hover">
+          <a href="https://www.linkedin.com/company/yamatodigital/" className="link-underline link-underline-hover">
             LinkedIn
           </a>
           <p className="mt-6 text-paper/40">© {new Date().getFullYear()} YAMATO</p>
