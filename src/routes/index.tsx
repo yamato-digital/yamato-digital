@@ -64,7 +64,7 @@ function Cta({ children, href = "#contacto" }: { children: React.ReactNode; href
   return (
     <a
       href={href}
-      className="group inline-flex items-baseline font-serif text-[clamp(1.5rem,3vw,2.5rem)] leading-tight italic link-underline link-underline-hover"
+      className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight italic link-underline link-underline-hover"
     >
       {children}
       <Arrow />
