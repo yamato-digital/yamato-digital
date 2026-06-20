@@ -114,7 +114,7 @@ function ClientesPage() {
               ¿No ves tu nombre?
             </h3>
             <p className="mt-4 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
-              Es muy sencillo, llámanos y cambiemos eso.
+              Muy sencillo, llámanos y cambiemos eso.
             </p>
           </div>
         </section>
