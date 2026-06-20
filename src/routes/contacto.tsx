@@ -20,6 +20,9 @@ export const Route = createFileRoute("/contacto")({
       { property: "og:url", content: "/contacto" },
     ],
     links: [{ rel: "canonical", href: "/contacto" }],
+    scripts: [
+      { src: "https://tally.so/widgets/embed.js", async: true },
+    ],
   }),
   component: ContactoPage,
 });
@@ -51,6 +54,18 @@ function ContactoPage() {
           >
             Newsletter.
           </a>
+        </div>
+        <div className="mt-16 w-full max-w-3xl">
+          <iframe
+            data-tally-src="https://tally.so/r/rjgEpL?transparentBackground=1"
+            width="100%"
+            height="600"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
+            title="YAMATO"
+            className="border-0"
+          />
         </div>
       </main>
       <Footer />
