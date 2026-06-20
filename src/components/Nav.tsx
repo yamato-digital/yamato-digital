@@ -26,18 +26,6 @@ export function Nav() {
           >
             Contacto
           </Link>
-          {[
-            ["Qué hacemos", "/#servicios"],
-            ["Cómo", "/#proceso"],
-          ].map(([label, href]) => (
-            <a
-              key={href}
-              href={href}
-              className="link-underline link-underline-hover"
-            >
-              {label}
-            </a>
-          ))}
         </nav>
       </div>
     </header>
