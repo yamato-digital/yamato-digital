@@ -19,6 +19,14 @@ export function Nav() {
           >
             Clientes
           </Link>
+          <a
+            href="https://pulsodiario.igonigonzalez.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-underline link-underline-hover"
+          >
+            Newsletter
+          </a>
           <Link
             to="/contacto"
             activeProps={{ className: "font-semibold" }}
