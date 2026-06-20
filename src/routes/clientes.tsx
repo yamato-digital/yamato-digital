@@ -54,21 +54,23 @@ function ClientesPage() {
     <div className="bg-paper text-ink">
       <Nav />
       <main className="px-6 sm:px-10 lg:px-20 xl:px-28 py-16 md:py-24">
-        <h1 className="font-serif text-[clamp(3rem,10vw,7.5rem)] leading-[0.9] tracking-[-0.02em]">
-          Clientes
-        </h1>
-        <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">
-          Algunos de ellos.
-        </p>
+        <div className="text-center">
+          <h1 className="font-serif text-[clamp(3rem,10vw,7.5rem)] leading-[0.9] tracking-[-0.02em]">
+            Clientes
+          </h1>
+          <p className="mt-4 max-w-xl mx-auto text-lg leading-relaxed text-muted-ink md:text-xl">
+            Algunos de ellos.
+          </p>
+        </div>
 
         <section className="mt-16 md:mt-24">
-          <div className="grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-2">
             {clients.map((client) => (
               <div key={client.name}>
-                <h3 className="font-semibold text-base leading-snug">
+                <h3 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
                   {client.name}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-ink">
+                <p className="mt-4 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
                   {client.description}
                 </p>
               </div>
