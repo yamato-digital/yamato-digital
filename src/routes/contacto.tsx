@@ -33,8 +33,7 @@ function ContactoPage() {
           href="https://tally.so/r/rjgEpL"
           target="_blank"
           rel="noopener noreferrer"
-          className="link-underline link-underline-hover select-none font-serif text-[clamp(5rem,20vw,18rem)] leading-[0.85] tracking-[-0.02em] text-hairline"
-          style={{ backgroundImage: "linear-gradient(var(--ink), var(--ink))" }}
+          className="link-underline link-underline-hover inline-block select-none font-serif text-[clamp(5rem,20vw,18rem)] leading-[0.85] tracking-[-0.02em] text-hairline [background-image:linear-gradient(var(--ink),var(--ink))]"
         >
           Contacto
         </a>
