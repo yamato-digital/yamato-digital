@@ -47,6 +47,38 @@ const clients = [
     name: "Bindu Events",
     description: "Breve descripción del proyecto. Reemplaza este texto.",
   },
+  {
+    name: "Cliente 7",
+    description: "Breve descripción del proyecto. Reemplaza este texto.",
+  },
+  {
+    name: "Cliente 8",
+    description: "Breve descripción del proyecto. Reemplaza este texto.",
+  },
+  {
+    name: "Cliente 9",
+    description: "Breve descripción del proyecto. Reemplaza este texto.",
+  },
+  {
+    name: "Cliente 10",
+    description: "Breve descripción del proyecto. Reemplaza este texto.",
+  },
+  {
+    name: "Cliente 11",
+    description: "Breve descripción del proyecto. Reemplaza este texto.",
+  },
+  {
+    name: "Cliente 12",
+    description: "Breve descripción del proyecto. Reemplaza este texto.",
+  },
+  {
+    name: "Cliente 13",
+    description: "Breve descripción del proyecto. Reemplaza este texto.",
+  },
+  {
+    name: "Cliente 14",
+    description: "Breve descripción del proyecto. Reemplaza este texto.",
+  },
 ];
 
 function ClientesPage() {
