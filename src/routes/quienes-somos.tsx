@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import ignacioAsset from "@/assets/ignacio-goni-sketch.jpeg.asset.json";
 
 export const Route = createFileRoute("/quienes-somos")({
   head: () => ({
@@ -117,8 +118,13 @@ function Hero() {
 
 function Founder() {
   return (
-    <section className="border-t border-hairline">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+    <section className="border-t border-hairline relative overflow-hidden">
+      <img
+        src={ignacioAsset.url}
+        alt="ignacio-goñi-yamato"
+        className="absolute top-1/2 left-[5%] w-[30%] max-w-[360px] -translate-y-1/2 opacity-[0.10] pointer-events-none select-none"
+      />
+      <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>Quién dirige esto</Eyebrow>
