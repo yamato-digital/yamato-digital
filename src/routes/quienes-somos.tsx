@@ -206,7 +206,7 @@ function Advisor() {
               equivocas, mejor.
             </p>
             <h3 className="font-serif text-[clamp(2rem,4vw,3.5rem)] leading-[1] tracking-tight">
-              [Nombre del advisor]
+              Elena González-Blanco
               <span className="block italic text-muted-ink">Advisor</span>
             </h3>
             <p className="text-muted-ink">
