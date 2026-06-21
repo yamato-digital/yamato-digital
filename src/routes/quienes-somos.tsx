@@ -159,7 +159,7 @@ function Team() {
         <div className="mt-16 grid gap-12 md:grid-cols-12">
           <div className="md:col-span-7 space-y-6 text-lg leading-relaxed md:text-xl">
             <p className="text-muted-ink">
-              Montan una cuadrícula de treinta caras sonrientes y la llaman \u201Cnuestro equipo\u201D.
+              Montan una cuadrícula de treinta caras sonrientes y la llaman “nuestro equipo”.
               Nosotros no vamos a hacer eso.
             </p>
             <p>
