@@ -9,6 +9,13 @@ export function Nav() {
           <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
         </Link>
         <nav className="hidden gap-8 text-sm md:flex">
+          <Link
+            to="/quienes-somos"
+            activeProps={{ className: "font-semibold" }}
+            className="link-underline link-underline-hover"
+          >
+            Quiénes somos
+          </Link>
           <Link to="/servicios" className="link-underline link-underline-hover">
             Servicios
           </Link>
