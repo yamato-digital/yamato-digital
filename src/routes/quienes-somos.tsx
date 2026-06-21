@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-import ignacioAsset from "@/assets/ignacio-goni-yamato.jpeg.asset.json";
+import ignacioAsset from "@/assets/ignacio-goni-sketch.jpeg.asset.json";
 
 export const Route = createFileRoute("/quienes-somos")({
   head: () => ({
