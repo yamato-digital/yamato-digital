@@ -35,6 +35,13 @@ export function Nav() {
             Newsletter
           </a>
           <Link
+            to="/partners"
+            activeProps={{ className: "font-semibold" }}
+            className="link-underline link-underline-hover"
+          >
+            Partners
+          </Link>
+          <Link
             to="/contacto"
             activeProps={{ className: "font-semibold" }}
             className="link-underline link-underline-hover"
