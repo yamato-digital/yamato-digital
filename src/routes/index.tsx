@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
-import heroVideoWebm from "@/assets/yamato-hero.webm.asset.json";
 import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
 
 const SITE_URL = "https://yamato.digital";
@@ -126,8 +125,14 @@ function HeroMedia() {
   return (
     <section>
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-ink/95">
+        <img
+          src={heroPoster.url}
+          alt="YAMATO — Consultora de marketing independiente"
+          className="absolute inset-0 h-full w-full object-cover"
+          loading="eager"
+        />
         <video
-          className="h-full w-full object-cover"
+          className="relative z-10 h-full w-full object-cover"
           width={1920}
           height={1080}
           poster={heroPoster.url}
@@ -135,12 +140,10 @@ function HeroMedia() {
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
           aria-label="YAMATO — Consultora de marketing independiente"
         >
           <source src={heroVideoMp4.url} type="video/mp4" />
-          <source src={heroVideoWebm.url} type="video/webm" />
-
         </video>
       </div>
     </section>
