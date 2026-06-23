@@ -66,7 +66,7 @@ const PRINCIPLES = [
   {
     n: "06",
     title: "Solo ejecutamos lo que hemos marcado.",
-    body: "Hacemos Google Ads, SEO, CRM, web. Lo mismo que las agencias, con un pero: solo ejecutamos la estrategia que hemos definido nosotros. Ejecutar a ciegas el plan de otro es como operar con los ojos cerrados.",
+    body: "Hacemos SEO/GEO, CRM, web. Lo mismo que las agencias, con un pero: solo ejecutamos la estrategia que hemos definido nosotros. Ejecutar a ciegas el plan de otro es como operar con los ojos cerrados. Y si algo no lo hacemos, te derivamos a quién sí.",
   },
   {
     n: "07",
