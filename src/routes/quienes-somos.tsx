@@ -168,9 +168,9 @@ function Team() {
             </p>
             <p>
               YAMATO funciona con una <em className="font-serif">red de más de 50 colaboradores
-              senior</em> —especialistas en paid media, SEO, CRM, contenido, datos, desarrollo— que
-              entran en cada proyecto según lo que ese proyecto necesita. No son una plantilla. Son
-              los mejores en lo suyo, y solo trabajan cuando hace falta lo suyo.
+              senior</em> —especialistas en SEO, CRM, contenido, datos, desarrollo, IA, redes
+              sociales— que entran en cada proyecto según lo que ese proyecto necesita. No son una
+              plantilla. Son los mejores en lo suyo, y solo trabajan cuando hace falta lo suyo.
             </p>
             <p className="text-muted-ink">Esto no es un parche. Es el modelo, y es mejor para ti:</p>
           </div>
