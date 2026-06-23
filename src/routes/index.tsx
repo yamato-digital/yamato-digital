@@ -151,9 +151,12 @@ function About() {
     <section className="py-28 px-6 sm:px-10 lg:px-20 xl:px-28">
       <div className="mx-auto max-w-4xl">
         <Eyebrow>Qué es YAMATO</Eyebrow>
+        <p className="mt-10 font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-snug italic">
+          Tu dirección de marketing.
+        </p>
         <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl">
           <p>
-            Tu dirección de marketing. La cabeza de un CMO con más de una década dirigiendo + las
+            La cabeza de un CMO con más de una década dirigiendo + las
             manos de un equipo senior. Dentro de tu empresa, las horas que necesites. Ni un freelance
             que hace campañas sueltas, ni un consultor que suelta el informe y desaparece.
           </p>
