@@ -127,10 +127,10 @@ function Founder() {
             </h3>
           </div>
           <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
-            <p>
-              Más de diez años dirigiendo marketing dentro de empresas, no asesorándolas desde fuera. He cometido los
-              errores caros en presupuestos que no eran míos, lo cual significa una cosa para ti: cuando trabajamos
-              juntos, esos errores ya no los pagas tú.
+            <p className="text-muted-ink">
+              Ingeniero industrial que viene del sector aeroráutico, con más de diez años dirigiendo marketing dentro de
+              empresas, no asesorándolas desde fuera. He cometido los errores caros en presupuestos que no eran míos, lo
+              cual significa una cosa para ti: cuando trabajamos juntos, esos errores ya no los pagas tú.
             </p>
             <p className="text-muted-ink">
               YAMATO es bootstrapped. Sin inversores a los que rendir cuentas, sin presión por inflar facturación, sin
