@@ -103,12 +103,12 @@ function HeroMedia() {
   return (
     <section>
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-ink/95">
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-paper/80">
-          <span className="text-xs uppercase tracking-[0.25em]">Hero media</span>
-          <span className="mt-3 font-serif text-2xl italic">
-            Sube aquí tu vídeo o imagen
-          </span>
-        </div>
+        <img
+          src={heroAsset.url}
+          alt="YAMATO — Consultora de marketing independiente"
+          className="h-full w-full object-cover"
+          loading="eager"
+        />
       </div>
     </section>
   );
