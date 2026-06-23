@@ -1,7 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-const heroAsset = { url: "/assets/hero-yamato-landscape-hd.jpg" };
+import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
+import heroVideoWebm from "@/assets/yamato-hero.webm.asset.json";
+import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
+
+const SITE_URL = "https://yamato.digital";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -96,16 +100,21 @@ function HeroMedia() {
   return (
     <section>
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-ink/95">
-        <img
-          src={heroAsset.url}
-          alt="YAMATO — Consultora de marketing independiente"
+        <video
           className="h-full w-full object-cover"
           width={1920}
           height={1080}
-          loading="eager"
-          fetchPriority="high"
-          decoding="async"
-        />
+          poster={heroPoster.url}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-label="YAMATO — Consultora de marketing independiente"
+        >
+          <source src={heroVideoWebm.url} type="video/webm" />
+          <source src={heroVideoMp4.url} type="video/mp4" />
+        </video>
       </div>
     </section>
   );
