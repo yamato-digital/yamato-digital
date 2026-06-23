@@ -1,67 +1,59 @@
+## Objetivo
 
-# Plan: Home YAMATO al estilo ueno.co
+Sustituir la imagen panorámica del `HeroMedia` por el video `yamato-hero.mp4` (1920x1080, 10s, 8.8MB), optimizado para carga rápida y SEO.
 
-## Dirección visual (réplica de ueno.co)
+## Optimización del video
 
-- **Tipografía**: display serif de gran peso (estilo GT Super / Tiempos Headline). Uso de **Instrument Serif** + **Fraunces** como display y **Inter** mono-spaced ligero para microcopy. Body en sans neutra (**Inter**).
-- **Paleta**: blanco puro `#FFFFFF`, negro `#0A0A0A`, gris para texto secundario `#6B6B6B`, fondo crema sutil para secciones `#F2F0EC`. Sin acentos de color: el peso visual lo da la tipografía y los medios.
-- **Estructura**: una sola columna ancha (max ~1440px), márgenes amplios, jerarquía editorial. Sin tarjetas, sin sombras, sin bordes decorativos.
-- **Movimiento**: marquee horizontal continuo para clientes; fade-up sutil al hacer scroll en titulares (framer-motion). Cursor estándar, hover con subrayado animado en enlaces.
+Original: H.264 High@L4, 7.3 Mbps, 8.8 MB → demasiado pesado para hero.
 
-## Estructura de la Home (orden)
+Generaré dos variantes + un poster, vía ffmpeg en el sandbox:
 
+1. **MP4 (H.264 baseline)** — máxima compatibilidad (Safari, iOS):
+   - CRF 26, preset slow, `-movflags +faststart` (moov al inicio → empieza a reproducir antes de descargar todo), sin audio (`-an`), pix_fmt yuv420p
+   - Target: ~1.5–2 MB
+2. **WebM (VP9)** — Chrome/Firefox/Edge, ~30–40% más pequeño:
+   - CRF 34, b:v 0, sin audio
+   - Target: ~1–1.5 MB
+3. **Poster JPG** (frame ~0.5s, 1920x1080, quality 75) — se muestra antes de que cargue el video y sirve como fallback / preview en redes.
+
+Los tres se suben a Lovable Assets (CDN con caché agresiva), no al repo.
+
+## Cambios en código
+
+**`src/routes/index.tsx`** — reemplazar `HeroMedia`:
+
+```tsx
+<video
+  className="h-full w-full object-cover"
+  width={1920} height={1080}
+  poster={poster.url}
+  autoPlay muted loop playsInline
+  preload="metadata"
+  aria-label="YAMATO — Consultora de marketing independiente"
+>
+  <source src={webm.url} type="video/webm" />
+  <source src={mp4.url} type="video/mp4" />
+</video>
 ```
-1. NAV fijo arriba         [LOGO YAMATO.]            [Servicios] [Cómo] [Casos] [Contacto]
-2. HERO (titular gigantesco serif a la izquierda)
-   "Consultora de marketing independiente (y sincera)."
-   Subtítulo + CTA "Llamar es gratis (aún) →"
-3. MEDIA HERO (placeholder 16:9 listo para vídeo/imagen del usuario)
-4. MARQUEE de clientes (Apodemia ◦ Cegid ◦ Contasimple ◦ …) en serif XL
-5. QUÉ ES YAMATO (about, 3 párrafos editoriales con eyebrow "ABOUT")
-6. NUESTROS SERVICIOS — "Cinco cosas, no cuarenta"
-   Lista numerada grande: Estrategia y dirección / Mentoría y gestión de equipos /
-   Go-to-Market / IA aplicada / Ejecución
-   Pull-quote sobre independencia.
-7. CÓMO LO HACEMOS — 3 pasos (Llamada · Radiografía · Arrancamos)
-   con tipografía numérica grande. CTA "¿Nos sentamos? →"
-8. UN CMO POR EL PRECIO DE UN JUNIOR — bloque pull-quote + CTA
-9. ¿Y SI YA TIENES UN CMO? — texto editorial + CTA
-10. CASOS DE ÉXITO — Apodemia y Cegid/Contasimple en formato editorial
-    (eyebrow + titular + párrafo). CTA final.
-11. NO PERDAMOS EL TIEMPO — dos columnas: "Encajarás si" / "No encajarás si"
-12. Y COLORÍN COLORADO… — cierre + CTA "Pide tu Radiografía gratis →"
-    + nota newsletter.
-13. FOOTER minimal: YAMATO. · email · enlaces.
-```
 
-## Contenido (literal del Notion)
+Claves de rendimiento/UX:
+- `autoPlay muted playsInline loop` → requerido para autoplay en iOS/Safari.
+- `preload="metadata"` → no descarga el video entero hasta empezar a reproducir; el poster cubre el espacio.
+- `poster` evita CLS y da algo que ver de inmediato (sirve también como LCP candidate ligero).
+- Quitar la imagen actual `hero-yamato-landscape-hd.jpg` y su preload (ya no es LCP).
 
-Se usa exactamente el texto que has compartido. CTAs respetados:
-- "Llamar es gratis (aún) →"
-- "¿Nos sentamos? →"
-- "Si llamas, respondemos →"
-- "Cuéntanos el proyecto →"
-- "Llámanos y te contamos el resto"
-- "Pide tu Radiografía gratis →"
+**`src/routes/__root.tsx`** — el `og:image` actual (1920x1080 webp) se mantiene para previews sociales (las redes no usan video del `<video>` tag; usan `og:video` opcional, que también añado apuntando al MP4).
 
-## Detalles técnicos
+## SEO
 
-- **Stack**: TanStack Start ya configurado; ruta única `src/routes/index.tsx`.
-- **Fuentes**: `@fontsource/instrument-serif`, `@fontsource/fraunces`, `@fontsource/inter` instaladas vía bun.
-- **Tokens** definidos en `src/styles.css` con `@theme` (colores, fuentes, radios = 0, sombras = ninguna).
-- **Componentes nuevos** en `src/components/home/`: `Nav`, `Hero`, `HeroMedia`, `ClientMarquee`, `About`, `Services`, `Process`, `PullCta`, `CaseStudies`, `FitList`, `Closing`, `Footer`.
-- **Logo YAMATO**: subiré la imagen que adjuntes a Lovable Assets y la usaré en el nav y el footer. Mientras tanto, fallback en wordmark serif "YAMATO.".
-- **Hero media**: hueco 16:9 con borde sutil y texto "Sube aquí tu vídeo o imagen" hasta que aportes el archivo (lo sustituyo con `<video>` o `<img>` cuando lo subas).
-- **SEO**: `head()` en la ruta con title "YAMATO — Consultora de marketing independiente", meta description del subtítulo, OG/Twitter.
-- **Responsive**: tipografía fluida con `clamp()`, marquee adaptado, nav colapsable a menú simple en móvil.
+- `og:video`, `og:video:type`, `og:video:width/height` en el head (Facebook/LinkedIn/WhatsApp pueden mostrar el video).
+- JSON-LD `VideoObject` con `name`, `description`, `thumbnailUrl` (poster), `contentUrl` (MP4), `uploadDate`, `duration` (PT10S) → habilita rich results y aparece en Google Video search.
+- `aria-label` en el `<video>` para accesibilidad.
+- Poster con nombre semántico (`yamato-hero-poster.jpg`).
 
-## Fuera de alcance (acordado)
+## Resultado esperado
 
-- Solo se construye la Home. No se crean rutas Services/Clients/Contact.
-- No se genera vídeo/imagen del hero: queda placeholder para que lo subas.
-
-## Lo que necesito de ti para terminar
-
-1. **Logo de YAMATO** (lo veo mencionado pero no llegó adjunto en este mensaje — súbelo cuando puedas).
-2. **Vídeo/imagen del hero** cuando lo tengas.
-3. Email/enlaces de contacto para el footer (si no, dejo `hola@yamato.digital` como placeholder a confirmar).
+- Peso transferido en primera carga: ~150 KB (poster) en lugar de la imagen actual; el video empieza a streamear sólo cuando ya está en pantalla.
+- Sin CLS (mismo aspect-ratio 16/9 reservado).
+- Compatible con todos los navegadores, autoplay funcional en móvil.
+- Indexable como video por Google.
