@@ -95,7 +95,7 @@ function Hero() {
             con buen producto pagando a agencias que vendían humo y delegaban el trabajo en un becario. Nadie pensaba el
             marketing más allá del mes que viene. Y cuando alguien lo pensaba, no era quien lo ejecutaba.
           </p>
-          <p>Así que montamos lo contrario.</p>
+          <p className="text-muted-ink">Así que montamos lo contrario.</p>
           <p className="text-muted-ink">
             Somos una <em className="font-serif">consultora de marketing independiente</em>. Entramos en tu empresa como
             entraría un director de marketing —pensamos la estrategia, marcamos los KPIs, lideramos la operación— pero
