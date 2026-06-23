@@ -100,7 +100,11 @@ function HeroMedia() {
           src={heroAsset.url}
           alt="YAMATO — Consultora de marketing independiente"
           className="h-full w-full object-cover"
+          width={1920}
+          height={1080}
           loading="eager"
+          fetchPriority="high"
+          decoding="async"
         />
       </div>
     </section>
