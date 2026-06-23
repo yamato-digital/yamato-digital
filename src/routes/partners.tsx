@@ -20,6 +20,20 @@ export const Route = createFileRoute("/partners")({
       { property: "og:url", content: "/partners" },
     ],
     links: [{ rel: "canonical", href: "/partners" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: FAQ.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: { "@type": "Answer", text: item.a },
+          })),
+        }),
+      },
+    ],
   }),
   component: Partners,
 });
