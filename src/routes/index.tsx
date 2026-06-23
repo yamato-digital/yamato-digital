@@ -16,9 +16,9 @@ export const Route = createFileRoute("/")({
         property: "og:description",
         content: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
       },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://yamato.digital" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://yamato.digital" }],
   }),
   component: Home,
 });

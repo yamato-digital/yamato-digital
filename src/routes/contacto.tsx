@@ -15,9 +15,9 @@ export const Route = createFileRoute("/contacto")({
         property: "og:description",
         content: "Hablemos. YAMATO es tu dirección de marketing independiente.",
       },
-      { property: "og:url", content: "/contacto" },
+      { property: "og:url", content: "https://yamato.digital/contacto" },
     ],
-    links: [{ rel: "canonical", href: "/contacto" }],
+    links: [{ rel: "canonical", href: "https://yamato.digital/contacto" }],
   }),
   component: ContactoPage,
 });

@@ -17,9 +17,9 @@ export const Route = createFileRoute("/partners")({
         content:
           "Una intro, un cobro. 15% del primer pago. Si traes 3 en un trimestre, los 3 van al 20%.",
       },
-      { property: "og:url", content: "/partners" },
+      { property: "og:url", content: "https://yamato.digital/partners" },
     ],
-    links: [{ rel: "canonical", href: "/partners" }],
+    links: [{ rel: "canonical", href: "https://yamato.digital/partners" }],
     scripts: [
       {
         type: "application/ld+json",
