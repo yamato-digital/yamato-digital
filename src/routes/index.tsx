@@ -138,8 +138,9 @@ function HeroMedia() {
           preload="metadata"
           aria-label="YAMATO — Consultora de marketing independiente"
         >
-          <source src={heroVideoWebm.url} type="video/webm" />
           <source src={heroVideoMp4.url} type="video/mp4" />
+          <source src={heroVideoWebm.url} type="video/webm" />
+
         </video>
       </div>
     </section>
