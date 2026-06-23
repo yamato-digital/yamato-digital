@@ -165,7 +165,7 @@ function Why() {
               soltar la frase: <em className="font-serif">“necesito a alguien que se ocupe del
               marketing en serio”</em>.
             </p>
-            <p className="text-muted-ink">
+            <p>
               Hasta hoy esa frase no te servía para nada. A partir de hoy, sí.
             </p>
             <p>
