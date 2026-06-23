@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-import ignacioAsset from "@/assets/ignacio-goni-sketch.jpeg.asset.json";
-import elenaAsset from "@/assets/elena-gonzalez-blanco-advisor.jpeg.asset.json";
+const ignacioAsset = { url: "/assets/ignacio-goni-sketch.jpeg" };
+const elenaAsset = { url: "/assets/elena-gonzalez-blanco-advisor.jpeg" };
 
 export const Route = createFileRoute("/quienes-somos")({
   head: () => ({
