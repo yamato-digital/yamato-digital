@@ -20,9 +20,35 @@ export const Route = createFileRoute("/")({
         property: "og:description",
         content: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
       },
-      { property: "og:url", content: "https://yamato.digital" },
+      { property: "og:url", content: SITE_URL },
+      { property: "og:video", content: `${SITE_URL}${heroVideoMp4.url}` },
+      { property: "og:video:secure_url", content: `${SITE_URL}${heroVideoMp4.url}` },
+      { property: "og:video:type", content: "video/mp4" },
+      { property: "og:video:width", content: "1920" },
+      { property: "og:video:height", content: "1080" },
     ],
-    links: [{ rel: "canonical", href: "https://yamato.digital" }],
+    links: [
+      { rel: "canonical", href: SITE_URL },
+      { rel: "preload", as: "image", href: heroPoster.url, fetchpriority: "high" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          name: "YAMATO — Consultora de marketing independiente",
+          description:
+            "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
+          thumbnailUrl: `${SITE_URL}${heroPoster.url}`,
+          contentUrl: `${SITE_URL}${heroVideoMp4.url}`,
+          uploadDate: "2026-06-23",
+          duration: "PT10S",
+          width: 1920,
+          height: 1080,
+        }),
+      },
+    ],
   }),
   component: Home,
 });
