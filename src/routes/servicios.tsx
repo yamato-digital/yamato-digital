@@ -20,6 +20,16 @@ export const Route = createFileRoute("/servicios")({
       { property: "og:url", content: "/servicios" },
     ],
     links: [{ rel: "canonical", href: "/servicios" }],
+    scripts: SERVICES.map((s) => ({
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: s.title.replace(/\.$/, ""),
+        description: s.body,
+        provider: { "@type": "Organization", name: "YAMATO" },
+      }),
+    })),
   }),
   component: ServiciosPage,
 });
