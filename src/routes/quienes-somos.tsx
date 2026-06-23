@@ -116,7 +116,7 @@ function Founder() {
     <section className="border-t border-hairline overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-24 md:py-28">
         <div className="grid items-start gap-12 md:grid-cols-12 lg:gap-16">
-          <figure className="md:col-span-5">
+          <figure className="md:col-span-5 md:mt-24">
             <img
               src={ignacioAsset.url}
               alt="Ignacio Goñi, fundador de YAMATO"
@@ -128,7 +128,7 @@ function Founder() {
               className="aspect-[4/5] w-full max-h-[760px] object-cover object-center grayscale md:sticky md:top-24"
             />
           </figure>
-          <div className="md:col-span-7 lg:pt-8">
+          <div className="md:col-span-7">
             <Eyebrow>Quién dirige esto</Eyebrow>
             <h3 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
               Ignacio Goñi
