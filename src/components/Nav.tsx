@@ -8,7 +8,7 @@ export function Nav() {
         <Link to="/" className="inline-block">
           <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
         </Link>
-        <nav className="hidden gap-8 text-sm md:flex">
+        <nav className="hidden gap-6 text-sm lg:flex lg:gap-8">
           <Link
             to="/quienes-somos"
             activeProps={{ className: "font-semibold" }}
