@@ -89,7 +89,7 @@ function Hero() {
       </h1>
       <div className="mt-16 mb-24 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
-          <p>YAMATO no nació de una pasión por el marketing. Nació de un cabreo.</p>
+          <p className="text-muted-ink">YAMATO no nació de una pasión por el marketing. Nació de un cabreo.</p>
           <p className="text-muted-ink">
             Después de más de una década dirigiendo marketing en cabeza ajena, el patrón siempre era el mismo: empresas
             con buen producto pagando a agencias que vendían humo y delegaban el trabajo en un becario. Nadie pensaba el
