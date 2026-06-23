@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import heroAsset from "@/assets/hero-yamato-landscape-hd.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
