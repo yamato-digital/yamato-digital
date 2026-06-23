@@ -197,6 +197,11 @@ function Advisor() {
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>Y un advisor que nos para los pies</Eyebrow>
+            <img
+              src={elenaAsset.url}
+              alt="Elena González-Blanco"
+              className="mt-8 w-full max-w-[280px] opacity-80 pointer-events-none select-none"
+            />
           </div>
           <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
             <p className="text-muted-ink">
