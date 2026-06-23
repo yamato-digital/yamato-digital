@@ -79,6 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "google-site-verification", content: "5hVSqmWNzF9ywzhbG4ZEgOwMJRqbmILlYqtYf92Jm-c" },
       { title: "YAMATO — Consultora de marketing independiente" },
       { name: "description", content: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación." },
       { property: "og:type", content: "website" },
