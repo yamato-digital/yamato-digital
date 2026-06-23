@@ -84,6 +84,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "YAMATO" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "YAMATO — Consultora de marketing independiente" },
+      { name: "twitter:title", content: "YAMATO — Consultora de marketing independiente" },
+      { property: "og:description", content: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación." },
+      { name: "twitter:description", content: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/aykRTjElrvhS78u5RDiqYqG9ItB2/social-images/social-1782230154804-YAMATO-2_-_1920x1080.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/aykRTjElrvhS78u5RDiqYqG9ItB2/social-images/social-1782230154804-YAMATO-2_-_1920x1080.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
