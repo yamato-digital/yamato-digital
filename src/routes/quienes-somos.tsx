@@ -198,7 +198,9 @@ function Advisor() {
             <Eyebrow>Y un advisor que nos para los pies</Eyebrow>
           </div>
           <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
-            <p>Tener criterio está bien. Tener a alguien que te lleve la contraria cuando te equivocas, mejor.</p>
+            <p className="text-muted-ink">
+              Tener criterio está bien. Tener a alguien que te lleve la contraria cuando te equivocas, mejor.
+            </p>
             <h3 className="font-serif text-[clamp(2rem,4vw,3.5rem)] leading-[1] tracking-tight">
               Elena González-Blanco
               <span className="block italic text-muted-ink">Advisor</span>
