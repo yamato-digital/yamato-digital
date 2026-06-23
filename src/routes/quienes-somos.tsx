@@ -137,9 +137,6 @@ function Founder() {
               un comercial cobrando comisión por venderte horas que no necesitas. Eso no es un detalle: es la razón por
               la que te puedo decir la verdad aunque no me convenga.
             </p>
-            <p className="font-serif text-2xl italic">
-              La cabeza pensante soy yo. Y quien piensa la estrategia es quien la firma.
-            </p>
           </div>
         </div>
       </div>
