@@ -60,7 +60,7 @@ function Arrow() {
   );
 }
 
-function Cta({ children, href = "#contacto" }: { children: React.ReactNode; href?: string }) {
+function Cta({ children, href = "/contacto" }: { children: React.ReactNode; href?: string }) {
   return (
     <a
       href={href}
