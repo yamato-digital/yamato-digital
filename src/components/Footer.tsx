@@ -1,4 +1,4 @@
-import logoWhite from "@/assets/logo-yamato-white.png.asset.json";
+const logoWhite = { url: "/assets/logo-yamato-white.png" };
 
 export function Footer() {
   return (
