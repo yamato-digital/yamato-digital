@@ -18,9 +18,9 @@ export const Route = createFileRoute("/quienes-somos")({
         property: "og:description",
         content: "Un CMO que firma lo que piensa y un equipo senior que no tienes que fichar.",
       },
-      { property: "og:url", content: "/quienes-somos" },
+      { property: "og:url", content: "https://yamato.digital/quienes-somos" },
     ],
-    links: [{ rel: "canonical", href: "/quienes-somos" }],
+    links: [{ rel: "canonical", href: "https://yamato.digital/quienes-somos" }],
   }),
   component: QuienesSomos,
 });

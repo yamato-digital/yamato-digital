@@ -15,9 +15,9 @@ export const Route = createFileRoute("/clientes")({
         property: "og:description",
         content: "Empresas con las que hemos trabajado. Estrategia, dirección y ejecución de marketing.",
       },
-      { property: "og:url", content: "/clientes" },
+      { property: "og:url", content: "https://yamato.digital/clientes" },
     ],
-    links: [{ rel: "canonical", href: "/clientes" }],
+    links: [{ rel: "canonical", href: "https://yamato.digital/clientes" }],
   }),
   component: ClientesPage,
 });

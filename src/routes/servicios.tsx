@@ -17,9 +17,9 @@ export const Route = createFileRoute("/servicios")({
         content:
           "Cinco cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución.",
       },
-      { property: "og:url", content: "/servicios" },
+      { property: "og:url", content: "https://yamato.digital/servicios" },
     ],
-    links: [{ rel: "canonical", href: "/servicios" }],
+    links: [{ rel: "canonical", href: "https://yamato.digital/servicios" }],
     scripts: SERVICES.map((s) => ({
       type: "application/ld+json",
       children: JSON.stringify({

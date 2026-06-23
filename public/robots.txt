@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yamato-digital.lovable.app/sitemap.xml
+Sitemap: https://yamato.digital/sitemap.xml
