@@ -7,6 +7,9 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  // Force the nitro deploy plugin to run even when no Lovable context is detected
+  // (e.g. building locally or in CI for self-hosted Cloudflare Workers deploys).
+  nitro: true,
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
