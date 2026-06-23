@@ -199,7 +199,7 @@ function Advisor() {
             <img
               src={elenaAsset.url}
               alt="Elena González-Blanco"
-              className="mt-8 w-full max-w-[280px] opacity-80 pointer-events-none select-none"
+              className="mt-8 w-full opacity-80 pointer-events-none select-none"
             />
           </div>
           <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
