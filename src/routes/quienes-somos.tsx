@@ -169,14 +169,14 @@ function Team() {
             </p>
             <p className="text-muted-ink">Esto no es un parche. Es el modelo, y es mejor para ti:</p>
           </div>
-          <ul className="md:col-span-5 space-y-5">
+          <ul className="md:col-span-5 space-y-5 text-muted-ink">
             {[
               "No pagas una estructura de 50 personas que alguien tiene que mantener ocupada todo el mes.",
               "No te toca el junior libre, te toca el especialista adecuado.",
               "Cuando tu proyecto cambia, el equipo cambia con él. Sin reuniones para justificar nóminas.",
             ].map((t) => (
               <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
-                <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-ink" />
+                <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
                 <span>{t}</span>
               </li>
             ))}
