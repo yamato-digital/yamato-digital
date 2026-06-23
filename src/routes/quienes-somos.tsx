@@ -205,6 +205,11 @@ function Advisor() {
               Elena González-Blanco
               <span className="block italic text-muted-ink">Advisor</span>
             </h3>
+            <p className="text-muted-ink">
+              Head of AI for Digital Natives en Microsoft EMEA. Cofundadora de Clibrain, PhD por Harvard y una de las
+              voces más reconocidas de la inteligencia artificial en español. Nos ayuda a integrar IA donde aporta
+              negocio, no donde hace ruido.
+            </p>
           </div>
         </div>
       </div>
