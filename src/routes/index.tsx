@@ -5,6 +5,8 @@ import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
 import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
 
 const SITE_URL = "https://yamato.digital";
+const ASSET_ORIGIN = "https://yamato-digital.lovable.app";
+const assetUrl = (url: string) => `${ASSET_ORIGIN}${url}`;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -28,7 +30,7 @@ export const Route = createFileRoute("/")({
     ],
     links: [
       { rel: "canonical", href: SITE_URL },
-      { rel: "preload", as: "image", href: heroPoster.url, fetchpriority: "high" },
+      { rel: "preload", as: "image", href: assetUrl(heroPoster.url), fetchpriority: "high" },
     ],
     scripts: [
       {
@@ -39,8 +41,8 @@ export const Route = createFileRoute("/")({
           name: "YAMATO — Consultora de marketing independiente",
           description:
             "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
-          thumbnailUrl: `${SITE_URL}${heroPoster.url}`,
-          contentUrl: `${SITE_URL}${heroVideoMp4.url}`,
+          thumbnailUrl: assetUrl(heroPoster.url),
+          contentUrl: assetUrl(heroVideoMp4.url),
           uploadDate: "2026-06-23",
           duration: "PT10S",
           width: 1920,
@@ -126,7 +128,7 @@ function HeroMedia() {
     <section>
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-ink/95">
         <img
-          src={heroPoster.url}
+          src={assetUrl(heroPoster.url)}
           alt="YAMATO — Consultora de marketing independiente"
           className="absolute inset-0 h-full w-full object-cover"
           loading="eager"
@@ -135,7 +137,7 @@ function HeroMedia() {
           className="relative z-10 h-full w-full object-cover"
           width={1920}
           height={1080}
-          poster={heroPoster.url}
+          poster={assetUrl(heroPoster.url)}
           autoPlay
           muted
           loop
@@ -143,7 +145,7 @@ function HeroMedia() {
           preload="auto"
           aria-label="YAMATO — Consultora de marketing independiente"
         >
-          <source src={heroVideoMp4.url} type="video/mp4" />
+          <source src={assetUrl(heroVideoMp4.url)} type="video/mp4" />
         </video>
       </div>
     </section>

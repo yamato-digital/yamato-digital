@@ -4,6 +4,8 @@ import { Footer } from "@/components/Footer";
 import ignacioAsset from "@/assets/ignacio-goni-yamato.webp.asset.json";
 
 const elenaAsset = { url: "/assets/elena-gonzalez-blanco-advisor.jpeg" };
+const ASSET_ORIGIN = "https://yamato-digital.lovable.app";
+const assetUrl = (url: string) => `${ASSET_ORIGIN}${url}`;
 
 export const Route = createFileRoute("/quienes-somos")({
   head: () => ({
@@ -120,7 +122,7 @@ function Founder() {
             <Eyebrow>Quién dirige esto</Eyebrow>
             <figure className="mt-10">
               <img
-                src={ignacioAsset.url}
+                src={assetUrl(ignacioAsset.url)}
                 alt="Ignacio Goñi, fundador de YAMATO"
                 width="1600"
                 height="1600"
