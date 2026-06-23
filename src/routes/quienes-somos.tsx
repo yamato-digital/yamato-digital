@@ -89,13 +89,13 @@ function Hero() {
       </h1>
       <div className="mt-16 mb-24 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
-          <p>YAMATO no nació de una pasión por el marketing. Nació de un cabreo.</p>
+          <p className="text-muted-ink">YAMATO no nació de una pasión por el marketing. Nació de un cabreo.</p>
           <p className="text-muted-ink">
             Después de más de una década dirigiendo marketing en cabeza ajena, el patrón siempre era el mismo: empresas
             con buen producto pagando a agencias que vendían humo y delegaban el trabajo en un becario. Nadie pensaba el
             marketing más allá del mes que viene. Y cuando alguien lo pensaba, no era quien lo ejecutaba.
           </p>
-          <p>Así que montamos lo contrario.</p>
+          <p className="text-muted-ink">Así que montamos lo contrario.</p>
           <p className="text-muted-ink">
             Somos una <em className="font-serif">consultora de marketing independiente</em>. Entramos en tu empresa como
             entraría un director de marketing —pensamos la estrategia, marcamos los KPIs, lideramos la operación— pero
@@ -137,9 +137,6 @@ function Founder() {
               un comercial cobrando comisión por venderte horas que no necesitas. Eso no es un detalle: es la razón por
               la que te puedo decir la verdad aunque no me convenga.
             </p>
-            <p className="font-serif text-2xl italic">
-              La cabeza pensante soy yo. Y quien piensa la estrategia es quien la firma.
-            </p>
           </div>
         </div>
       </div>
@@ -163,7 +160,8 @@ function Team() {
             </p>
             <p className="text-muted-ink">
               YAMATO funciona con una <em className="font-serif">red de más de 50 colaboradores senior</em>{" "}
-              —especialistas en paid media, SEO, CRM, contenido, datos, desarrollo— que entran en cada proyecto según lo
+              —especialistas en SEO, CRM, contenido, datos, desarrollo, IA, redes sociales— que entran en cada proyecto
+              según lo
               que ese proyecto necesita. No son una plantilla. Son los mejores en lo suyo, y solo trabajan cuando hace
               falta lo suyo.
             </p>
@@ -200,18 +198,17 @@ function Advisor() {
             <Eyebrow>Y un advisor que nos para los pies</Eyebrow>
           </div>
           <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
-            <p>Tener criterio está bien. Tener a alguien que te lleve la contraria cuando te equivocas, mejor.</p>
+            <p className="text-muted-ink">
+              Tener criterio está bien. Tener a alguien que te lleve la contraria cuando te equivocas, mejor.
+            </p>
             <h3 className="font-serif text-[clamp(2rem,4vw,3.5rem)] leading-[1] tracking-tight">
               Elena González-Blanco
               <span className="block italic text-muted-ink">Advisor</span>
             </h3>
             <p className="text-muted-ink">
-              [Una o dos frases: quién es y qué ha hecho de verdad —cargo o trayectoria que dé peso, sin adjetivos
-              huecos.]
-            </p>
-            <p className="text-muted-ink">
-              [Una frase sobre qué aporta a YAMATO: la segunda opinión incómoda, el contraste de experiencia, lo que
-              mantiene honesto al proyecto.]
+              Head of AI for Digital Natives en Microsoft EMEA. Cofundadora de Clibrain, PhD por Harvard y una de las
+              voces más reconocidas de la inteligencia artificial en español. Nos ayuda a integrar IA donde aporta
+              negocio, no donde hace ruido.
             </p>
           </div>
         </div>
