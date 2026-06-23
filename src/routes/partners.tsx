@@ -273,7 +273,7 @@ function Fit() {
                 "Estás buscando ingresos pasivos a base de spam en LinkedIn.",
                 "Vas a presentarnos a tu cuñado que tiene una pizzería.",
               ].map((t) => (
-                <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
+                <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
                   <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
                   <span>{t}</span>
                 </li>
@@ -306,7 +306,7 @@ function FaqSection() {
               <dt className="md:col-span-5 font-serif text-xl leading-tight md:text-2xl">
                 {item.q}
               </dt>
-              <dd className="md:col-span-7 text-lg leading-relaxed text-muted-ink md:text-xl">
+              <dd className="md:col-span-7 text-lg leading-relaxed md:text-xl">
                 {item.a}
               </dd>
             </div>
