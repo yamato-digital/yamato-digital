@@ -66,7 +66,7 @@ const PRINCIPLES = [
   {
     n: "06",
     title: "Solo ejecutamos lo que hemos marcado.",
-    body: "Hacemos SEO/GEO, CRM, web. Lo mismo que las agencias, con un pero: solo ejecutamos la estrategia que hemos definido nosotros. Ejecutar a ciegas el plan de otro es como operar con los ojos cerrados. Y si algo no lo hacemos, te derivamos a quién sí.",
+    body: "Hacemos Google Ads, SEO, CRM, web. Lo mismo que las agencias, con un pero: solo ejecutamos la estrategia que hemos definido nosotros. Ejecutar a ciegas el plan de otro es como operar con los ojos cerrados.",
   },
   {
     n: "07",
@@ -112,8 +112,13 @@ function Hero() {
 
 function Founder() {
   return (
-    <section className="border-t border-hairline">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+    <section className="border-t border-hairline relative overflow-hidden">
+      <img
+        src={ignacioAsset.url}
+        alt="ignacio-goñi-yamato"
+        className="absolute top-1/2 left-[5%] w-[30%] max-w-[360px] -translate-y-1/2 opacity-30 pointer-events-none select-none"
+      />
+      <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
             <Eyebrow>Quién dirige esto</Eyebrow>
@@ -121,11 +126,6 @@ function Founder() {
               Ignacio Goñi
               <span className="block italic text-muted-ink">Fundador</span>
             </h3>
-            <img
-              src={ignacioAsset.url}
-              alt="ignacio-goñi-yamato"
-              className="mt-8 w-full opacity-30 pointer-events-none select-none"
-            />
           </div>
           <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
             <p className="text-muted-ink">
@@ -199,7 +199,7 @@ function Advisor() {
             <img
               src={elenaAsset.url}
               alt="Elena González-Blanco"
-              className="mt-8 w-full opacity-80 pointer-events-none select-none"
+              className="mt-8 w-full max-w-[280px] opacity-80 pointer-events-none select-none"
             />
           </div>
           <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
