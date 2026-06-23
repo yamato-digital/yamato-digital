@@ -373,29 +373,6 @@ function Closing() {
   );
 }
 
-function Newsletter() {
-  return (
-    <section className="bg-ink text-paper">
-      <div className="px-6 sm:px-10 lg:px-20 xl:px-28 pb-32">
-        <div className="border-t border-paper/15 pt-24">
-          <p className="max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
-            Y si nada de esto te encaja, dedícale 1 minuto al día a la newsletter. Intentaremos que
-            al menos aprendas algo nuevo cada día.
-          </p>
-          <div className="mt-12">
-            <a
-              href="#"
-              className="group inline-flex items-center gap-4 rounded-full border border-paper/30 px-8 py-4 font-serif text-[clamp(1.25rem,2.5vw,1.75rem)] italic transition-colors hover:bg-paper/10"
-            >
-              Quiero leerla
-              <Arrow />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 
 function Home() {
@@ -414,7 +391,7 @@ function Home() {
       <div className="border-t border-hairline" />
       <Fit />
       <Closing />
-      <Newsletter />
+      
       <Footer />
     </main>
   );
