@@ -300,8 +300,7 @@ function EnterpriseBlock() {
               habla y nadie implanta, la segunda opinión que tu agencia no te va a dar…
             </p>
             <p className="text-muted-ink">
-              Proyectos con principio, fin y resultado. No nos quedamos a vivir en tu nómina. Es como
-              trabajamos con Cegid.
+              Proyectos con principio, fin y resultado. No nos quedamos a vivir en tu nómina.
             </p>
             <p className="text-muted-ink">
               Sí, suena a lo que te prometió la gran consultora. La diferencia: aquí, el que te lo
