@@ -206,12 +206,9 @@ function Advisor() {
               <span className="block italic text-muted-ink">Advisor</span>
             </h3>
             <p className="text-muted-ink">
-              [Una o dos frases: quién es y qué ha hecho de verdad —cargo o trayectoria que dé peso, sin adjetivos
-              huecos.]
-            </p>
-            <p className="text-muted-ink">
-              [Una frase sobre qué aporta a YAMATO: la segunda opinión incómoda, el contraste de experiencia, lo que
-              mantiene honesto al proyecto.]
+              Head of AI for Digital Natives en Microsoft EMEA. Cofundadora de Clibrain, PhD por Harvard y una de las
+              voces más reconocidas de la inteligencia artificial en español. Nos ayuda a integrar IA donde aporta
+              negocio, no donde hace ruido.
             </p>
           </div>
         </div>
