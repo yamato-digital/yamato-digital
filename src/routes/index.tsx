@@ -311,9 +311,12 @@ function Fit() {
 
         <div className="mt-16 grid gap-16 md:grid-cols-2">
           <ul className="space-y-5 text-muted-ink">
-            {FIT_YES.map((t) => (
+            {FIT_YES.map((t, i) => (
               <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
-                <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
+                <span
+                  aria-hidden
+                  className={`mt-2 inline-block h-px w-6 shrink-0 ${i % 2 === 0 ? "bg-muted-ink" : "bg-ink/30"}`}
+                />
                 <span>{t}</span>
               </li>
             ))}
@@ -321,9 +324,12 @@ function Fit() {
           <div>
             <p className="font-serif text-2xl italic text-muted-ink">No encajarás si…</p>
             <ul className="mt-6 space-y-5">
-              {FIT_NO.map((t) => (
+              {FIT_NO.map((t, i) => (
                 <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
-                  <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
+                  <span
+                    aria-hidden
+                    className={`mt-2 inline-block h-px w-6 shrink-0 ${i % 2 === 0 ? "bg-muted-ink" : "bg-ink/30"}`}
+                  />
                   <span>{t}</span>
                 </li>
               ))}
