@@ -9,14 +9,12 @@ export const Route = createFileRoute("/")({
       { title: "YAMATO — Consultora de marketing independiente (y sincera)" },
       {
         name: "description",
-        content:
-          "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
+        content: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
       },
       { property: "og:title", content: "YAMATO — Consultora de marketing independiente" },
       {
         property: "og:description",
-        content:
-          "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
+        content: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -74,13 +72,8 @@ function Cta({ children, href = "/contacto" }: { children: React.ReactNode; href
 }
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
-  return (
-    <h2 className="text-sm font-medium uppercase tracking-[0.18em] text-muted-ink">
-      {children}
-    </h2>
-  );
+  return <h2 className="text-sm font-medium uppercase tracking-[0.18em] text-muted-ink">{children}</h2>;
 }
-
 
 function Hero() {
   return (
@@ -134,7 +127,9 @@ function Marquee() {
                 {doubled.map((c, i) => (
                   <span key={i} className="flex items-center gap-10">
                     {c}
-                    <span aria-hidden className="text-muted-ink">◦</span>
+                    <span aria-hidden className="text-muted-ink">
+                      ◦
+                    </span>
                   </span>
                 ))}
               </div>
@@ -154,20 +149,19 @@ function About() {
         <p className="mt-10 font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-snug italic">
           Tu dirección de marketing.
         </p>
-        <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl">
+        <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl" text-muted-ink>
           <p>
-            La cabeza de un CMO con más de una década dirigiendo + las
-            manos de un equipo senior. Dentro de tu empresa, las horas que necesites. Ni un freelance
-            que hace campañas sueltas, ni un consultor que suelta el informe y desaparece.
+            La cabeza de un CMO con más de una década dirigiendo + las manos de un equipo senior. Dentro de tu empresa,
+            las horas que necesites. Ni un freelance que hace campañas sueltas, ni un consultor que suelta el informe y
+            desaparece.
           </p>
           <p>
-            No somos una agencia. Nadie te venderá la moto en la primera reunión para pasarte luego
-            con un junior: quien piensa tu estrategia es quien la firma, y se sienta en tu comité de
-            dirección.
+            No somos una agencia. Nadie te venderá la moto en la primera reunión para pasarte luego con un junior: quien
+            piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
           </p>
           <p>
-            Trabajamos como <em className="font-serif">Growth Partner</em>: solo ganamos cuando tú
-            ganas. Incómodo para el resto del sector. Cómodo para ti.
+            Trabajamos como <em className="font-serif">Growth Partner</em>: solo ganamos cuando tú ganas. Incómodo para
+            el resto del sector. Cómodo para ti.
           </p>
         </div>
       </div>
@@ -185,16 +179,9 @@ function Services() {
           </div>
           <ol className="md:col-span-8 md:col-start-5">
             {SERVICES.map((s, i) => (
-              <li
-                key={s}
-                className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b"
-              >
-                <span className="text-sm tabular-nums text-muted-ink">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">
-                  {s}
-                </span>
+              <li key={s} className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b">
+                <span className="text-sm tabular-nums text-muted-ink">{String(i + 1).padStart(2, "0")}</span>
+                <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">{s}</span>
               </li>
             ))}
           </ol>
@@ -248,8 +235,7 @@ function Process() {
           ))}
         </div>
         <p className="mt-20 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
-          “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no
-          haces.”
+          “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no haces.”
         </p>
         <div className="mt-16">
           <Cta>¿Nos sentamos?</Cta>
@@ -265,13 +251,11 @@ function PriceQuote() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Inversión</Eyebrow>
         <p className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
-          Un CMO por el precio de un{" "}
-          <span className="italic text-muted-ink">junior</span>.
+          Un CMO por el precio de un <span className="italic text-muted-ink">junior</span>.
         </p>
         <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
-          Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una
-          década dirigiendo marketing. Menos horas, sí. Pero ninguna se pierde en que un junior
-          aprenda a tu costa.
+          Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una década dirigiendo marketing.
+          Menos horas, sí. Pero ninguna se pierde en que un junior aprenda a tu costa.
         </p>
         <div className="mt-10">
           <Cta>Si llamas, respondemos</Cta>
@@ -295,16 +279,16 @@ function EnterpriseBlock() {
           <div className="space-y-6 text-lg leading-relaxed md:col-span-7 md:col-start-6 md:text-xl">
             <p className="text-muted-ink">No venimos a quitarle la silla a nadie.</p>
             <p className="text-muted-ink">
-              En empresas grandes entramos donde la estructura no llega: el lanzamiento que nadie
-              tiene tiempo de liderar, la unidad de negocio sin foco, la IA de la que todo el comité
-              habla y nadie implanta, la segunda opinión que tu agencia no te va a dar…
+              En empresas grandes entramos donde la estructura no llega: el lanzamiento que nadie tiene tiempo de
+              liderar, la unidad de negocio sin foco, la IA de la que todo el comité habla y nadie implanta, la segunda
+              opinión que tu agencia no te va a dar…
             </p>
             <p className="text-muted-ink">
               Proyectos con principio, fin y resultado. No nos quedamos a vivir en tu nómina.
             </p>
             <p className="text-muted-ink">
-              Sí, suena a lo que te prometió la gran consultora. La diferencia: aquí, el que te lo
-              vende es el que trabaja.
+              Sí, suena a lo que te prometió la gran consultora. La diferencia: aquí, el que te lo vende es el que
+              trabaja.
             </p>
             <div className="pt-4">
               <Cta>Cuéntanos el proyecto</Cta>
@@ -315,7 +299,6 @@ function EnterpriseBlock() {
     </section>
   );
 }
-
 
 function Fit() {
   return (
@@ -376,8 +359,6 @@ function Closing() {
   );
 }
 
-
-
 function Home() {
   return (
     <main className="bg-paper text-ink">
@@ -394,7 +375,7 @@ function Home() {
       <div className="border-t border-hairline" />
       <Fit />
       <Closing />
-      
+
       <Footer />
     </main>
   );
