@@ -243,7 +243,7 @@ function Process() {
             <div key={s.n}>
               <span className="font-serif text-5xl text-muted-ink">{s.n}</span>
               <h3 className="mt-4 font-serif text-3xl">{s.title}</h3>
-              <p className="mt-4 leading-relaxed">{s.body}</p>
+              <p className="mt-4 leading-relaxed text-muted-ink">{s.body}</p>
             </div>
           ))}
         </div>
@@ -268,7 +268,7 @@ function PriceQuote() {
           Un CMO por el precio de un{" "}
           <span className="italic text-muted-ink">junior</span>.
         </p>
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed md:text-xl">
+        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
           Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una
           década dirigiendo marketing. Menos horas, sí. Pero ninguna se pierde en que un junior
           aprenda a tu costa.
@@ -293,16 +293,16 @@ function EnterpriseBlock() {
             </h3>
           </div>
           <div className="space-y-6 text-lg leading-relaxed md:col-span-7 md:col-start-6 md:text-xl">
-            <p>No venimos a quitarle la silla a nadie.</p>
-            <p>
+            <p className="text-muted-ink">No venimos a quitarle la silla a nadie.</p>
+            <p className="text-muted-ink">
               En empresas grandes entramos donde la estructura no llega: el lanzamiento que nadie
               tiene tiempo de liderar, la unidad de negocio sin foco, la IA de la que todo el comité
               habla y nadie implanta, la segunda opinión que tu agencia no te va a dar…
             </p>
-            <p>
+            <p className="text-muted-ink">
               Proyectos con principio, fin y resultado. No nos quedamos a vivir en tu nómina.
             </p>
-            <p>
+            <p className="text-muted-ink">
               Sí, suena a lo que te prometió la gran consultora. La diferencia: aquí, el que te lo
               vende es el que trabaja.
             </p>
@@ -339,7 +339,7 @@ function Fit() {
             <p className="font-serif text-2xl italic text-muted-ink">No encajarás si…</p>
             <ul className="mt-6 space-y-5">
               {FIT_NO.map((t) => (
-                <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
+                <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
                   <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
                   <span>{t}</span>
                 </li>

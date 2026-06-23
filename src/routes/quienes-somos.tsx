@@ -95,14 +95,14 @@ function Hero() {
       <div className="mt-16 mb-24 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
           <p>YAMATO no nació de una pasión por el marketing. Nació de un cabreo.</p>
-          <p>
+          <p className="text-muted-ink">
             Después de más de una década dirigiendo marketing en cabeza ajena, el patrón siempre
             era el mismo: empresas con buen producto pagando a agencias que vendían humo y delegaban
             el trabajo en un becario. Nadie pensaba el marketing más allá del mes que viene. Y cuando
             alguien lo pensaba, no era quien lo ejecutaba.
           </p>
           <p>Así que montamos lo contrario.</p>
-          <p>
+          <p className="text-muted-ink">
             Somos una <em className="font-serif">consultora de marketing independiente</em>. Entramos
             en tu empresa como entraría un director de marketing —pensamos la estrategia, marcamos
             los KPIs, lideramos la operación— pero sin que tengas que ficharlo ni pagarle 100.000 € al
@@ -140,7 +140,7 @@ function Founder() {
               caros en presupuestos que no eran míos, lo cual significa una cosa para ti: cuando
               trabajamos juntos, esos errores ya no los pagas tú.
             </p>
-            <p>
+            <p className="text-muted-ink">
               YAMATO es bootstrapped. Sin inversores a los que rendir cuentas, sin presión por inflar
               facturación, sin un comercial cobrando comisión por venderte horas que no necesitas. Eso
               no es un detalle: es la razón por la que te puedo decir la verdad aunque no me convenga.
@@ -162,7 +162,7 @@ function Team() {
         </h3>
         <div className="mt-16 grid gap-12 md:grid-cols-12">
           <div className="md:col-span-7 space-y-6 text-lg leading-relaxed md:text-xl">
-            <p>
+            <p className="text-muted-ink">
               Montan una cuadrícula de treinta caras sonrientes y la llaman “nuestro equipo”.
               Nosotros no vamos a hacer eso.
             </p>
@@ -172,7 +172,7 @@ function Team() {
               sociales— que entran en cada proyecto según lo que ese proyecto necesita. No son una
               plantilla. Son los mejores en lo suyo, y solo trabajan cuando hace falta lo suyo.
             </p>
-            <p>Esto no es un parche. Es el modelo, y es mejor para ti:</p>
+            <p className="text-muted-ink">Esto no es un parche. Es el modelo, y es mejor para ti:</p>
           </div>
           <ul className="md:col-span-5 space-y-5">
             {[
@@ -271,7 +271,7 @@ function Closing() {
           Treinta minutos. Te hacemos una <span className="italic">Radiografía gratis</span> de tu
           marketing.
         </p>
-        <p className="mt-8 max-w-3xl text-lg leading-relaxed md:text-xl">
+        <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-ink md:text-xl">
           Las tres cosas, sin compromiso. Si en media hora no te convencemos, te lo diremos nosotros
           antes de que cuelgues.
         </p>

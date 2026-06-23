@@ -58,7 +58,7 @@ function ServiciosPage() {
             <h1 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
               Cinco cosas, <span className="italic">no cuarenta.</span>
             </h1>
-            <div className="mt-10 space-y-7 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em]">
+            <div className="mt-10 space-y-7 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
               <p>
                 No hacemos de todo. Hacemos lo que mueve el negocio. Estrategia,
                 equipos, lanzamientos, IA y ejecución.
@@ -88,7 +88,7 @@ function ServiciosPage() {
               Vale. ¿Pero qué hacéis <span className="italic">exactamente?</span>
             </h2>
 
-            <div className="mt-12 space-y-8 max-w-xl text-lg leading-relaxed md:text-xl">
+            <div className="mt-12 space-y-8 max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">
               {SERVICES.map((s) => (
                 <p key={s.title}>
                   <strong className="font-semibold text-ink">{s.title}</strong>{" "}
