@@ -90,13 +90,13 @@ function Hero() {
       </h1>
       <div className="mt-16 mb-24 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
-          <p className="text-muted-ink">YAMATO no nació de una pasión por el marketing. Nació de un cabreo.</p>
+          <p>YAMATO no nació de una pasión por el marketing. Nació de un cabreo.</p>
           <p className="text-muted-ink">
             Después de más de una década dirigiendo marketing en cabeza ajena, el patrón siempre era el mismo: empresas
             con buen producto pagando a agencias que vendían humo y delegaban el trabajo en un becario. Nadie pensaba el
             marketing más allá del mes que viene. Y cuando alguien lo pensaba, no era quien lo ejecutaba.
           </p>
-          <p className="text-muted-ink">Así que montamos lo contrario.</p>
+          <p>Así que montamos lo contrario.</p>
           <p className="text-muted-ink">
             Somos una <em className="font-serif">consultora de marketing independiente</em>. Entramos en tu empresa como
             entraría un director de marketing —pensamos la estrategia, marcamos los KPIs, lideramos la operación— pero
@@ -162,9 +162,8 @@ function Team() {
             <p className="text-muted-ink">
               YAMATO funciona con una <em className="font-serif">red de más de 50 colaboradores senior</em>{" "}
               —especialistas en SEO, CRM, contenido, datos, desarrollo, IA, redes sociales— que entran en cada proyecto
-              según lo
-              que ese proyecto necesita. No son una plantilla. Son los mejores en lo suyo, y solo trabajan cuando hace
-              falta lo suyo.
+              según lo que ese proyecto necesita. No son una plantilla. Son los mejores en lo suyo, y solo trabajan
+              cuando hace falta lo suyo.
             </p>
             <p className="text-muted-ink">Esto no es un parche. Es el modelo, y es mejor para ti:</p>
           </div>
