@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-const ignacioAsset = { url: "/assets/ignacio-goni-sketch.jpeg" };
+import ignacioAsset from "@/assets/ignacio-goni-yamato.webp.asset.json";
+
 const elenaAsset = { url: "/assets/elena-gonzalez-blanco-advisor.jpeg" };
 
 export const Route = createFileRoute("/quienes-somos")({
@@ -112,32 +113,39 @@ function Hero() {
 
 function Founder() {
   return (
-    <section className="border-t border-hairline relative overflow-hidden">
-      <img
-        src={ignacioAsset.url}
-        alt="Ignacio Goñi, fundador de YAMATO"
-        className="absolute top-1/2 left-[5%] w-[30%] max-w-[360px] -translate-y-1/2 opacity-30 pointer-events-none select-none"
-      />
-      <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-        <div className="grid gap-12 md:grid-cols-12">
-          <div className="md:col-span-4">
+    <section className="border-t border-hairline overflow-hidden">
+      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-24 md:py-28">
+        <div className="grid items-start gap-12 md:grid-cols-12 lg:gap-16">
+          <figure className="md:col-span-5">
+            <img
+              src={ignacioAsset.url}
+              alt="Ignacio Goñi, fundador de YAMATO"
+              width="1600"
+              height="1600"
+              loading="lazy"
+              decoding="async"
+              sizes="(min-width: 1024px) 36vw, (min-width: 768px) 42vw, 100vw"
+              className="aspect-[4/5] w-full max-h-[760px] object-cover object-center grayscale md:sticky md:top-24"
+            />
+          </figure>
+          <div className="md:col-span-7 lg:pt-8">
             <Eyebrow>Quién dirige esto</Eyebrow>
             <h3 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
               Ignacio Goñi
               <span className="block italic text-muted-ink">Fundador</span>
             </h3>
-          </div>
-          <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
-            <p className="text-muted-ink">
-              Ingeniero industrial que viene del sector aeroráutico, con más de diez años dirigiendo marketing dentro de
-              empresas, no asesorándolas desde fuera. He cometido los errores caros en presupuestos que no eran míos, lo
-              cual significa una cosa para ti: cuando trabajamos juntos, esos errores ya no los pagas tú.
-            </p>
-            <p className="text-muted-ink">
-              YAMATO es bootstrapped. Sin inversores a los que rendir cuentas, sin presión por inflar facturación, sin
-              un comercial cobrando comisión por venderte horas que no necesitas. Eso no es un detalle: es la razón por
-              la que te puedo decir la verdad aunque no me convenga.
-            </p>
+            <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl">
+              <p className="text-muted-ink">
+                Ingeniero industrial que viene del sector aeroráutico, con más de diez años dirigiendo marketing dentro
+                de empresas, no asesorándolas desde fuera. He cometido los errores caros en presupuestos que no eran
+                míos, lo cual significa una cosa para ti: cuando trabajamos juntos, esos errores ya no los pagas tú.
+              </p>
+              <p className="text-muted-ink">
+                YAMATO es bootstrapped. Sin inversores a los que rendir cuentas, sin presión por inflar facturación, sin
+                un comercial cobrando comisión por venderte horas que no necesitas. Eso no es un detalle: es la razón por
+                la que te puedo decir la verdad aunque no me convenga.
+              </p>
+            </div>
           </div>
         </div>
       </div>
