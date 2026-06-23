@@ -391,7 +391,7 @@ function Home() {
       <div className="border-t border-hairline" />
       <Fit />
       <Closing />
-      <Newsletter />
+      
       <Footer />
     </main>
   );
