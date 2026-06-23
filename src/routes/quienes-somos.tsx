@@ -15,8 +15,7 @@ export const Route = createFileRoute("/quienes-somos")({
       { property: "og:title", content: "Quiénes somos — YAMATO" },
       {
         property: "og:description",
-        content:
-          "Un CMO que firma lo que piensa y un equipo senior que no tienes que fichar.",
+        content: "Un CMO que firma lo que piensa y un equipo senior que no tienes que fichar.",
       },
       { property: "og:url", content: "/quienes-somos" },
     ],
@@ -34,11 +33,7 @@ function Arrow() {
 }
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
-  return (
-    <h2 className="text-sm font-medium uppercase tracking-[0.18em] text-muted-ink">
-      {children}
-    </h2>
-  );
+  return <h2 className="text-sm font-medium uppercase tracking-[0.18em] text-muted-ink">{children}</h2>;
 }
 
 const PRINCIPLES = [
@@ -96,18 +91,16 @@ function Hero() {
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
           <p>YAMATO no nació de una pasión por el marketing. Nació de un cabreo.</p>
           <p className="text-muted-ink">
-            Después de más de una década dirigiendo marketing en cabeza ajena, el patrón siempre
-            era el mismo: empresas con buen producto pagando a agencias que vendían humo y delegaban
-            el trabajo en un becario. Nadie pensaba el marketing más allá del mes que viene. Y cuando
-            alguien lo pensaba, no era quien lo ejecutaba.
+            Después de más de una década dirigiendo marketing en cabeza ajena, el patrón siempre era el mismo: empresas
+            con buen producto pagando a agencias que vendían humo y delegaban el trabajo en un becario. Nadie pensaba el
+            marketing más allá del mes que viene. Y cuando alguien lo pensaba, no era quien lo ejecutaba.
           </p>
           <p>Así que montamos lo contrario.</p>
           <p className="text-muted-ink">
-            Somos una <em className="font-serif">consultora de marketing independiente</em>. Entramos
-            en tu empresa como entraría un director de marketing —pensamos la estrategia, marcamos
-            los KPIs, lideramos la operación— pero sin que tengas que ficharlo ni pagarle 100.000 € al
-            año. La cabeza de un CMO con las manos de un equipo senior. Las horas que necesites. Ni
-            una más.
+            Somos una <em className="font-serif">consultora de marketing independiente</em>. Entramos en tu empresa como
+            entraría un director de marketing —pensamos la estrategia, marcamos los KPIs, lideramos la operación— pero
+            sin que tengas que ficharlo ni pagarle 100.000 € al año. La cabeza de un CMO con las manos de un equipo
+            senior. Las horas que necesites. Ni una más.
           </p>
           <p className="font-serif text-2xl italic">De la startup a la corporación.</p>
         </div>
@@ -135,15 +128,17 @@ function Founder() {
           </div>
           <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
             <p>
-              Ingeniero industrial que viene del sector aeroráutico, con más de diez años dirigiendo
-              marketing dentro de empresas, no asesorándolas desde fuera. He cometido los errores
-              caros en presupuestos que no eran míos, lo cual significa una cosa para ti: cuando
-              trabajamos juntos, esos errores ya no los pagas tú.
+              Más de diez años dirigiendo marketing dentro de empresas, no asesorándolas desde fuera. He cometido los
+              errores caros en presupuestos que no eran míos, lo cual significa una cosa para ti: cuando trabajamos
+              juntos, esos errores ya no los pagas tú.
             </p>
             <p className="text-muted-ink">
-              YAMATO es bootstrapped. Sin inversores a los que rendir cuentas, sin presión por inflar
-              facturación, sin un comercial cobrando comisión por venderte horas que no necesitas. Eso
-              no es un detalle: es la razón por la que te puedo decir la verdad aunque no me convenga.
+              YAMATO es bootstrapped. Sin inversores a los que rendir cuentas, sin presión por inflar facturación, sin
+              un comercial cobrando comisión por venderte horas que no necesitas. Eso no es un detalle: es la razón por
+              la que te puedo decir la verdad aunque no me convenga.
+            </p>
+            <p className="font-serif text-2xl italic">
+              La cabeza pensante soy yo. Y quien piensa la estrategia es quien la firma.
             </p>
           </div>
         </div>
@@ -163,14 +158,14 @@ function Team() {
         <div className="mt-16 grid gap-12 md:grid-cols-12">
           <div className="md:col-span-7 space-y-6 text-lg leading-relaxed md:text-xl">
             <p className="text-muted-ink">
-              Montan una cuadrícula de treinta caras sonrientes y la llaman “nuestro equipo”.
-              Nosotros no vamos a hacer eso.
+              Montan una cuadrícula de treinta caras sonrientes y la llaman “nuestro equipo”. Nosotros no vamos a hacer
+              eso.
             </p>
-            <p>
-              YAMATO funciona con una <em className="font-serif">red de más de 50 colaboradores
-              senior</em> —especialistas en SEO, CRM, contenido, datos, desarrollo, IA, redes
-              sociales— que entran en cada proyecto según lo que ese proyecto necesita. No son una
-              plantilla. Son los mejores en lo suyo, y solo trabajan cuando hace falta lo suyo.
+            <p className="text-muted-ink">
+              YAMATO funciona con una <em className="font-serif">red de más de 50 colaboradores senior</em>{" "}
+              —especialistas en paid media, SEO, CRM, contenido, datos, desarrollo— que entran en cada proyecto según lo
+              que ese proyecto necesita. No son una plantilla. Son los mejores en lo suyo, y solo trabajan cuando hace
+              falta lo suyo.
             </p>
             <p className="text-muted-ink">Esto no es un parche. Es el modelo, y es mejor para ti:</p>
           </div>
@@ -188,8 +183,8 @@ function Team() {
           </ul>
         </div>
         <p className="mt-20 max-w-4xl font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-[1.2] italic">
-          Una agencia te vende su organigrama. Nosotros te vendemos exactamente el talento que tu
-          problema requiere, dirigido por alguien que responde con su nombre.
+          Una agencia te vende su organigrama. Nosotros te vendemos exactamente el talento que tu problema requiere,
+          dirigido por alguien que responde con su nombre.
         </p>
       </div>
     </section>
@@ -205,21 +200,18 @@ function Advisor() {
             <Eyebrow>Y un advisor que nos para los pies</Eyebrow>
           </div>
           <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
-            <p>
-              Tener criterio está bien. Tener a alguien que te lleve la contraria cuando te
-              equivocas, mejor.
-            </p>
+            <p>Tener criterio está bien. Tener a alguien que te lleve la contraria cuando te equivocas, mejor.</p>
             <h3 className="font-serif text-[clamp(2rem,4vw,3.5rem)] leading-[1] tracking-tight">
               Elena González-Blanco
               <span className="block italic text-muted-ink">Advisor</span>
             </h3>
             <p className="text-muted-ink">
-              [Una o dos frases: quién es y qué ha hecho de verdad —cargo o trayectoria que dé peso,
-              sin adjetivos huecos.]
+              [Una o dos frases: quién es y qué ha hecho de verdad —cargo o trayectoria que dé peso, sin adjetivos
+              huecos.]
             </p>
             <p className="text-muted-ink">
-              [Una frase sobre qué aporta a YAMATO: la segunda opinión incómoda, el contraste de
-              experiencia, lo que mantiene honesto al proyecto.]
+              [Una frase sobre qué aporta a YAMATO: la segunda opinión incómoda, el contraste de experiencia, lo que
+              mantiene honesto al proyecto.]
             </p>
           </div>
         </div>
@@ -243,17 +235,12 @@ function Code() {
         </p>
         <ol className="mt-20">
           {PRINCIPLES.map((p) => (
-            <li
-              key={p.n}
-              className="grid gap-6 border-t border-paper/15 py-10 last:border-b md:grid-cols-12"
-            >
+            <li key={p.n} className="grid gap-6 border-t border-paper/15 py-10 last:border-b md:grid-cols-12">
               <div className="md:col-span-3">
                 <span className="font-serif text-4xl text-paper/50">{p.n}</span>
                 <h3 className="mt-3 font-serif text-2xl leading-tight md:text-3xl">{p.title}</h3>
               </div>
-              <p className="md:col-span-8 md:col-start-5 text-lg leading-relaxed text-paper/80 md:text-xl">
-                {p.body}
-              </p>
+              <p className="md:col-span-8 md:col-start-5 text-lg leading-relaxed text-paper/80 md:text-xl">{p.body}</p>
             </li>
           ))}
         </ol>
@@ -268,12 +255,11 @@ function Closing() {
       <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-32">
         <Eyebrow>¿Hablamos?</Eyebrow>
         <p className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
-          Treinta minutos. Te hacemos una <span className="italic">Radiografía gratis</span> de tu
-          marketing.
+          Treinta minutos. Te hacemos una <span className="italic">Radiografía gratis</span> de tu marketing.
         </p>
         <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-ink md:text-xl">
-          Las tres cosas, sin compromiso. Si en media hora no te convencemos, te lo diremos nosotros
-          antes de que cuelgues.
+          Las tres cosas, sin compromiso. Si en media hora no te convencemos, te lo diremos nosotros antes de que
+          cuelgues.
         </p>
         <div className="mt-12">
           <a
