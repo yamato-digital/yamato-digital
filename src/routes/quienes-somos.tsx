@@ -147,8 +147,8 @@ function Founder() {
               </p>
               <p className="text-muted-ink">
                 YAMATO es bootstrapped. Sin inversores a los que rendir cuentas, sin presión por inflar facturación, sin
-                un comercial cobrando comisión por venderte horas que no necesitas. Eso no es un detalle: es la razón por
-                la que te puedo decir la verdad aunque no me convenga.
+                un comercial cobrando comisión por venderte horas que no necesitas. Razón por la que te puedo decir la
+                verdad aunque no me convenga.
               </p>
             </div>
           </div>
