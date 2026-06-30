@@ -288,7 +288,7 @@ function Fit() {
                 "Vas a presentarnos a tu cuñado que tiene una pizzería.",
               ].map((t) => (
                 <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
-                  <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
+                  <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-current" />
                   <span>{t}</span>
                 </li>
               ))}
