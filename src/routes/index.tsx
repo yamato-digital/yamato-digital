@@ -110,16 +110,16 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
 function Hero() {
   return (
     <section id="top" className="px-6 sm:px-10 lg:px-20 xl:px-28">
-      <h1 className="mt-16 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em] md:mt-24">
+      <Reveal as="h1" className="mt-16 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em] md:mt-24">
         Hola. Somos una consultora de marketing independiente
         <span className="italic"> (y sincera).</span>
-      </h1>
-      <p className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
+      </Reveal>
+      <Reveal as="p" delay={150} className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
         Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.
-      </p>
-      <div className="mt-10 mb-20">
+      </Reveal>
+      <Reveal delay={300} className="mt-10 mb-20">
         <Cta>Llamar es gratis (aún)</Cta>
-      </div>
+      </Reveal>
     </section>
   );
 }
