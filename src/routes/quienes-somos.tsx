@@ -187,7 +187,7 @@ function Team() {
               "Cuando tu proyecto cambia, el equipo cambia con él. Sin reuniones para justificar nóminas.",
             ].map((t) => (
               <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
-                <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink" />
+                <span aria-hidden className="mt-2 inline-block h-px w-6 shrink-0 bg-current" />
                 <span>{t}</span>
               </li>
             ))}
