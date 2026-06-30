@@ -65,17 +65,17 @@ export function Reveal({
 
   const shown = "opacity-100 translate-x-0 translate-y-0 scale-100";
 
-  return (
-    <Tag
-      ref={ref as never}
-      style={{ transitionDelay: `${delay}ms` }}
-      className={cn(
+  return createElement(
+    Tag,
+    {
+      ref,
+      style: { transitionDelay: `${delay}ms` },
+      className: cn(
         "will-change-[opacity,transform] transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none",
         visible ? shown : initial,
         className,
-      )}
-    >
-      {children}
-    </Tag>
+      ),
+    },
+    children,
   );
 }
