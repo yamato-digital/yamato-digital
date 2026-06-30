@@ -316,13 +316,13 @@ function EnterpriseBlock() {
     <section>
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <div className="grid gap-12 md:grid-cols-12">
-          <div className="md:col-span-4">
+          <Reveal variant="fade-right" className="md:col-span-4">
             <Eyebrow>Para empresas grandes</Eyebrow>
             <h3 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
               ¿Y si ya tienes un <span className="italic">CMO?</span>
             </h3>
-          </div>
-          <div className="space-y-6 text-lg leading-relaxed md:col-span-7 md:col-start-6 md:text-xl">
+          </Reveal>
+          <Reveal variant="fade-left" delay={150} className="space-y-6 text-lg leading-relaxed md:col-span-7 md:col-start-6 md:text-xl">
             <p className="text-muted-ink">No venimos a quitarle la silla a nadie.</p>
             <p className="text-muted-ink">
               En empresas grandes entramos donde la estructura no llega: el lanzamiento que nadie tiene tiempo de
@@ -339,7 +339,7 @@ function EnterpriseBlock() {
             <div className="pt-4">
               <Cta>Cuéntanos el proyecto</Cta>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>
