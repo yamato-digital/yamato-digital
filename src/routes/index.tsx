@@ -373,7 +373,7 @@ function Fit() {
                 <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
                   <span
                     aria-hidden
-                    className="mt-2 inline-block h-px w-6 shrink-0 bg-muted-ink"
+                    className="mt-[0.7em] inline-block h-[2px] w-6 shrink-0 bg-muted-ink"
                   />
                   <span>{t}</span>
                 </li>
