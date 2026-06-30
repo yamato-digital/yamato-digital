@@ -191,24 +191,24 @@ function About() {
   return (
     <section className="py-28 px-6 sm:px-10 lg:px-20 xl:px-28">
       <div className="mx-auto max-w-4xl">
-        <Eyebrow>Qué es YAMATO</Eyebrow>
-        <p className="mt-10 font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-snug italic">
+        <Reveal><Eyebrow>Qué es YAMATO</Eyebrow></Reveal>
+        <Reveal as="p" delay={120} className="mt-10 font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-snug italic">
           Tu dirección de marketing.
-        </p>
+        </Reveal>
         <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl text-muted-ink">
-          <p>
+          <Reveal as="p" delay={200}>
             La cabeza de un CMO con más de una década dirigiendo + las manos de un equipo senior. Dentro de tu empresa,
             las horas que necesites. Ni un freelance que hace campañas sueltas, ni un consultor que suelta el informe y
             desaparece.
-          </p>
-          <p>
+          </Reveal>
+          <Reveal as="p" delay={280}>
             No somos una agencia. Nadie te venderá la moto en la primera reunión para pasarte luego con un junior: quien
             piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
-          </p>
-          <p>
+          </Reveal>
+          <Reveal as="p" delay={360}>
             Trabajamos como <em className="font-serif">Growth Partner</em>: solo ganamos cuando tú ganas. Incómodo para
             el resto del sector. Cómodo para ti.
-          </p>
+          </Reveal>
         </div>
       </div>
     </section>
