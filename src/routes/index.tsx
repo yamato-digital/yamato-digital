@@ -127,7 +127,7 @@ function Hero() {
 function HeroMedia() {
   return (
     <section>
-      <div className="relative aspect-[16/9] w-full overflow-hidden bg-ink/95">
+      <Reveal variant="scale" className="relative aspect-[16/9] w-full overflow-hidden bg-ink/95">
         <img
           src={assetUrl(heroPoster.url)}
           alt="YAMATO — Consultora de marketing independiente"
@@ -148,7 +148,7 @@ function HeroMedia() {
         >
           <source src={assetUrl(heroVideoMp4.url)} type="video/mp4" />
         </video>
-      </div>
+      </Reveal>
     </section>
   );
 }
