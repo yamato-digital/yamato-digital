@@ -360,7 +360,7 @@ function Fit() {
               <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
                 <span
                   aria-hidden
-                  className="mt-[0.7em] inline-block h-[2px] w-6 shrink-0 bg-current"
+                  className="mt-[0.7em] inline-block h-px w-6 shrink-0 bg-current"
                 />
                 <span>{t}</span>
               </li>
@@ -370,13 +370,13 @@ function Fit() {
             <p className="font-serif text-2xl italic text-muted-ink">No encajarás si…</p>
             <ul className="mt-6 space-y-5">
               {FIT_NO.map((t) => (
-                <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
-                  <span
-                    aria-hidden
-                    className="mt-[0.7em] inline-block h-[2px] w-6 shrink-0 bg-current"
-                  />
-                  <span>{t}</span>
-                </li>
+              <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
+                <span
+                  aria-hidden
+                  className="mt-[0.7em] inline-block h-px w-6 shrink-0 bg-current"
+                />
+                <span>{t}</span>
+              </li>
               ))}
             </ul>
           </div>
