@@ -272,20 +272,20 @@ function Process() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Cómo lo hacemos</Eyebrow>
         <div className="mt-20 grid gap-12 md:grid-cols-3">
-          {steps.map((s) => (
-            <div key={s.n}>
+          {steps.map((s, i) => (
+            <Reveal key={s.n} delay={i * 120}>
               <span className="font-serif text-5xl text-muted-ink">{s.n}</span>
               <h3 className="mt-4 font-serif text-3xl">{s.title}</h3>
               <p className="mt-4 leading-relaxed text-muted-ink">{s.body}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
-        <p className="mt-20 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
+        <Reveal as="p" className="mt-20 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
           “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no haces.”
-        </p>
-        <div className="mt-16">
+        </Reveal>
+        <Reveal delay={150} className="mt-16">
           <Cta>¿Nos sentamos?</Cta>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
