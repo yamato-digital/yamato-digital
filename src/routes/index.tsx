@@ -225,10 +225,10 @@ function Services() {
           </div>
           <ol className="md:col-span-8 md:col-start-5">
             {SERVICES.map((s, i) => (
-              <li key={s} className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b">
+              <Reveal as="li" delay={i * 80} key={s} className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b">
                 <span className="text-sm tabular-nums text-muted-ink">{String(i + 1).padStart(2, "0")}</span>
                 <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">{s}</span>
-              </li>
+              </Reveal>
             ))}
           </ol>
           <div className="mt-10 md:col-span-8 md:col-start-5">
