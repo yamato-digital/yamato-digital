@@ -391,13 +391,15 @@ function Closing() {
   return (
     <section id="contacto" className="bg-ink text-paper">
       <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-32">
-        <Eyebrow>
-          <span className="text-paper/60">Y colorín colorado…</span>
-        </Eyebrow>
-        <p className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
+        <Reveal>
+          <Eyebrow>
+            <span className="text-paper/60">Y colorín colorado…</span>
+          </Eyebrow>
+        </Reveal>
+        <Reveal as="p" delay={150} className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
           ¿Qué tal si hacemos una, o dos, cosas juntos?
-        </p>
-        <div className="mt-12">
+        </Reveal>
+        <Reveal delay={300} className="mt-12">
           <a
             href="/contacto"
             className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight italic link-underline link-underline-hover"
@@ -405,7 +407,7 @@ function Closing() {
             Hablemos pues
             <Arrow />
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
