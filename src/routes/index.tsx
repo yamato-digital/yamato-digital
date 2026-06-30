@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { Reveal } from "@/components/Reveal";
 import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
 import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
 
@@ -109,16 +110,16 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
 function Hero() {
   return (
     <section id="top" className="px-6 sm:px-10 lg:px-20 xl:px-28">
-      <h1 className="mt-16 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em] md:mt-24">
+      <Reveal as="h1" className="mt-16 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em] md:mt-24">
         Hola. Somos una consultora de marketing independiente
         <span className="italic"> (y sincera).</span>
-      </h1>
-      <p className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
+      </Reveal>
+      <Reveal as="p" delay={150} className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
         Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.
-      </p>
-      <div className="mt-10 mb-20">
+      </Reveal>
+      <Reveal delay={300} className="mt-10 mb-20">
         <Cta>Llamar es gratis (aún)</Cta>
-      </div>
+      </Reveal>
     </section>
   );
 }
@@ -126,7 +127,7 @@ function Hero() {
 function HeroMedia() {
   return (
     <section>
-      <div className="relative aspect-[16/9] w-full overflow-hidden bg-ink/95">
+      <Reveal variant="scale" className="relative aspect-[16/9] w-full overflow-hidden bg-ink/95">
         <img
           src={assetUrl(heroPoster.url)}
           alt="YAMATO — Consultora de marketing independiente"
@@ -147,7 +148,7 @@ function HeroMedia() {
         >
           <source src={assetUrl(heroVideoMp4.url)} type="video/mp4" />
         </video>
-      </div>
+      </Reveal>
     </section>
   );
 }
@@ -190,24 +191,24 @@ function About() {
   return (
     <section className="py-28 px-6 sm:px-10 lg:px-20 xl:px-28">
       <div className="mx-auto max-w-4xl">
-        <Eyebrow>Qué es YAMATO</Eyebrow>
-        <p className="mt-10 font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-snug italic">
+        <Reveal><Eyebrow>Qué es YAMATO</Eyebrow></Reveal>
+        <Reveal as="p" delay={120} className="mt-10 font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-snug italic">
           Tu dirección de marketing.
-        </p>
+        </Reveal>
         <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl text-muted-ink">
-          <p>
+          <Reveal as="p" delay={200}>
             La cabeza de un CMO con más de una década dirigiendo + las manos de un equipo senior. Dentro de tu empresa,
             las horas que necesites. Ni un freelance que hace campañas sueltas, ni un consultor que suelta el informe y
             desaparece.
-          </p>
-          <p>
+          </Reveal>
+          <Reveal as="p" delay={280}>
             No somos una agencia. Nadie te venderá la moto en la primera reunión para pasarte luego con un junior: quien
             piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
-          </p>
-          <p>
+          </Reveal>
+          <Reveal as="p" delay={360}>
             Trabajamos como <em className="font-serif">Growth Partner</em>: solo ganamos cuando tú ganas. Incómodo para
             el resto del sector. Cómodo para ti.
-          </p>
+          </Reveal>
         </div>
       </div>
     </section>
@@ -224,10 +225,10 @@ function Services() {
           </div>
           <ol className="md:col-span-8 md:col-start-5">
             {SERVICES.map((s, i) => (
-              <li key={s} className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b">
+              <Reveal as="li" delay={i * 80} key={s} className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b">
                 <span className="text-sm tabular-nums text-muted-ink">{String(i + 1).padStart(2, "0")}</span>
                 <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">{s}</span>
-              </li>
+              </Reveal>
             ))}
           </ol>
           <div className="mt-10 md:col-span-8 md:col-start-5">
@@ -271,20 +272,20 @@ function Process() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Cómo lo hacemos</Eyebrow>
         <div className="mt-20 grid gap-12 md:grid-cols-3">
-          {steps.map((s) => (
-            <div key={s.n}>
+          {steps.map((s, i) => (
+            <Reveal key={s.n} delay={i * 120}>
               <span className="font-serif text-5xl text-muted-ink">{s.n}</span>
               <h3 className="mt-4 font-serif text-3xl">{s.title}</h3>
               <p className="mt-4 leading-relaxed text-muted-ink">{s.body}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
-        <p className="mt-20 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
+        <Reveal as="p" className="mt-20 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
           “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no haces.”
-        </p>
-        <div className="mt-16">
+        </Reveal>
+        <Reveal delay={150} className="mt-16">
           <Cta>¿Nos sentamos?</Cta>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
@@ -294,17 +295,17 @@ function PriceQuote() {
   return (
     <section className="border-y border-hairline bg-paper">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-        <Eyebrow>Inversión</Eyebrow>
-        <p className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
+        <Reveal><Eyebrow>Inversión</Eyebrow></Reveal>
+        <Reveal as="p" delay={120} className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
           Un CMO por el precio de un <span className="italic text-muted-ink">junior</span>.
-        </p>
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
+        </Reveal>
+        <Reveal as="p" delay={220} className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
           Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una década dirigiendo marketing.
           Menos horas, sí. Pero ninguna se pierde en que un junior aprenda a tu costa.
-        </p>
-        <div className="mt-10">
+        </Reveal>
+        <Reveal delay={320} className="mt-10">
           <Cta>Si llamas, respondemos</Cta>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
@@ -315,13 +316,13 @@ function EnterpriseBlock() {
     <section>
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <div className="grid gap-12 md:grid-cols-12">
-          <div className="md:col-span-4">
+          <Reveal variant="fade-right" className="md:col-span-4">
             <Eyebrow>Para empresas grandes</Eyebrow>
             <h3 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
               ¿Y si ya tienes un <span className="italic">CMO?</span>
             </h3>
-          </div>
-          <div className="space-y-6 text-lg leading-relaxed md:col-span-7 md:col-start-6 md:text-xl">
+          </Reveal>
+          <Reveal variant="fade-left" delay={150} className="space-y-6 text-lg leading-relaxed md:col-span-7 md:col-start-6 md:text-xl">
             <p className="text-muted-ink">No venimos a quitarle la silla a nadie.</p>
             <p className="text-muted-ink">
               En empresas grandes entramos donde la estructura no llega: el lanzamiento que nadie tiene tiempo de
@@ -338,7 +339,7 @@ function EnterpriseBlock() {
             <div className="pt-4">
               <Cta>Cuéntanos el proyecto</Cta>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>
@@ -356,27 +357,27 @@ function Fit() {
 
         <div className="mt-16 grid gap-16 md:grid-cols-2">
           <ul className="space-y-5 text-muted-ink">
-            {FIT_YES.map((t) => (
-              <li key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
+            {FIT_YES.map((t, i) => (
+              <Reveal as="li" delay={i * 70} key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
                 <span
                   aria-hidden
                   className="mt-[0.7em] inline-block h-[2px] w-6 shrink-0 bg-current"
                 />
                 <span>{t}</span>
-              </li>
+              </Reveal>
             ))}
           </ul>
           <div>
-            <p className="font-serif text-2xl italic text-muted-ink">No encajarás si…</p>
+            <Reveal as="p" className="font-serif text-2xl italic text-muted-ink">No encajarás si…</Reveal>
             <ul className="mt-6 space-y-5">
-              {FIT_NO.map((t) => (
-                <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
+              {FIT_NO.map((t, i) => (
+                <Reveal as="li" delay={i * 70} key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
                   <span
                     aria-hidden
                     className="mt-[0.7em] inline-block h-[2px] w-6 shrink-0 bg-current"
                   />
                   <span>{t}</span>
-                </li>
+                </Reveal>
               ))}
             </ul>
           </div>
@@ -390,13 +391,15 @@ function Closing() {
   return (
     <section id="contacto" className="bg-ink text-paper">
       <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-32">
-        <Eyebrow>
-          <span className="text-paper/60">Y colorín colorado…</span>
-        </Eyebrow>
-        <p className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
+        <Reveal>
+          <Eyebrow>
+            <span className="text-paper/60">Y colorín colorado…</span>
+          </Eyebrow>
+        </Reveal>
+        <Reveal as="p" delay={150} className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
           ¿Qué tal si hacemos una, o dos, cosas juntos?
-        </p>
-        <div className="mt-12">
+        </Reveal>
+        <Reveal delay={300} className="mt-12">
           <a
             href="/contacto"
             className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight italic link-underline link-underline-hover"
@@ -404,7 +407,7 @@ function Closing() {
             Hablemos pues
             <Arrow />
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
