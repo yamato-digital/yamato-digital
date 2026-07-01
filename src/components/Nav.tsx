@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import logoBlack from "@/assets/logo-yamato-black.png";
+import logoBlackAsset from "@/assets/logo-yamato-black.webp.asset.json";
+const logoBlack = logoBlackAsset.url;
 
 const navItems = [
   { label: "Quiénes somos", to: "/quienes-somos" },
@@ -17,7 +18,7 @@ export function Nav() {
     <header className="sticky top-0 z-40 bg-paper/85 backdrop-blur">
       <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-6 sm:px-10 lg:px-16 xl:px-28">
         <Link to="/" className="inline-block">
-          <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
+          <img src={logoBlack} alt="YAMATO" width={206} height={32} className="h-8 w-auto" />
         </Link>
         <nav className="hidden min-w-0 items-center justify-end gap-4 text-xs md:flex lg:gap-6 lg:text-sm">
           {navItems.slice(0, 4).map((item) => (
