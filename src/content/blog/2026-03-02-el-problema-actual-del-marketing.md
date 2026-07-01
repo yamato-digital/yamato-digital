@@ -6,6 +6,8 @@ cover: "https://images.unsplash.com/photo-1519581706005-e1b7e2de264c?ixlib=rb-4.
 excerpt: "El 30 % de los nuevos CMOs duran menos de  18 meses. Es el c-level menos longevo."
 ---
 
+## Atraer talento es lento, caro y tortuoso.
+
 Mínimo, 5 meses.
 
 El 30 % de los nuevos CMOs duran menos de  18 meses. Es el c-level menos longevo.
