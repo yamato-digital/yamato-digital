@@ -197,7 +197,7 @@ function About() {
     <section className="py-28 px-6 sm:px-10 lg:px-20 xl:px-28">
       <div className="mx-auto max-w-4xl">
         <Reveal><Eyebrow>Qué es YAMATO</Eyebrow></Reveal>
-        <Reveal as="p" delay={120} className="mt-10 font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-snug italic">
+        <Reveal as="h3" delay={120} className="mt-10 font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-snug italic">
           Tu dirección de marketing.
         </Reveal>
         <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl text-muted-ink">
@@ -301,7 +301,7 @@ function PriceQuote() {
     <section className="border-y border-hairline bg-paper">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Reveal><Eyebrow>Inversión</Eyebrow></Reveal>
-        <Reveal as="p" delay={120} className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
+        <Reveal as="h3" delay={120} className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
           Un CMO por el precio de un <span className="italic text-muted-ink">junior</span>.
         </Reveal>
         <Reveal as="p" delay={220} className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
@@ -401,7 +401,7 @@ function Closing() {
             <span className="text-paper/60">Y colorín colorado…</span>
           </Eyebrow>
         </Reveal>
-        <Reveal as="p" delay={150} className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
+        <Reveal as="h3" delay={150} className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
           ¿Qué tal si hacemos una, o dos, cosas juntos?
         </Reveal>
         <Reveal delay={300} className="mt-12">
