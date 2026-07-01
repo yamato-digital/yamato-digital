@@ -101,11 +101,6 @@ function BlogPage() {
                         <h2 className="mt-3 font-serif text-2xl leading-[1.15] tracking-[-0.01em] text-ink group-hover:underline underline-offset-4 decoration-1">
                           {post.title}
                         </h2>
-                        {post.excerpt ? (
-                          <p className="mt-3 line-clamp-2 text-base text-muted-ink">
-                            {post.excerpt}
-                          </p>
-                        ) : null}
                       </div>
                     </Link>
                   </Reveal>
