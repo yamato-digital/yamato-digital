@@ -1,4 +1,19 @@
-import matter from "gray-matter";
+// Minimal frontmatter parser (browser + worker safe, no Node Buffer).
+function parseFrontmatter(raw: string): { data: Record<string, string>; content: string } {
+  const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(raw);
+  if (!match) return { data: {}, content: raw };
+  const data: Record<string, string> = {};
+  for (const line of match[1].split(/\r?\n/)) {
+    const m = /^([A-Za-z0-9_-]+)\s*:\s*(.*)$/.exec(line);
+    if (!m) continue;
+    let value = m[2].trim();
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+    data[m[1]] = value;
+  }
+  return { data, content: match[2] };
+}
 
 export interface BlogPost {
   slug: string;
@@ -31,17 +46,14 @@ function readingTime(text: string): number {
 
 const posts: BlogPost[] = Object.entries(modules)
   .map(([path, raw]) => {
-    const { data, content } = matter(raw);
-    const slug = (data.slug as string) || slugFromPath(path);
-    const dateStr = data.date instanceof Date
-      ? data.date.toISOString()
-      : String(data.date ?? "");
+    const { data, content } = parseFrontmatter(raw);
+    const slug = data.slug || slugFromPath(path);
     return {
       slug,
-      title: String(data.title ?? slug),
-      date: dateStr,
-      excerpt: String(data.excerpt ?? ""),
-      cover: data.cover ? String(data.cover) : undefined,
+      title: data.title ?? slug,
+      date: data.date ?? "",
+      excerpt: data.excerpt ?? "",
+      cover: data.cover || undefined,
       content,
       readingMinutes: readingTime(content),
     } satisfies BlogPost;
