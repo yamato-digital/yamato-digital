@@ -197,7 +197,7 @@ function About() {
     <section className="py-28 px-6 sm:px-10 lg:px-20 xl:px-28">
       <div className="mx-auto max-w-4xl">
         <Reveal><Eyebrow>Qué es YAMATO</Eyebrow></Reveal>
-        <Reveal as="h3" delay={120} className="mt-10 font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-snug italic">
+        <Reveal as="h3" delay={120} className="mt-10 font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight italic">
           Tu dirección de marketing.
         </Reveal>
         <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl text-muted-ink">
