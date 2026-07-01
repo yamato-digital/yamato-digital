@@ -1,4 +1,4 @@
-# Bots de búsqueda y citación — acceso completo
+# Bots de busqueda y citacion - acceso completo
 
 User-agent: Googlebot
 Allow: /
@@ -18,7 +18,7 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Entrenamiento de IA — bloqueado
+# Entrenamiento de IA - bloqueado
 
 User-agent: GPTBot
 Disallow: /
