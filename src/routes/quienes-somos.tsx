@@ -49,7 +49,7 @@ function Arrow() {
 }
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
-  return <h2 className="text-sm font-medium uppercase tracking-[0.18em] text-muted-ink">{children}</h2>;
+  return <h2 className="text-base font-semibold uppercase tracking-[0.14em] text-ink">{children}</h2>;
 }
 
 const PRINCIPLES = [
