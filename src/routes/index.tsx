@@ -143,7 +143,7 @@ function HeroMedia() {
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
           aria-label="YAMATO — Consultora de marketing independiente"
         >
           <source src={assetUrl(heroVideoMp4.url)} type="video/mp4" />
