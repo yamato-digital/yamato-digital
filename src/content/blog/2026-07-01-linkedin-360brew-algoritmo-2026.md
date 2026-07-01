@@ -63,5 +63,3 @@ Eso es una mala noticia para quien llevaba años inflando contenido de relleno p
 La pregunta no es si tu marca necesita "estar en LinkedIn". Es si detrás de esa cuenta hay una voz que un modelo de 150.000 millones de parámetros considere que merece la pena leer.
 
 [¿Hablamos?](https://yamato.digital/contacto)
-
-*Escrito por el equipo de YAMATO. Sí, usamos IA. No, no dejamos que escriba sola. Sí, notarás la diferencia.*
