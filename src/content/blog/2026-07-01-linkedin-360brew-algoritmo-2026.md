@@ -50,6 +50,10 @@ Escribe para que alguien se pare a leer, no para que alguien reaccione sin pensa
 
 Y sobre todo: deja de medir el éxito en likes. Mide comentarios de calidad, mide quién comenta (¿es tu cliente potencial o es tu competencia dándote un aplauso de cortesía?), mide si el post sigue generando tracción semanas después. 360Brew rescata contenido evergreen que sigue teniendo relevancia, así que ese artículo bien argumentado que escribiste hace un mes puede seguir trabajando para ti hoy.
 
+## El algoritmo en una imagen
+
+![El algoritmo de LinkedIn 360Brew explicado visualmente](https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/c4abdcb3-481e-4e84-9741-e63f76f5edfc/algoritmo-linkedin/w=1920,quality=90,fit=scale-down)
+
 ## Lo que esto significa de verdad
 
 LinkedIn ha dejado de ser una red de contactos para convertirse en una red de intereses. Ya no importa cuánta gente te sigue. Importa a quién le interesa lo que dices y si el modelo entiende que le interesa.
