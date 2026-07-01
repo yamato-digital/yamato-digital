@@ -6,6 +6,7 @@ const navItems = [
   { label: "Quiénes somos", to: "/quienes-somos" },
   { label: "Servicios", to: "/servicios" },
   { label: "Clientes", to: "/clientes" },
+  { label: "Blog", to: "/blog" },
   { label: "Contacto", to: "/contacto" },
 ];
 
@@ -19,7 +20,7 @@ export function Nav() {
           <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
         </Link>
         <nav className="hidden min-w-0 items-center justify-end gap-4 text-xs md:flex lg:gap-6 lg:text-sm">
-          {navItems.slice(0, 3).map((item) => (
+          {navItems.slice(0, 4).map((item) => (
             <Link
               key={item.to}
               to={item.to}

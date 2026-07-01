@@ -1,59 +1,88 @@
-## Objetivo
+## Nueva sección /blog
 
-Sustituir la imagen panorámica del `HeroMedia` por el video `yamato-hero.mp4` (1920x1080, 10s, 8.8MB), optimizado para carga rápida y SEO.
+### Contenido — flujo de edición semanal sin Lovable
 
-## Optimización del video
+La forma más simple y sin depender de Lovable: **archivos Markdown en el repo**, editables desde GitHub (web, móvil, VS Code, Obsidian, lo que prefieras).
 
-Original: H.264 High@L4, 7.3 Mbps, 8.8 MB → demasiado pesado para hero.
+Flujo semanal:
+1. Creas `src/content/blog/2026-07-08-titulo-del-post.md` en GitHub (o localmente y `git push`).
+2. En el frontmatter pones título, fecha, extracto, imagen de portada y slug.
+3. La build lo detecta automáticamente y aparece en `/blog` y en `/blog/<slug>`.
 
-Generaré dos variantes + un poster, vía ffmpeg en el sandbox:
+Ejemplo de post:
+```md
+---
+title: "El marketing mediocre ha muerto"
+date: 2026-07-08
+excerpt: "Por qué la IA no acaba con el marketing, solo con el que sobra."
+cover: "https://cdn.../portada.jpg"
+---
 
-1. **MP4 (H.264 baseline)** — máxima compatibilidad (Safari, iOS):
-   - CRF 26, preset slow, `-movflags +faststart` (moov al inicio → empieza a reproducir antes de descargar todo), sin audio (`-an`), pix_fmt yuv420p
-   - Target: ~1.5–2 MB
-2. **WebM (VP9)** — Chrome/Firefox/Edge, ~30–40% más pequeño:
-   - CRF 34, b:v 0, sin audio
-   - Target: ~1–1.5 MB
-3. **Poster JPG** (frame ~0.5s, 1920x1080, quality 75) — se muestra antes de que cargue el video y sirve como fallback / preview en redes.
-
-Los tres se suben a Lovable Assets (CDN con caché agresiva), no al repo.
-
-## Cambios en código
-
-**`src/routes/index.tsx`** — reemplazar `HeroMedia`:
-
-```tsx
-<video
-  className="h-full w-full object-cover"
-  width={1920} height={1080}
-  poster={poster.url}
-  autoPlay muted loop playsInline
-  preload="metadata"
-  aria-label="YAMATO — Consultora de marketing independiente"
->
-  <source src={webm.url} type="video/webm" />
-  <source src={mp4.url} type="video/mp4" />
-</video>
+Contenido en Markdown normal...
 ```
 
-Claves de rendimiento/UX:
-- `autoPlay muted playsInline loop` → requerido para autoplay en iOS/Safari.
-- `preload="metadata"` → no descarga el video entero hasta empezar a reproducir; el poster cubre el espacio.
-- `poster` evita CLS y da algo que ver de inmediato (sirve también como LCP candidate ligero).
-- Quitar la imagen actual `hero-yamato-landscape-hd.jpg` y su preload (ya no es LCP).
+Alternativas descartadas: Lovable Cloud (requiere entrar al backend cada semana) y hardcodear en TS (obliga a tocar código).
 
-**`src/routes/__root.tsx`** — el `og:image` actual (1920x1080 webp) se mantiene para previews sociales (las redes no usan video del `<video>` tag; usan `og:video` opcional, que también añado apuntando al MP4).
+### Estructura
 
-## SEO
+- `src/content/blog/*.md` — posts (creo 3 de ejemplo con lorem ipsum para que veas el layout).
+- `src/lib/blog.ts` — usa `import.meta.glob('../content/blog/*.md', { eager: true })` + `gray-matter` para leer frontmatter y devolver la lista ordenada por fecha desc.
+- `src/routes/blog.tsx` — listado con H1 "Blog", grid de miniaturas, botón "Cargar más".
+- `src/routes/blog.$slug.tsx` — página de detalle del post (render de Markdown con `marked` o `react-markdown`).
+- `src/components/Nav.tsx` — añadir "Blog" antes de "Contacto" (desktop y mobile).
+- `src/routes/sitemap[.]xml.ts` — quitar la exclusión de `/blog` y añadir cada post dinámicamente.
 
-- `og:video`, `og:video:type`, `og:video:width/height` en el head (Facebook/LinkedIn/WhatsApp pueden mostrar el video).
-- JSON-LD `VideoObject` con `name`, `description`, `thumbnailUrl` (poster), `contentUrl` (MP4), `uploadDate`, `duration` (PT10S) → habilita rich results y aparece en Google Video search.
-- `aria-label` en el `<video>` para accesibilidad.
-- Poster con nombre semántico (`yamato-hero-poster.jpg`).
+### Layout de la miniatura
 
-## Resultado esperado
+Coherente con el tono editorial del sitio (paper/ink, serif para títulos):
 
-- Peso transferido en primera carga: ~150 KB (poster) en lugar de la imagen actual; el video empieza a streamear sólo cuando ya está en pantalla.
-- Sin CLS (mismo aspect-ratio 16/9 reservado).
-- Compatible con todos los navegadores, autoplay funcional en móvil.
-- Indexable como video por Google.
+```
+┌─────────────────────┐
+│                     │
+│    [imagen 16:9]    │
+│                     │
+├─────────────────────┤
+│ 08 JUL 2026 · 4 min │  ← fecha en small caps, muted-ink
+│                     │
+│ Título del post     │  ← font-serif, ~1.5rem, hover subrayado
+│ en dos líneas       │
+│                     │
+│ Extracto breve del  │  ← text-muted-ink, 2 líneas
+│ artículo...         │
+└─────────────────────┘
+```
+
+- Grid: 3 columnas desktop / 2 tablet / 1 mobile.
+- Card completa clicable (`<Link>` que envuelve todo).
+- Wrapped en `<Reveal variant="fade-up" delay={index * 60}>` para stagger, consistente con el resto del site.
+
+### Paginación "Cargar más"
+
+- Estado local `visibleCount`, inicial 6, +6 por click.
+- Botón centrado tras el grid: fondo negro (`bg-ink`), texto blanco, `rounded-full`, `px-8 py-3`, replicando el estilo de la imagen adjunta.
+- Se oculta cuando `visibleCount >= posts.length`.
+- Sin scroll infinito ni URL params, click-driven.
+
+### SEO
+
+- `head()` en `/blog`: title "Blog — YAMATO", description, canonical `https://yamato.digital/blog`, og tags.
+- `head()` en `/blog/$slug`: usa loader data del post para title, description (excerpt) y og:image (cover).
+- JSON-LD `Blog` en el índice y `BlogPosting` en cada post.
+- Sitemap dinámico: lista `/blog` + cada `/blog/<slug>` con `lastmod` de la fecha del frontmatter.
+
+### Dependencias a instalar
+
+- `gray-matter` — parsear frontmatter.
+- `marked` — renderizar Markdown a HTML en el detalle (ligera, Worker-safe).
+
+### Detalles técnicos
+
+- `import.meta.glob('../content/blog/*.md', { eager: true, query: '?raw', import: 'default' })` para cargar el contenido en el bundle (funciona en SSR/Worker sin filesystem runtime).
+- El slug se deriva del filename (sin fecha ni extensión) o del frontmatter si se define.
+- Fecha formateada en español (`Intl.DateTimeFormat('es-ES', {...})`).
+- `reading time` calculado con `Math.ceil(words / 200)` inline, sin dependencia extra.
+
+### Fuera de alcance
+
+- Sin categorías, tags, autor múltiple, comentarios ni RSS (se pueden añadir después si los pides).
+- Sin CMS visual (Decap/TinaCMS): el flujo GitHub Markdown ya cubre "editar sin Lovable".

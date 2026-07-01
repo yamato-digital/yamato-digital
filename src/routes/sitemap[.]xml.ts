@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
+import { getAllPosts } from "@/lib/blog";
 
 const BASE_URL = "https://yamato.digital";
 
@@ -7,15 +8,16 @@ interface SitemapEntry {
   path: string;
   changefreq?: "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
   priority?: string;
+  lastmod?: string;
 }
 
-// Public, indexable routes only. /blog is intentionally excluded (temporary redirect to home).
-const entries: SitemapEntry[] = [
+const staticEntries: SitemapEntry[] = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/servicios", changefreq: "monthly", priority: "0.9" },
   { path: "/quienes-somos", changefreq: "monthly", priority: "0.8" },
   { path: "/clientes", changefreq: "monthly", priority: "0.8" },
   { path: "/partners", changefreq: "monthly", priority: "0.8" },
+  { path: "/blog", changefreq: "weekly", priority: "0.8" },
   { path: "/contacto", changefreq: "monthly", priority: "0.7" },
 ];
 
@@ -23,10 +25,19 @@ export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
+        const postEntries: SitemapEntry[] = getAllPosts().map((p) => ({
+          path: `/blog/${p.slug}`,
+          changefreq: "monthly",
+          priority: "0.6",
+          lastmod: p.date ? new Date(p.date).toISOString().slice(0, 10) : undefined,
+        }));
+        const entries = [...staticEntries, ...postEntries];
+
         const urls = entries.map((e) =>
           [
             `  <url>`,
             `    <loc>${BASE_URL}${e.path}</loc>`,
+            e.lastmod ? `    <lastmod>${e.lastmod}</lastmod>` : null,
             e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
             e.priority ? `    <priority>${e.priority}</priority>` : null,
             `  </url>`,
