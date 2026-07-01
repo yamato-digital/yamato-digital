@@ -43,7 +43,7 @@ function ContactoPage() {
             Email.
           </a>
           <a
-            href="https://pulsodiario.igonigonzalez.com/"
+            href="https://www.linkedin.com/company/yamatodigital/"
             className="link-underline link-underline-hover"
             target="_blank"
             rel="noopener noreferrer"
@@ -51,7 +51,7 @@ function ContactoPage() {
             LinkedIn.
           </a>
           <a
-            href="https://www.linkedin.com/company/yamatodigital/"
+            href="https://pulsodiario.igonigonzalez.com/"
             className="link-underline link-underline-hover"
             target="_blank"
             rel="noopener noreferrer"
