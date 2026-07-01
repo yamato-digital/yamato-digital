@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import logoBlack from "@/assets/logo-yamato-black.png";
+import logoBlackAsset from "@/assets/logo-yamato-black.webp.asset.json";
+const logoBlack = logoBlackAsset.url;
 
 const navItems = [
   { label: "Quiénes somos", to: "/quienes-somos" },
