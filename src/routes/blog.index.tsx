@@ -7,7 +7,7 @@ import { getAllPosts, formatDate } from "@/lib/blog";
 
 const PAGE_SIZE = 6;
 
-export const Route = createFileRoute("/blog")({
+export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
       { title: "Blog — YAMATO" },
