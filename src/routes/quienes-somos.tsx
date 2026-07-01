@@ -259,9 +259,9 @@ function Code() {
         <Eyebrow>
           <span className="text-paper/60">Nuestro código</span>
         </Eyebrow>
-        <p className="mt-8 max-w-4xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
+        <h3 className="mt-8 max-w-4xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
           Ocho cosas que <span className="italic">no negociamos.</span>
-        </p>
+        </h3>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper/70 md:text-xl">
           Si alguna te chirría, probablemente no somos para ti. Y no pasa nada.
         </p>
@@ -286,9 +286,9 @@ function Closing() {
     <section id="contacto">
       <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-32">
         <Eyebrow>¿Hablamos?</Eyebrow>
-        <p className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
+        <h3 className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
           Treinta minutos. Te hacemos una <span className="italic">Radiografía gratis</span> de tu marketing.
-        </p>
+        </h3>
         <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-ink md:text-xl">
           Las tres cosas, sin compromiso. Si en media hora no te convencemos, te lo diremos nosotros antes de que
           cuelgues.

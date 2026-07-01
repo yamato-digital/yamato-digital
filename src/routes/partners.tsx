@@ -201,9 +201,9 @@ function How() {
     <section className="bg-cream">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Cómo funciona</Eyebrow>
-        <p className="mt-8 max-w-4xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
+        <h3 className="mt-8 max-w-4xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
           Tres pasos. <span className="italic">Nada más.</span>
-        </p>
+        </h3>
         <ol className="mt-20">
           {STEPS.map((s) => (
             <li
@@ -232,9 +232,9 @@ function Money() {
         <Eyebrow>
           <span className="text-paper/60">Cuánto se gana</span>
         </Eyebrow>
-        <p className="mt-8 max-w-4xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
+        <h3 className="mt-8 max-w-4xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
           Las cuentas, <span className="italic">claras.</span>
-        </p>
+        </h3>
         <div className="mt-16 grid gap-12 md:grid-cols-3">
           <div className="space-y-3">
             <p className="font-serif text-5xl md:text-6xl">5.000 €<span className="text-paper/50 text-2xl">/mes</span></p>
@@ -311,9 +311,9 @@ function FaqSection() {
     <section className="bg-cream">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>FAQ</Eyebrow>
-        <p className="mt-8 max-w-4xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
+        <h3 className="mt-8 max-w-4xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
           Lo que <span className="italic">vas a preguntar.</span>
-        </p>
+        </h3>
         <dl className="mt-16">
           {FAQ.map((item) => (
             <div
@@ -339,10 +339,10 @@ function Closing() {
     <section>
       <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-32">
         <Eyebrow>¿Tienes a alguien en mente ahora mismo?</Eyebrow>
-        <p className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
+        <h3 className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
           Pues no esperes. Cuanto antes registres la intro,{" "}
           <span className="italic">antes empieza a contar el reloj.</span>
-        </p>
+        </h3>
         <div className="mt-12">
           <a
             href={TALLY_URL}
