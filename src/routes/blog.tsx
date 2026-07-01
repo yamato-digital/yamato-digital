@@ -68,7 +68,7 @@ function BlogPage() {
             {posts.length === 0 ? (
               <p className="text-muted-ink">Pronto habrá algo aquí.</p>
             ) : (
-              <ul className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+              <ul className="grid grid-cols-1 gap-x-10 gap-y-16 md:grid-cols-2">
                 {shown.map((post, i) => (
                   <Reveal
                     as="li"
