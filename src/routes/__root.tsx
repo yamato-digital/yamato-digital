@@ -109,11 +109,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "YAMATO",
-          url: SITE_URL,
-          logo: `${SITE_URL}/logo-yamato-black.png`,
-          sameAs: [],
+          "@graph": [
+            {
+              "@type": "Organization",
+              "name": "YAMATO",
+              "url": SITE_URL,
+              "description": "Consultora de marketing independiente. CMO externo para startups y corporaciones.",
+              "contactPoint": { "@type": "ContactPoint", "email": "hola@yamato.digital" },
+            },
+            {
+              "@type": "WebSite",
+              "name": "YAMATO",
+              "url": SITE_URL,
+              "inLanguage": "es",
+            },
+          ],
         }),
       },
     ],

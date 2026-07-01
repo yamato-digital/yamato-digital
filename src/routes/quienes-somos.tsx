@@ -24,6 +24,18 @@ export const Route = createFileRoute("/quienes-somos")({
       { property: "og:url", content: "https://yamato.digital/quienes-somos" },
     ],
     links: [{ rel: "canonical", href: "https://yamato.digital/quienes-somos" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@type": "Person",
+          "name": "Ignacio Goñi",
+          "jobTitle": "Fundador, CMO",
+          "worksFor": { "@type": "Organization", "name": "YAMATO" },
+          "description": "Ingeniero industrial con más de 15 años dirigiendo marketing. Ex-LOEWE.",
+        }),
+      },
+    ],
   }),
   component: QuienesSomos,
 });
