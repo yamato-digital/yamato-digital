@@ -1,6 +1,6 @@
 ---
 slug: "linkedin-360brew-algoritmo-2026"
-title: "LinkedIn 360Brew: el algoritmo que lee tu contenido"
+title: "LinkedIn dejó de contar tus likes. Ahora te lee. Literalmente."
 date: "2026-07-01"
 cover: "https://images.unsplash.com/photo-1611944212129-29977ae1398c?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
 excerpt: "LinkedIn cambió su algoritmo con 360Brew, un modelo de 150.000 M de parámetros que lee tu contenido. Qué cambia y cómo adaptar tu estrategia."
