@@ -6,12 +6,6 @@ cover: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=1920&q=90
 excerpt: "Hay una historia que el sector del marketing lleva repitiendo desde 2014: el email está muerto. Que nadie abre los correos. Que la gente solo usa redes sociales. Que la newsletter…"
 ---
 
-Publicado
-
-June 15, 2026
-
-## El email no ha muerto. Ha estado esperando a que tú lo mataras.
-
 Hay una historia que el sector del marketing lleva repitiendo desde 2014: el email está muerto. Que nadie abre los correos. Que la gente solo usa redes sociales. Que la newsletter es un formato del pasado.
 
 Esa historia es cómoda. Y completamente falsa.

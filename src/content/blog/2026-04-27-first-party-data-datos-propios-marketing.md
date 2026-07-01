@@ -6,10 +6,6 @@ cover: "https://images.unsplash.com/photo-1640158615573-cd28feb1bf4e?ixlib=rb-4.
 excerpt: "Hay activos en tu negocio que no aparecen en el balance contable, pero que en 2026 valen más que cualquier partida presupuestaria. Uno de ellos son tus datos propios: la informació…"
 ---
 
-Publicado
-
-April 27, 2026
-
 Hay activos en tu negocio que no aparecen en el balance contable, pero que en 2026 valen más que cualquier partida presupuestaria. Uno de ellos son tus datos propios: la información que tus clientes y usuarios te han entregado directamente, de forma voluntaria, mientras interactuaban contigo. Y la gran paradoja es esta: la mayoría de las marcas tienen esa mina de oro y no saben cómo explotarla.
 
 No es un problema de tecnología. Tampoco de presupuesto. Es, casi siempre, un problema de estrategia — o de ausencia de ella.

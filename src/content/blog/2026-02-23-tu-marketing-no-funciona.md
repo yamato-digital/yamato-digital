@@ -6,10 +6,6 @@ cover: "https://images.unsplash.com/photo-1711725637816-b0755c582c86?ixlib=rb-4.
 excerpt: "Gastas en Google Ads pero no tienes ni idea de si funciona. Publicas en redes como si fuera una obligación moral y nadie interactúa. Tu web tiene tres años y parece de diez. No sal…"
 ---
 
-Publicado
-
-February 23, 2026
-
 Gastas en Google Ads pero no tienes ni idea de si funciona. Publicas en redes como si fuera una obligación moral y nadie interactúa. Tu web tiene tres años y parece de diez. No sales en Google. No sales en ChatGPT. No sales, en general.
 
 Si estás leyendo esto, probablemente ya lo sabías. Lo que no sabes es por qué.

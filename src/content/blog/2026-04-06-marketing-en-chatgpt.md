@@ -6,10 +6,6 @@ cover: "https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/50c71
 excerpt: "Llevas años optimizando campañas en Google Ads. Ajustando audiencias en Meta. Probando creatividades en TikTok. Y de repente, el canal más importante del marketing digital en 2026…"
 ---
 
-Publicado
-
-April 6, 2026
-
 Llevas años optimizando campañas en Google Ads. Ajustando audiencias en Meta. Probando creatividades en TikTok. Y de repente, el canal más importante del marketing digital en 2026 no es una red social ni un buscador. Es una conversación.
 
 ChatGPT ya tiene publicidad. Desde febrero de este año, los usuarios del plan gratuito y ChatGPT Go ven anuncios integrados directamente en las respuestas de la IA. No banners laterales. No pop-ups. Anuncios dentro de la conversación, justo cuando estás preguntando algo que necesitas resolver.

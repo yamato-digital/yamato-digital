@@ -6,10 +6,6 @@ cover: "https://images.unsplash.com/photo-1638136264464-2711f0078d1e?ixlib=rb-4.
 excerpt: "Google Marketing Live 2026 trajo el anuncio que llevábamos meses esperando. O temiendo. Depende de a quién preguntes."
 ---
 
-Publicado
-
-June 1, 2026
-
 Google Marketing Live 2026 trajo el anuncio que llevábamos meses esperando. O temiendo. Depende de a quién preguntes.
 
 Se llama Ask Advisor. Es un agente construido con Gemini que ahora controla Google Ads, Google Analytics, Merchant Center y Google Marketing Platform. Todo desde el mismo sitio. Con una memoria compartida que recuerda tus objetivos de negocio sin que tengas que repetírselos. Y con capacidad para lanzar campañas, ajustar presupuestos, importar conversiones y "optimizar" sin que tú toques nada.

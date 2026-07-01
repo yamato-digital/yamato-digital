@@ -6,10 +6,6 @@ cover: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.
 excerpt: "La promesa es tan vieja como nueva: la IA va a hacer tu marketing por ti. Ahora con un giro. Ya no se trata de que te escriba el copy o te recomiende segmentaciones. Se trata de un…"
 ---
 
-Publicado
-
-May 11, 2026
-
 La promesa es tan vieja como nueva: la IA va a hacer tu marketing por ti. Ahora con un giro. Ya no se trata de que te escriba el copy o te recomiende segmentaciones. Se trata de un equipo entero de agentes autónomos —estrategia, contenido, compliance, media buying— que ejecutan campañas de principio a fin sin que tú toques nada.
 
 Por si te lo preguntas: ya está pasando. McKinsey calcula que estos sistemas aceleran la creación y ejecución de campañas entre 10 y 15 veces. Meta lleva meses empujando un futuro en el que el anunciante solo aporta URL y presupuesto, mientras la IA se encarga de creatividad, segmentación, pujada y colocación. Gartner predice que para finales de este año más del 40% de las aplicaciones empresariales tendrán agentes autónomos integrados.

@@ -6,10 +6,6 @@ cover: "https://images.unsplash.com/photo-1646446855655-451a3a8f19b6?ixlib=rb-4.
 excerpt: "En diciembre de 2024, TikTok lanzó TikTok Shop en España. Año y medio después, la plataforma factura 200 millones de euros al año, tiene 21.000 vendedores activos y es el retailer…"
 ---
 
-Publicado
-
-June 8, 2026
-
 En diciembre de 2024, TikTok lanzó TikTok Shop en España. Año y medio después, la plataforma factura 200 millones de euros al año, tiene 21.000 vendedores activos y es el retailer online número 16 del país. Por delante de marcas que llevan dos décadas vendiendo por internet.
 
 Mientras tanto, en la sala de juntas de tu marca seguís debatiendo si "TikTok encaja con vuestro posicionamiento".

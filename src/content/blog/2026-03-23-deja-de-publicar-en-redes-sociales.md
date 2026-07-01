@@ -6,10 +6,6 @@ cover: "https://images.unsplash.com/photo-1554177255-61502b352de3?ixlib=rb-4.1.0
 excerpt: "Publicas en Instagram los martes. Un carrusel los jueves. Una frase inspiracional los viernes. Llevas meses así. Quizás años."
 ---
 
-Publicado
-
-March 23, 2026
-
 Publicas en Instagram los martes. Un carrusel los jueves. Una frase inspiracional los viernes. Llevas meses así. Quizás años.
 
 ¿Y sabes qué has conseguido? 23 likes de los cuales 14 son de tu equipo, tu madre y esa cuenta rara de Dubái que te sigue desde 2023.

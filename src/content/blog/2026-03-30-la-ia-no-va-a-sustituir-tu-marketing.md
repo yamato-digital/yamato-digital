@@ -6,10 +6,6 @@ cover: "https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?ixlib=rb-4.
 excerpt: "Llevas meses escuchando que la inteligencia artificial va a revolucionar el marketing. Que los agentes de IA van a crear campañas solas. Que la hiperpersonalización va a hacer que…"
 ---
 
-Publicado
-
-March 30, 2026
-
 Llevas meses escuchando que la inteligencia artificial va a revolucionar el marketing. Que los agentes de IA van a crear campañas solas. Que la hiperpersonalización va a hacer que cada cliente reciba el mensaje perfecto en el momento exacto.
 
 Y tú mientras, mandando el mismo email a toda tu base de datos con el asunto "Newsletter de marzo".

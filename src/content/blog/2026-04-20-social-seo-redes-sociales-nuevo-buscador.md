@@ -6,10 +6,6 @@ cover: "https://images.unsplash.com/photo-1683721003111-070bcc053d8b?ixlib=rb-4.
 excerpt: "Hay algo que probablemente ya has hecho esta semana sin darte cuenta: abrir TikTok o Instagram para buscar un restaurante, una receta, o ese producto que viste en un reel. No abris…"
 ---
 
-Publicado
-
-April 20, 2026
-
 Hay algo que probablemente ya has hecho esta semana sin darte cuenta: abrir TikTok o Instagram para buscar un restaurante, una receta, o ese producto que viste en un reel. No abriste Google. No escribiste en la barra de direcciones. Fuiste directo a la red social.
 
 Y no, no eres raro. Eres parte de un cambio de comportamiento que está redefiniendo cómo las marcas deben plantearse su estrategia digital. Bienvenido a la era del Social SEO.

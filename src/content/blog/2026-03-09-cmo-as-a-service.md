@@ -6,10 +6,6 @@ cover: "https://images.unsplash.com/photo-1541537103745-ea3429c65dc4?ixlib=rb-4.
 excerpt: "El CMO as a Service está reemplazando a las agencias en España y hay una razón muy simple: necesitas marketing de alto nivel, pero contratar un director de marketing te cuesta entr…"
 ---
 
-Publicado
-
-March 9, 2026
-
 El CMO as a Service está reemplazando a las agencias en España y hay una razón muy simple: necesitas marketing de alto nivel, pero contratar un director de marketing te cuesta entre 70.000 y 130.000 € al año. Y eso solo es la cabeza — luego necesitas las manos.
 
 Mientras tanto, tu agencia actual te manda informes bonitos pero no se sienta en tu mesa directiva. No entiende tu negocio. No le dice al CTO que la web es un desastre. No prioriza. Ejecuta lo que le pides y punto.

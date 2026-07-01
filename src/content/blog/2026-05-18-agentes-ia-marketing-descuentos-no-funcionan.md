@@ -6,10 +6,6 @@ cover: "https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/b28d9
 excerpt: "Mientras lees esto, alguien le está comprando algo a tu marca sin haber visitado tu web. No es magia. Es un agente de IA decidiendo por una persona real, en una conversación con Ch…"
 ---
 
-Publicado
-
-May 18, 2026
-
 Mientras lees esto, alguien le está comprando algo a tu marca sin haber visitado tu web. No es magia. Es un agente de IA decidiendo por una persona real, en una conversación con ChatGPT, con Gemini o con un asistente integrado en una app que ya casi nadie nombra porque ya forma parte del sistema operativo del móvil.
 
 El 45% de los consumidores usa IA en algún punto de su proceso de compra. eMarketer estima que en 2026 las ventas que pasen por plataformas de IA superarán los 20.900 millones de dólares — casi cuatro veces más que en 2025. Y aquí viene la parte incómoda: el tráfico que llega desde agentes de IA ha crecido un 805% interanual.

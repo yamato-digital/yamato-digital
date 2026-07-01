@@ -6,10 +6,6 @@ cover: "https://images.unsplash.com/photo-1678329886668-6f44024b9ae6?ixlib=rb-4.
 excerpt: "La mayoría de marcas con las que hablamos siguen midiendo lo mismo que en 2018: impresiones, alcance, CTR, engagement rate. Indicadores limpios, fáciles de exportar a un PowerPoint…"
 ---
 
-Publicado
-
-May 4, 2026
-
 La mayoría de marcas con las que hablamos siguen midiendo lo mismo que en 2018: impresiones, alcance, CTR, engagement rate. Indicadores limpios, fáciles de exportar a un PowerPoint. Y casi completamente desconectados de cómo se compra hoy.
 
 Tu cliente no decide en tu post de Instagram. Decide en un grupo de WhatsApp con tres amigos. En un Discord donde alguien recomendó tu producto sin que tú te enteraras. En una conversación con ChatGPT. En un mensaje directo de Twitter que nunca vas a ver en Google Analytics.
