@@ -58,5 +58,3 @@ Si alguna respuesta te incomoda, ese es el punto de partida. No para dejar de us
 Si tu contenido de los últimos meses lo firmaría igual cualquier competidor, hablemos antes de que se note más.
 
 [¿Hablamos?](https://yamato.digital/contacto)
-
-*Escrito por el equipo de YAMATO con ayuda de IA. Si este artículo te ha sonado genérico, hemos fallado estrepitosamente.*
