@@ -21,6 +21,7 @@ export interface BlogPost {
   date: string; // ISO
   excerpt: string;
   cover?: string;
+  keywords?: string;
   content: string;
   readingMinutes: number;
 }
@@ -54,6 +55,7 @@ const posts: BlogPost[] = Object.entries(modules)
       date: data.date ?? "",
       excerpt: data.excerpt ?? "",
       cover: data.cover || undefined,
+      keywords: data.keywords || undefined,
       content,
       readingMinutes: readingTime(content),
     } satisfies BlogPost;
