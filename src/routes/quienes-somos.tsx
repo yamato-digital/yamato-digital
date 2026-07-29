@@ -29,10 +29,10 @@ export const Route = createFileRoute("/quienes-somos")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@type": "Person",
-          "name": "Ignacio Goñi",
-          "jobTitle": "Fundador, CMO",
-          "worksFor": { "@type": "Organization", "name": "YAMATO" },
-          "description": "Ingeniero industrial con más de 15 años dirigiendo marketing. Ex-LOEWE.",
+          name: "Ignacio Goñi",
+          jobTitle: "Fundador, CMO",
+          worksFor: { "@type": "Organization", name: "YAMATO" },
+          description: "Ingeniero industrial con más de 15 años dirigiendo marketing. Ex-LOEWE.",
         }),
       },
     ],
@@ -119,9 +119,9 @@ function Hero() {
           <p>Así que montamos lo contrario.</p>
           <p className="text-muted-ink">
             Somos una <em className="font-serif">consultora de marketing independiente</em>. Entramos en tu empresa como
-            entraría un director de marketing —pensamos la estrategia, marcamos los KPIs, lideramos la operación— pero
-            sin que tengas que ficharlo ni pagarle 100.000 € al año. La cabeza de un CMO con las manos de un equipo
-            senior. Las horas que necesites. Ni una más.
+            entraría un director de marketing (lo que ahora llaman Fractional CMO) —pensamos la estrategia, marcamos los
+            KPIs, lideramos la operación— pero sin que tengas que ficharlo ni pagarle 100.000 € al año. La cabeza de un
+            CMO con las manos de un equipo senior. Las horas que necesites. Ni una más.
           </p>
           <p className="font-serif text-2xl italic">De la startup a la corporación.</p>
         </div>
@@ -158,9 +158,9 @@ function Founder() {
             <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl">
               <p className="text-muted-ink">
                 Ingeniero industrial que viene del sector aeronáutico, ha pasado por la expansión global de LOEWE y está
-                metido en la IA hasta las entrañas, he pasado más de quince años dirigiendo marketing dentro de empresas,
-                no asesorándolas desde fuera. He cometido los errores caros en presupuestos que no eran míos, lo cual
-                significa una cosa para ti: cuando trabajamos juntos, esos errores ya no los pagas tú.
+                metido en la IA hasta las entrañas, he pasado más de quince años dirigiendo marketing dentro de
+                empresas, no asesorándolas desde fuera. He cometido los errores caros en presupuestos que no eran míos,
+                lo cual significa una cosa para ti: cuando trabajamos juntos, esos errores ya no los pagas tú.
               </p>
               <p className="text-muted-ink">
                 YAMATO es bootstrapped. Sin inversores a los que rendir cuentas, sin presión por inflar facturación, sin
