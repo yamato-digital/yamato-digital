@@ -1,23 +1,16 @@
-## Problema
+Plan: Añadir salto de línea entre "Tu dirección de marketing." y "Tu Fractional CMO." en la sección "Qué es YAMATO" de la home.
 
-`src/routes/blog.tsx` es a la vez la página de listado y — al existir `src/routes/blog.$slug.tsx` — el layout padre de las rutas `/blog/$slug`. Como `blog.tsx` no renderiza `<Outlet />`, al navegar a `/blog/algo` TanStack Router hace match del padre pero no monta al hijo: se queda visualmente en el listado aunque la URL cambia.
+Contexto: El usuario reportó que, en la sección About de la home, el texto "Tu dirección de marketing. Tu Fractional CMO." aparece en una sola línea. Quiere que "Tu Fractional CMO." vaya en una línea aparte.
 
-## Solución
+Problema previo: El build anterior falló con errores de JSX en `src/routes/index.tsx`. Es necesario verificar el estado actual del archivo antes de editar y, si persiste, corregir el error sintáctico antes de aplicar el cambio visual.
 
-Convertir el listado en un leaf sibling, para que `/blog` y `/blog/$slug` sean rutas independientes al mismo nivel — sin layout intermedio.
+Pasos:
+1. Releer `src/routes/index.tsx` para confirmar que no hay errores JSX residuales (líneas 195-230).
+2. Si hay errores, corregir el JSX para que el build pase.
+3. En el componente `About`, modificar la línea que contiene "Tu dirección de marketing. Tu Fractional CMO." para que "Tu Fractional CMO." aparezca en una línea nueva. Se puede lograr con un salto de línea explícito (`<br />` o dos elementos separados con `display: block`) respetando la misma clase tipográfica (`font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight italic`).
+4. Verificar que el build pase y que el heading se vea en dos líneas en el preview.
 
-### Cambios de archivos
+Archivos a modificar:
+- `src/routes/index.tsx` (líneas ~205-210, componente `About`).
 
-1. Renombrar `src/routes/blog.tsx` → `src/routes/blog.index.tsx`.
-2. Dentro del archivo renombrado, cambiar `createFileRoute("/blog")` por `createFileRoute("/blog/")` (el `/` final es la convención de TanStack para rutas index).
-3. Dejar `src/routes/blog.$slug.tsx` tal cual (ya tiene `createFileRoute("/blog/$slug")`).
-4. Dejar que el plugin de Vite regenere `src/routeTree.gen.ts` automáticamente.
-
-### Verificación
-
-- Abrir `/blog` → sigue mostrando el grid con "Cargar más".
-- Click en una miniatura → navega a `/blog/<slug>` y muestra el artículo completo (título, cover, contenido markdown).
-- Deep link directo a `/blog/email-marketing-newsletter-canal-mas-rentable-2026` sigue funcionando.
-- Sitemap dinámico (`/sitemap.xml`) sigue incluyendo el listado y todos los posts (no depende del layout).
-
-No se toca contenido de posts, ni Nav, ni SEO/JSON-LD.
+No se tocará ningún otro archivo, layout, diseño o contenido.
