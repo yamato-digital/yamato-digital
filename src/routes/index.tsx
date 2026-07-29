@@ -208,9 +208,6 @@ function About() {
         >
           Tu dirección de marketing. Tu Fractional CMO.
         </Reveal>
-        >
-          Tu Fractional CMO.
-        </Reveal>
         <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl text-muted-ink">
           <Reveal as="p" delay={200}>
             La cabeza de un CMO con más de una década dirigiendo + las manos de un equipo senior. Dentro de tu empresa,
