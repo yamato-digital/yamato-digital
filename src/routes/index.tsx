@@ -62,7 +62,7 @@ const SERVICES = [
   "Estrategia y dirección",
   "Mentoría y gestión de equipos",
   "Go-to-Market",
-  "IA aplicada a marketing y comunicación",
+  "IA aplicada al marketing",
   "Ejecución",
 ];
 
