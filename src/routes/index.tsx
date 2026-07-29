@@ -206,7 +206,7 @@ function About() {
           delay={120}
           className="mt-10 font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight italic"
         >
-          Tu dirección de marketing. Tu Fractional CMO.
+          Tu dirección de marketing.
         </Reveal>
         <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl text-muted-ink">
           <Reveal as="p" delay={200}>
