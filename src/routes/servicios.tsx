@@ -14,8 +14,7 @@ export const Route = createFileRoute("/servicios")({
       { property: "og:title", content: "Servicios — YAMATO" },
       {
         property: "og:description",
-        content:
-          "Cinco cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución.",
+        content: "Cinco cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución.",
       },
       { property: "og:url", content: "https://yamato.digital/servicios" },
     ],
@@ -48,7 +47,7 @@ const SERVICES = [
     body: "Hay fecha de lanzamiento y nadie ha pensado el cómo. Diseñamos y ejecutamos la entrada al mercado. Con plan y con plazos.",
   },
   {
-    title: "IA aplicada.",
+    title: "IA aplicada al marketing.",
     body: "Todos hablan de IA, nadie la implanta. La metemos donde ahorra dinero de verdad: automatizaciones, agentes, análisis, reporting. La IA no va a acabar con el marketing, va a acabar con el marketing mediocre.",
   },
   {
@@ -70,18 +69,15 @@ function ServiciosPage() {
             </h1>
             <div className="mt-10 space-y-7 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
               <p>
-                No hacemos de todo. Hacemos lo que mueve el negocio. Estrategia,
-                equipos, lanzamientos, IA y ejecución.
+                No hacemos de todo. Hacemos lo que mueve el negocio. Estrategia, equipos, lanzamientos, IA y ejecución.
               </p>
               <p>
-                Si necesitas a alguien que te haga cuarenta cosas regulares,
-                no somos nosotros. Si quieres a alguien que haga cinco bien y
-                te diga la verdad por el camino, sigue leyendo.
+                Si necesitas a alguien que te haga cuarenta cosas regulares, no somos nosotros. Si quieres a alguien que
+                haga cinco bien y te diga la verdad por el camino, sigue leyendo.
               </p>
               <p>
-                Y si lo único que necesitas en hacer campañas de Paid Media, no
-                te preocupes, te pondremos en contacto con nuestros partners.
-                Saben hacerlo mucho mejor que nosotros.
+                Y si lo único que necesitas en hacer campañas de Paid Media, no te preocupes, te pondremos en contacto
+                con nuestros partners. Saben hacerlo mucho mejor que nosotros.
               </p>
             </div>
           </div>
@@ -101,8 +97,7 @@ function ServiciosPage() {
             <div className="mt-12 space-y-8 max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">
               {SERVICES.map((s) => (
                 <p key={s.title}>
-                  <strong className="font-semibold text-ink">{s.title}</strong>{" "}
-                  {s.body}
+                  <strong className="font-semibold text-ink">{s.title}</strong> {s.body}
                 </p>
               ))}
             </div>
