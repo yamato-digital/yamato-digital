@@ -40,8 +40,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "VideoObject",
           name: "YAMATO — Consultora de marketing independiente",
-          description:
-            "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
+          description: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
           thumbnailUrl: assetUrl(heroPoster.url),
           contentUrl: assetUrl(heroVideoMp4.url),
           uploadDate: "2026-06-23",
@@ -63,7 +62,7 @@ const SERVICES = [
   "Estrategia y dirección",
   "Mentoría y gestión de equipos",
   "Go-to-Market",
-  "IA aplicada",
+  "IA aplicada a marketing y comunicación",
   "Ejecución",
 ];
 
@@ -115,7 +114,10 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
 function Hero() {
   return (
     <section id="top" className="px-6 sm:px-10 lg:px-20 xl:px-28">
-      <Reveal as="h1" className="mt-16 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em] md:mt-24">
+      <Reveal
+        as="h1"
+        className="mt-16 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em] md:mt-24"
+      >
         Hola. Somos una consultora de marketing independiente
         <span className="italic"> (y sincera).</span>
       </Reveal>
@@ -196,8 +198,14 @@ function About() {
   return (
     <section className="py-28 px-6 sm:px-10 lg:px-20 xl:px-28">
       <div className="mx-auto max-w-4xl">
-        <Reveal><Eyebrow>Qué es YAMATO</Eyebrow></Reveal>
-        <Reveal as="h3" delay={120} className="mt-10 font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight italic">
+        <Reveal>
+          <Eyebrow>Qué es YAMATO</Eyebrow>
+        </Reveal>
+        <Reveal
+          as="h3"
+          delay={120}
+          className="mt-10 font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight italic"
+        >
           Tu dirección de marketing.
         </Reveal>
         <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl text-muted-ink">
@@ -230,7 +238,12 @@ function Services() {
           </div>
           <ol className="md:col-span-8 md:col-start-5">
             {SERVICES.map((s, i) => (
-              <Reveal as="li" delay={i * 80} key={s} className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b">
+              <Reveal
+                as="li"
+                delay={i * 80}
+                key={s}
+                className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b"
+              >
                 <span className="text-sm tabular-nums text-muted-ink">{String(i + 1).padStart(2, "0")}</span>
                 <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">{s}</span>
               </Reveal>
@@ -285,7 +298,10 @@ function Process() {
             </Reveal>
           ))}
         </div>
-        <Reveal as="p" className="mt-20 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic">
+        <Reveal
+          as="p"
+          className="mt-20 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic"
+        >
           “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no haces.”
         </Reveal>
         <Reveal delay={150} className="mt-16">
@@ -300,8 +316,14 @@ function PriceQuote() {
   return (
     <section className="border-y border-hairline bg-paper">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
-        <Reveal><Eyebrow>Inversión</Eyebrow></Reveal>
-        <Reveal as="h3" delay={120} className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
+        <Reveal>
+          <Eyebrow>Inversión</Eyebrow>
+        </Reveal>
+        <Reveal
+          as="h3"
+          delay={120}
+          className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight"
+        >
           Un CMO por el precio de un <span className="italic text-muted-ink">junior</span>.
         </Reveal>
         <Reveal as="p" delay={220} className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
@@ -327,7 +349,11 @@ function EnterpriseBlock() {
               ¿Y si ya tienes un <span className="italic">CMO?</span>
             </h3>
           </Reveal>
-          <Reveal variant="fade-left" delay={150} className="space-y-6 text-lg leading-relaxed md:col-span-7 md:col-start-6 md:text-xl">
+          <Reveal
+            variant="fade-left"
+            delay={150}
+            className="space-y-6 text-lg leading-relaxed md:col-span-7 md:col-start-6 md:text-xl"
+          >
             <p className="text-muted-ink">No venimos a quitarle la silla a nadie.</p>
             <p className="text-muted-ink">
               En empresas grandes entramos donde la estructura no llega: el lanzamiento que nadie tiene tiempo de
@@ -364,23 +390,24 @@ function Fit() {
           <ul className="space-y-5 text-muted-ink">
             {FIT_YES.map((t, i) => (
               <Reveal as="li" delay={i * 70} key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
-                <span
-                  aria-hidden
-                  className="mt-[0.7em] inline-block h-[2px] w-6 shrink-0 bg-current"
-                />
+                <span aria-hidden className="mt-[0.7em] inline-block h-[2px] w-6 shrink-0 bg-current" />
                 <span>{t}</span>
               </Reveal>
             ))}
           </ul>
           <div>
-            <Reveal as="p" className="font-serif text-2xl italic text-muted-ink">No encajarás si…</Reveal>
+            <Reveal as="p" className="font-serif text-2xl italic text-muted-ink">
+              No encajarás si…
+            </Reveal>
             <ul className="mt-6 space-y-5">
               {FIT_NO.map((t, i) => (
-                <Reveal as="li" delay={i * 70} key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl">
-                  <span
-                    aria-hidden
-                    className="mt-[0.7em] inline-block h-[2px] w-6 shrink-0 bg-current"
-                  />
+                <Reveal
+                  as="li"
+                  delay={i * 70}
+                  key={t}
+                  className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl"
+                >
+                  <span aria-hidden className="mt-[0.7em] inline-block h-[2px] w-6 shrink-0 bg-current" />
                   <span>{t}</span>
                 </Reveal>
               ))}
@@ -401,7 +428,11 @@ function Closing() {
             <span className="text-paper/60">Y colorín colorado…</span>
           </Eyebrow>
         </Reveal>
-        <Reveal as="h3" delay={150} className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
+        <Reveal
+          as="h3"
+          delay={150}
+          className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight"
+        >
           ¿Qué tal si hacemos una, o dos, cosas juntos?
         </Reveal>
         <Reveal delay={300} className="mt-12">
