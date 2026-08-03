@@ -7,6 +7,6 @@
 - [Inicio](/): Qué es YAMATO y cómo trabajamos.
 - [Servicios](/servicios): Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución.
 - [Quiénes somos](/quienes-somos): Equipo y enfoque de YAMATO.
-- [Clientes](/clientes): Empresas con las que trabajamos.
+- [Casos](/casos): Cuatro clientes, cuatro cifras. Lo que pasó cuando YAMATO entró a dirigir su marketing.
 - [Partners](/partners): Programa de partners — una intro, un cobro.
 - [Contacto](/contacto): Reservar consulta, email, LinkedIn y newsletter.
