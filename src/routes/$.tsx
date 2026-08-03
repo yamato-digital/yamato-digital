@@ -4,11 +4,10 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/$")({
-  loader: () => {
+  beforeLoad: () => {
     if (typeof document === "undefined") {
       setResponseStatus(404);
     }
-    return null;
   },
   head: () => ({
     meta: [
