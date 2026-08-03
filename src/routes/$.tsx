@@ -1,13 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { setResponseStatus } from "@tanstack/react-start/server";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/$")({
-  beforeLoad: () => {
-    if (typeof document === "undefined") {
-      setResponseStatus(404);
-    }
+  loader: () => {
+    throw notFound();
   },
   head: () => ({
     meta: [
@@ -16,6 +13,7 @@ export const Route = createFileRoute("/$")({
     ],
   }),
   component: CatchAllNotFound,
+  notFoundComponent: CatchAllNotFound,
 });
 
 function CatchAllNotFound() {
