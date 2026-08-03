@@ -5,7 +5,7 @@ import logoBlack from "@/assets/logo-yamato-black.png";
 const navItems = [
   { label: "Quiénes somos", to: "/quienes-somos" },
   { label: "Servicios", to: "/servicios" },
-  { label: "Casos", to: "/casos" },
+  { label: "Clientes", to: "/clientes" },
   { label: "Partners", to: "/partners" },
   { label: "Blog", to: "/blog" },
   { label: "Contacto", to: "/contacto" },
