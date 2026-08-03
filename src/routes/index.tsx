@@ -57,10 +57,6 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const CLIENTS_ROW_1 = ["LOEWE", "Cedrion", "Kincode", "Bindu Events", "Beedigital", "Cegid"];
-const CLIENTS_ROW_2 = ["APODEMIA", "Airamana", "1forAll", "IEB", "Grupo Alquila"];
-const CLIENTS_ROW_3 = ["Clicollege", "Vivas Psicología", "SomosNLP", "Rem83"];
-
 const SERVICES = [
   "Estrategia y dirección",
   "Mentoría y gestión de equipos",
@@ -84,35 +80,6 @@ const FIT_NO = [
   "Te ofende que te digan lo que no funciona.",
   "Regateas. No somos un mercadillo.",
 ];
-
-function Arrow() {
-  return (
-    <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
-      →
-    </span>
-  );
-}
-
-function Cta({ children, href = "/contacto" }: { children: React.ReactNode; href?: string }) {
-  return (
-    <a
-      href={href}
-      className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight italic link-underline link-underline-hover"
-    >
-      {children}
-      <Arrow />
-    </a>
-  );
-}
-
-function Eyebrow({ children }: { children: React.ReactNode }) {
-  return (
-    <div>
-      <h2 className="text-base font-semibold uppercase tracking-[0.14em] text-ink">{children}</h2>
-      <div className="mt-2 h-[2px] w-10 bg-current opacity-40" />
-    </div>
-  );
-}
 
 function Hero() {
   return (
@@ -159,40 +126,6 @@ function HeroMedia() {
           <source src={assetUrl(heroVideoMp4.url)} type="video/mp4" />
         </video>
       </Reveal>
-    </section>
-  );
-}
-
-function Marquee() {
-  const rows = [
-    { items: CLIENTS_ROW_1, reverse: false },
-    { items: CLIENTS_ROW_2, reverse: true },
-    { items: CLIENTS_ROW_3, reverse: false },
-  ];
-  return (
-    <section aria-label="Trabajamos con" className="py-12">
-      <div>
-        {rows.map((row, idx) => {
-          const doubled = [...row.items, ...row.items, ...row.items, ...row.items];
-          const isLast = idx === rows.length - 1;
-          return (
-            <div key={idx} className={`overflow-hidden py-4 ${isLast ? "" : "border-b border-ink/15"}`}>
-              <div
-                className={`${row.reverse ? "marquee-track-reverse" : "marquee-track"} font-serif text-[clamp(1.75rem,4.5vw,3.5rem)] leading-[1.2] whitespace-nowrap py-1`}
-              >
-                {doubled.map((c, i) => (
-                  <span key={i} className="flex items-center gap-10">
-                    {c}
-                    <span aria-hidden className="text-muted-ink">
-                      ◦
-                    </span>
-                  </span>
-                ))}
-              </div>
-            </div>
-          );
-        })}
-      </div>
     </section>
   );
 }
