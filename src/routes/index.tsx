@@ -2,6 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
+import { Eyebrow } from "@/components/Eyebrow";
+import { Arrow, Cta } from "@/components/Cta";
+import { Marquee } from "@/components/Marquee";
 import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
 import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
 
