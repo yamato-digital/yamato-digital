@@ -64,6 +64,7 @@
   --color-cream: var(--cream);
   --color-muted-ink: var(--muted-ink);
   --color-hairline: var(--hairline);
+  --color-brand-red: var(--brand-red);
   --font-serif: "Fraunces", "Times New Roman", serif;
   --font-sans: "Inter", system-ui, sans-serif;
 }
@@ -79,6 +80,7 @@
   --cream: oklch(0.96 0.008 80);
   --muted-ink: oklch(0.55 0 0);
   --hairline: oklch(0.88 0 0);
+  --brand-red: #f1453b;
   --background: var(--paper);
   --foreground: var(--ink);
   --card: oklch(1 0 0);
