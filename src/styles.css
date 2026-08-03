@@ -79,7 +79,7 @@
   --paper: oklch(1 0 0);
   --cream: oklch(0.96 0.008 80);
   --muted-ink: oklch(0.55 0 0);
-  --hairline: oklch(0.88 0 0);
+  --brand-red: #f1453b;
   --background: var(--paper);
   --foreground: var(--ink);
   --card: oklch(1 0 0);
