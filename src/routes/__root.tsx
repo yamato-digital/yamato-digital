@@ -15,23 +15,42 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
 function NotFoundComponent() {
+  useEffect(() => {
+    document.title = "Página no encontrada — YAMATO";
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <div className="max-w-md text-center">
-        <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
-        </p>
-        <div className="mt-6">
-          <Link
-            to="/"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Go home
-          </Link>
+    <div className="flex min-h-screen flex-col bg-paper text-ink">
+      <Nav />
+      <main className="flex flex-1 items-center justify-center px-6 py-20 sm:px-10 lg:px-20 xl:px-28">
+        <div className="max-w-2xl text-center">
+          <span className="font-serif text-[clamp(6rem,15vw,12rem)] leading-none tracking-tight text-ink/10">
+            404
+          </span>
+          <h1 className="mt-6 font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] tracking-tight italic">
+            Esta página no genera tráfico ni conversión.
+          </h1>
+          <p className="mt-6 text-lg leading-relaxed text-muted-ink md:text-xl">
+            La URL que has intentado visitar no existe, ha sido movida o nunca tuvo demanda.
+            En marketing, cuando algo no funciona, lo mejor es reorientar.
+          </p>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <Link
+              to="/"
+              className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              Volver a la home
+            </Link>
+            <Link
+              to="/contacto"
+              className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-accent"
+            >
+              Hablemos
+            </Link>
+          </div>
         </div>
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }
