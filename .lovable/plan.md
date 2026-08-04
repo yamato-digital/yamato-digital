@@ -1,16 +1,39 @@
-Plan: Añadir salto de línea entre "Tu dirección de marketing." y "Tu Fractional CMO." en la sección "Qué es YAMATO" de la home.
+# Plan: Página 404 de YAMATO
 
-Contexto: El usuario reportó que, en la sección About de la home, el texto "Tu dirección de marketing. Tu Fractional CMO." aparece en una sola línea. Quiere que "Tu Fractional CMO." vaya en una línea aparte.
+## Objetivo
+Reemplazar la página 404 genérica actual por una página original y alineada con el tono de voz de YAMATO: directa, sincera, con sentido del humor estratégico y sin perder la utilidad.
 
-Problema previo: El build anterior falló con errores de JSX en `src/routes/index.tsx`. Es necesario verificar el estado actual del archivo antes de editar y, si persiste, corregir el error sintáctico antes de aplicar el cambio visual.
+## Requisitos resueltos
+- **Concepto:** metáfora de marketing.
+- **Estructura:** mantener navegación completa (header + footer) para que el usuario no se pierda.
 
-Pasos:
-1. Releer `src/routes/index.tsx` para confirmar que no hay errores JSX residuales (líneas 195-230).
-2. Si hay errores, corregir el JSX para que el build pase.
-3. En el componente `About`, modificar la línea que contiene "Tu dirección de marketing. Tu Fractional CMO." para que "Tu Fractional CMO." aparezca en una línea nueva. Se puede lograr con un salto de línea explícito (`<br />` o dos elementos separados con `display: block`) respetando la misma clase tipográfica (`font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight italic`).
-4. Verificar que el build pase y que el heading se vea en dos líneas en el preview.
+## Qué se va a construir
 
-Archivos a modificar:
-- `src/routes/index.tsx` (líneas ~205-210, componente `About`).
+### 1. Nuevo componente `NotFoundComponent` en `src/routes/__root.tsx`
+- Dejará de ser la pantalla genérica gris con "404" y "Page not found".
+- Tendrá el header (`Nav`) y el footer (`Footer`) de la web, integrándose visualmente con el resto de páginas.
+- Usará el sistema de color y tipografía existente (`bg-paper`, `text-ink`, `font-serif`, tokens de Tailwind). Sin colores a mano alzada.
+- Centrará el mensaje en pantalla completa (`min-h-screen`) con un diseño limpio y espacioso.
 
-No se tocará ningún otro archivo, layout, diseño o contenido.
+### 2. Copy y metáfora de marketing
+El mensaje jugará con el lenguaje de YAMATO sin caer en lo forzado. Ejemplo de dirección:
+- **Número grande:** "404" en tipografía serif, como un dato de marketing que no cuadra.
+- **Titular:** "Esta página no genera tráfico ni conversión."
+- **Subtitular:** "La URL que has intentado visitar no existe, ha sido movida o nunca tuvo demanda."
+- **CTA primaria:** "Volver a la home".
+- **CTA secundaria (opcional):** "Hablemos" que lleva a `/contacto`.
+
+El tono será cercano, sin excusas, y alineado con la honestidad brutal de la marca.
+
+### 3. SEO y experiencia de usuario
+- Se actualizará el título de la pestaña a algo como "Página no encontrada — YAMATO" mediante `useEffect` dentro del componente 404.
+- Se mantendrá el resto de metadatos genéricos del root, suficientes para que el error no quede descontextualizado.
+
+### 4. Verificación
+- Lanzar build para asegurar que no hay errores de tipos o sintaxis.
+- Probar una ruta inexistente (por ejemplo `/no-existe`) y confirmar que aparece el nuevo 404, con header, footer y el mensaje de marketing.
+
+## Notas técnicas
+- No se toca el enrutamiento: `notFoundComponent` ya está declarado en `__root.tsx` y es el punto correcto para capturar URLs no existentes.
+- No se añaden dependencias nuevas.
+- Se reutilizan los componentes `Nav` y `Footer` existentes.
