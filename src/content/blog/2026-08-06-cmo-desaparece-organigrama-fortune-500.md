@@ -15,7 +15,7 @@ No es que los CMO se vayan. Es que no se les sustituye.
 
 ## Los números, que son bastante feos
 
-Según el [análisis de Forrester sobre el Fortune 500](https://www.forrester.com/blogs/new-analysis-suggests-the-cmo-role-in-the-fortune-500-is-at-a-crossroads/) publicado este verano, solo el **36%** de las mayores empresas de Estados Unidos usa ya el título de Chief Marketing Officer. Hace un año era el 49%. Un cuarto del cargo evaporado en doce meses.
+Según el <a href="https://www.forrester.com/blogs/new-analysis-suggests-the-cmo-role-in-the-fortune-500-is-at-a-crossroads/" target="_blank" rel="noopener noreferrer">análisis de Forrester sobre el Fortune 500</a> publicado este verano, solo el **36%** de las mayores empresas de Estados Unidos usa ya el título de Chief Marketing Officer. Hace un año era el 49%. Un cuarto del cargo evaporado en doce meses.
 
 Hay un dato peor, porque este no va de nombres sino de poder: el máximo responsable de marketing se sienta en el comité de dirección o reporta al CEO en el **52%** de las Fortune 500. Hace un año, el 58%. Tercer año consecutivo de caída.
 
@@ -23,7 +23,7 @@ Y la lista de empresas que han eliminado el puesto en vez de cubrirlo no es prec
 
 ## General Motors: cómo se degrada una función sin anunciarlo
 
-GM fichó a Norm de Greve como CMO en 2023. En noviembre de 2025 lo movieron a un puesto de nueva creación, Chief Growth Officer, mientras la responsable de comunicación asumía también marketing. En mayo de 2026, [de Greve anunció que se iba](https://www.adweek.com/brand-marketing/chief-growth-officer-norm-de-greve-to-leave-general-motors/).
+GM fichó a Norm de Greve como CMO en 2023. En noviembre de 2025 lo movieron a un puesto de nueva creación, Chief Growth Officer, mientras la responsable de comunicación asumía también marketing. En mayo de 2026, <a href="https://www.adweek.com/brand-marketing/chief-growth-officer-norm-de-greve-to-leave-general-motors/" target="_blank" rel="noopener noreferrer">de Greve anunció que se iba</a>.
 
 Uno de los mayores anunciantes del mundo pasó de CMO a CGO a función absorbida en menos de tres años. Nadie emitió una nota de prensa anunciando que marketing perdía peso. Simplemente pasó en el organigrama, que es donde de verdad se decide la estrategia.
 
@@ -57,7 +57,7 @@ Tres preguntas que valen más que cualquier organigrama:
 
 Este verano, la marca de wearables WHOOP fichó a la ex-CMO de Nike para dirigir su marketing. Una scale-up pagando por una de las mejores constructoras de marca del mercado, en el mismo trimestre en que el Fortune 500 jubila su título. El valor no ha desaparecido. Ha cambiado de empresa.
 
-Y conviene tener a mano un precedente: McDonald's eliminó su cargo global de CMO y [lo reinstauró menos de un año después](https://www.marketingweek.com/mcdonalds-brings-back-global-cmo-role/). Repartir la responsabilidad de marca por el organigrama tiene un coste. Alguien acaba pagándolo.
+Y conviene tener a mano un precedente: McDonald's eliminó su cargo global de CMO y <a href="https://www.marketingweek.com/mcdonalds-brings-back-global-cmo-role/" target="_blank" rel="noopener noreferrer">lo reinstauró menos de un año después</a>. Repartir la responsabilidad de marca por el organigrama tiene un coste. Alguien acaba pagándolo.
 
 ## Qué significa esto si tu empresa factura cinco millones, no cincuenta mil
 
