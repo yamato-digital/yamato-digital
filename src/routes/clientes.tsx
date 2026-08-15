@@ -111,9 +111,10 @@ function ClientesPage() {
           </div>
 
           <div className="mt-16 md:mt-24 text-center max-w-2xl mx-auto">
-            <h3 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
+            <h2 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
               ¿No ves tu nombre?
-            </h3>
+            </h2>
+
             <p className="mt-4 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
               Muy sencillo, llámanos y cambiemos eso.
             </p>
