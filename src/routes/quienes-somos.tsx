@@ -28,7 +28,9 @@ export const Route = createFileRoute("/quienes-somos")({
       {
         type: "application/ld+json",
         children: JSON.stringify({
+          "@context": "https://schema.org",
           "@type": "Person",
+
           "name": "Ignacio Goñi",
           "jobTitle": "Fundador, CMO",
           "worksFor": { "@type": "Organization", "name": "YAMATO" },
