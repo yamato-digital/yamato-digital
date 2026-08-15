@@ -99,9 +99,10 @@ function ClientesPage() {
           <div className="grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-2">
             {clients.map((client) => (
               <div key={client.name}>
-                <h3 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
+                <h2 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
                   {client.name}
-                </h3>
+                </h2>
+
                 <p className="mt-4 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
                   {client.description}
                 </p>
