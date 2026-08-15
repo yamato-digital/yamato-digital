@@ -13,6 +13,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServiciosRouteImport } from './routes/servicios'
 import { Route as QuienesSomosRouteImport } from './routes/quienes-somos'
 import { Route as PartnersRouteImport } from './routes/partners'
+import { Route as FractionalCmoRouteImport } from './routes/fractional-cmo'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as ClientesRouteImport } from './routes/clientes'
 import { Route as IndexRouteImport } from './routes/index'
@@ -37,6 +38,11 @@ const QuienesSomosRoute = QuienesSomosRouteImport.update({
 const PartnersRoute = PartnersRouteImport.update({
   id: '/partners',
   path: '/partners',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FractionalCmoRoute = FractionalCmoRouteImport.update({
+  id: '/fractional-cmo',
+  path: '/fractional-cmo',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactoRoute = ContactoRouteImport.update({
@@ -69,6 +75,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/clientes': typeof ClientesRoute
   '/contacto': typeof ContactoRoute
+  '/fractional-cmo': typeof FractionalCmoRoute
   '/partners': typeof PartnersRoute
   '/quienes-somos': typeof QuienesSomosRoute
   '/servicios': typeof ServiciosRoute
@@ -80,6 +87,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/clientes': typeof ClientesRoute
   '/contacto': typeof ContactoRoute
+  '/fractional-cmo': typeof FractionalCmoRoute
   '/partners': typeof PartnersRoute
   '/quienes-somos': typeof QuienesSomosRoute
   '/servicios': typeof ServiciosRoute
@@ -92,6 +100,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/clientes': typeof ClientesRoute
   '/contacto': typeof ContactoRoute
+  '/fractional-cmo': typeof FractionalCmoRoute
   '/partners': typeof PartnersRoute
   '/quienes-somos': typeof QuienesSomosRoute
   '/servicios': typeof ServiciosRoute
@@ -105,6 +114,7 @@ export interface FileRouteTypes {
     | '/'
     | '/clientes'
     | '/contacto'
+    | '/fractional-cmo'
     | '/partners'
     | '/quienes-somos'
     | '/servicios'
@@ -116,6 +126,7 @@ export interface FileRouteTypes {
     | '/'
     | '/clientes'
     | '/contacto'
+    | '/fractional-cmo'
     | '/partners'
     | '/quienes-somos'
     | '/servicios'
@@ -127,6 +138,7 @@ export interface FileRouteTypes {
     | '/'
     | '/clientes'
     | '/contacto'
+    | '/fractional-cmo'
     | '/partners'
     | '/quienes-somos'
     | '/servicios'
@@ -139,6 +151,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ClientesRoute: typeof ClientesRoute
   ContactoRoute: typeof ContactoRoute
+  FractionalCmoRoute: typeof FractionalCmoRoute
   PartnersRoute: typeof PartnersRoute
   QuienesSomosRoute: typeof QuienesSomosRoute
   ServiciosRoute: typeof ServiciosRoute
@@ -175,6 +188,13 @@ declare module '@tanstack/react-router' {
       path: '/partners'
       fullPath: '/partners'
       preLoaderRoute: typeof PartnersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fractional-cmo': {
+      id: '/fractional-cmo'
+      path: '/fractional-cmo'
+      fullPath: '/fractional-cmo'
+      preLoaderRoute: typeof FractionalCmoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contacto': {
@@ -219,6 +239,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ClientesRoute: ClientesRoute,
   ContactoRoute: ContactoRoute,
+  FractionalCmoRoute: FractionalCmoRoute,
   PartnersRoute: PartnersRoute,
   QuienesSomosRoute: QuienesSomosRoute,
   ServiciosRoute: ServiciosRoute,
