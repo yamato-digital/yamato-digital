@@ -79,6 +79,13 @@ function ServiciosPage() {
                 Y si lo único que necesitas en hacer campañas de Paid Media, no te preocupes, te pondremos en contacto
                 con nuestros partners. Saben hacerlo mucho mejor que nosotros.
               </p>
+              <p>
+                ¿Buscas quien dirija todo esto sin contratar a un CMO en plantilla?{" "}
+                <Link to="/fractional-cmo" className="link-underline link-underline-hover text-ink">
+                  Así trabajamos como Fractional CMO
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </section>
