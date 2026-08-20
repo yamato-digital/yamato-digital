@@ -6,7 +6,6 @@ const navItems = [
   { label: "Quiénes somos", to: "/quienes-somos" },
   { label: "Servicios", to: "/servicios" },
   { label: "Clientes", to: "/clientes" },
-  { label: "Partners", to: "/partners" },
   { label: "Blog", to: "/blog" },
   { label: "Contacto", to: "/contacto" },
 ];
