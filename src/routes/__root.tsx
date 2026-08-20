@@ -134,6 +134,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             {
               "@type": "Organization",
               "name": "YAMATO",
+              "alternateName": ["YAMATO Digital", "Yamato Consultora de Marketing"],
               "url": SITE_URL,
               "description": "Consultora de marketing independiente. CMO externo para startups y corporaciones.",
               "contactPoint": { "@type": "ContactPoint", "email": "hola@yamato.digital" },
@@ -141,9 +142,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             {
               "@type": "WebSite",
               "name": "YAMATO",
+              "alternateName": ["YAMATO Digital", "Yamato Consultora de Marketing"],
               "url": SITE_URL,
               "inLanguage": "es",
+              "publisher": { "@type": "Organization", "name": "YAMATO", "url": SITE_URL },
             },
+
           ],
         }),
       },

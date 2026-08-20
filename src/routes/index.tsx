@@ -12,18 +12,20 @@ const assetUrl = (url: string) => `${ASSET_ORIGIN}${url}`;
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "YAMATO — Consultora de marketing independiente (y sincera)" },
+      { title: "YAMATO — Consultora de marketing independiente" },
       {
         name: "description",
         content:
-          "Dirección de marketing externa y Fractional CMO desde Madrid: estrategia, ejecución y visibilidad en Google y en IA, sin humo ni fees eternos.",
+          "YAMATO es una consultora de marketing independiente (y sincera): dirección de marketing externa y Fractional CMO desde Madrid. Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio.",
       },
-      { property: "og:title", content: "YAMATO — Tu dirección de marketing. Tu Fractional CMO." },
+      { property: "og:site_name", content: "YAMATO" },
+      { property: "og:title", content: "YAMATO — Consultora de marketing independiente" },
       {
         property: "og:description",
         content:
-          "Dirección de marketing externa y Fractional CMO desde Madrid: estrategia, ejecución y visibilidad en Google y en IA, sin humo ni fees eternos.",
+          "YAMATO es una consultora de marketing independiente (y sincera): dirección de marketing externa y Fractional CMO desde Madrid. Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio.",
       },
+
 
       { property: "og:url", content: SITE_URL },
       { property: "og:video", content: `${SITE_URL}${heroVideoMp4.url}` },
